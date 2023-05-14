@@ -1,13 +1,17 @@
 import React from "react";
 import { Routes, Route } from "react-router-dom";
 
-import Landing from "../pages/Landing";
+import Home from "../pages/Home";
 import Portfolio from "../pages/Portfolio";
+import Contact from "../pages/Contact";
+import About from "../pages/About";
 
 const RouteBuild = () => (
   <Routes>
-    <Route path="/" element={<Landing />} />
-    <Route path="/Portfolio" element={<Portfolio />} />
+    <Route path="/" element={<Home />} />
+    <Route path="/portfolio" element={<Portfolio />} />
+    <Route path="/contato" element={<Contact />} />
+    <Route path="/sobre" element={<About />} />
   </Routes>
 );
 
