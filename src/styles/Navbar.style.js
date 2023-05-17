@@ -4,12 +4,12 @@ import { Link } from "react-router-dom";
 export const NavbarContainer = styled.nav`
   width: 100%;
   height: ${(props) => (props.extendNavbar ? "100vh" : "80px")};
-  background-color: papayawhip;
   display: flex;
   flex-direction: column;
+  position: sticky;
   
   @media (min-width: 700px) {
-    height: 80px;
+    
   }
 `;
 
@@ -60,11 +60,16 @@ export const Logo = styled.img`
   margin: 10px;
   max-width: 180px;
   height: auto;
+
+  @media (max-width: 450px) {
+    margin: 5px;
+    margin-right: -20px;
+  }
 `;
 
 export const OpenLinksButton = styled.button`
-  width: 70px;
-  height: 50px;
+  width: 50px;
+  height: 100px;
   background: none;
   border: none;
   color: darkcyan;

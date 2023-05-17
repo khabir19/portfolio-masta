@@ -11,6 +11,7 @@ import {
   OpenLinksButton,
   NavbarLinkExtended,
 } from "../styles/Navbar.style";
+
 import LogoImg from "../assets/logo.png";
 
 function Navbar() {
