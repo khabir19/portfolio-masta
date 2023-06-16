@@ -5,8 +5,8 @@ import '../../styles/global.css'
 import styled from 'styled-components';
 import Navbar from '../../Components/navbar';
 
-import backMandala from "../../assets/mandala.png";
-import clientPhoto from "../../assets/masta.png";
+import backMandala from "../../assets/misc/mandalaWhite.png";
+import clientPhoto from "../../assets/misc/masta.png";
 
 
 export const Grid = styled.div` 

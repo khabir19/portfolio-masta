@@ -6,11 +6,7 @@ export const NavbarContainer = styled.nav`
   height: ${(props) => (props.extendNavbar ? "100vh" : "80px")};
   display: flex;
   flex-direction: column;
-  position: sticky;
-  
-  @media (min-width: 700px) {
-    
-  }
+  position: sticky;  
 `;
 
 export const LeftContainer = styled.div`
@@ -34,15 +30,19 @@ export const NavbarInnerContainer = styled.div`
 `;
 
 export const NavbarLinkContainer = styled.div`
-  display: flex;
+  display: flex;  
 `;
 
 export const NavbarLink = styled(Link)`
-  color: darkcyan;
+  color: snow;
   font-size: x-large;
   font-family: Quicksand, Helvetica, sans-serif;
   text-decoration: none;
   margin: 10px;
+
+  &:hover{
+    color: bisque;
+  }
 
   @media (max-width: 700px) {
     display: none;
@@ -50,7 +50,7 @@ export const NavbarLink = styled(Link)`
 `;
 
 export const NavbarLinkExtended = styled(Link)`
-  color: darkcyan;
+  color: snow;
   font-size: x-large;
   font-family: Arial, Helvetica, sans-serif;
   text-decoration: none;
@@ -60,7 +60,7 @@ export const Logo = styled.img`
   margin: 10px;
   max-width: 180px;
   height: auto;
-
+  position: relative;
   @media (max-width: 450px) {
     margin: 5px;
     margin-right: -20px;
@@ -72,9 +72,10 @@ export const OpenLinksButton = styled.button`
   height: 100px;
   background: none;
   border: none;
-  color: darkcyan;
+  color: snow;
   font-size: 45px;
   cursor: pointer;
+  position: relative;
 
   @media (min-width: 700px) {
     display: none;
@@ -84,7 +85,9 @@ export const OpenLinksButton = styled.button`
 export const NavbarExtendedContainer = styled.div`
   display: flex;
   flex-direction: column;
-  align-items: center;  
+  align-items: stretch;
+  background-color: black;
+  margin: 0px;
 
   @media (min-width: 700px) {
     display: none;

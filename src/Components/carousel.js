@@ -7,10 +7,10 @@ import {
   CarouselButton 
 } from '../styles/Carousel.style';
 
-import aliceSo from "../assets/aliceSo.png";
-import fogareu from "../assets/fogareu.png";
-import rioDesejo2 from "../assets/rioDesejo2.png";
-import carousel4 from "../assets/carousel4.JPG";
+// import aliceSo from "../assets/aliceSo.png";
+// import fogareu from "../assets/fogareu.png";
+// import rioDesejo2 from "../assets/rioDesejo2.png";
+// import carousel4 from "../assets/carousel4.JPG";
 
 const CarouselFade = () => {
   return (
@@ -23,7 +23,7 @@ const CarouselFade = () => {
       >
         <Carousel.Item>
           <CarouselItemImg
-            src={aliceSo}
+            // src={aliceSo}
             alt="Alice e Só"
           />
           <Carousel.Caption>
@@ -35,7 +35,7 @@ const CarouselFade = () => {
         </Carousel.Item>
         <Carousel.Item>
           <CarouselItemImg
-            src={fogareu}
+            // src={fogareu}
             alt="Fogaréu"
           />
           <Carousel.Caption>
@@ -47,7 +47,7 @@ const CarouselFade = () => {
         </Carousel.Item>
         <Carousel.Item>
           <CarouselItemImg
-            src={rioDesejo2}
+            // src={rioDesejo2}
             alt="Rio dos Desejos"
           />
           <Carousel.Caption>

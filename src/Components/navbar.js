@@ -12,7 +12,7 @@ import {
   NavbarLinkExtended,
 } from "../styles/Navbar.style";
 
-import LogoImg from "../assets/logo.png";
+import LogoImg from "../assets/misc/logo.png";
 
 function Navbar() {
   const [extendNavbar, setExtendNavbar] = useState(false);
