@@ -1,18 +1,16 @@
-import React, { useState } from "react";
+import { useState } from "react";
 import {
   NavbarContainer,
   LeftContainer,
-  RightContainer,
   NavbarExtendedContainer,
   NavbarInnerContainer,
   NavbarLinkContainer,
   NavbarLink,
-  Logo,
   OpenLinksButton,
   NavbarLinkExtended,
-} from "../styles/Navbar.style";
-
-import LogoImg from "../assets/misc/logo.png";
+  RightContainer,
+  Artist
+} from "./styles";
 
 function Navbar() {
   const [extendNavbar, setExtendNavbar] = useState(false);
@@ -24,7 +22,6 @@ function Navbar() {
           <NavbarLinkContainer>
             <NavbarLink to="/"> Home</NavbarLink>
             <NavbarLink to="/portfolio"> Portfólio</NavbarLink>
-            <NavbarLink to="/contato"> Contato</NavbarLink>
             <NavbarLink to="/sobre"> Sobre</NavbarLink>
             <OpenLinksButton
               onClick={() => {
@@ -36,14 +33,13 @@ function Navbar() {
           </NavbarLinkContainer>
         </LeftContainer>
         <RightContainer>
-          <Logo src={LogoImg}></Logo>
+          <Artist>masta ariane</Artist>
         </RightContainer>
       </NavbarInnerContainer>
       {extendNavbar && (
         <NavbarExtendedContainer>
           <NavbarLinkExtended to="/"> Home</NavbarLinkExtended>
           <NavbarLinkExtended to="/portfolio"> Portfólio</NavbarLinkExtended>
-          <NavbarLinkExtended to="/contato"> Contato</NavbarLinkExtended>
           <NavbarLinkExtended to="/sobre"> Sobre</NavbarLinkExtended>
         </NavbarExtendedContainer>
       )}

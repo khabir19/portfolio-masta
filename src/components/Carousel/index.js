@@ -1,11 +1,10 @@
-import React from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import Carousel from 'react-bootstrap/Carousel';
 import { 
   CarouselItemImg, 
   CarouselCaptionFade,
   CarouselButton 
-} from '../styles/Carousel.style';
+} from './styles';
 
 // import aliceSo from "../assets/aliceSo.png";
 // import fogareu from "../assets/fogareu.png";

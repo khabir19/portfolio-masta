@@ -1,46 +1,57 @@
-/* eslint-disable no-undef */
-import React from "react";
-import '../../App.css';
-import { Grid, Row, ColText, ColImage, WrapperNavHeadear, WrapperElements } from '../../styles/global.js'
-import Navbar from '../../Components/navbar';
-import CarouselFade from "../../Components/carousel";
-
+import {WrapperText, WrapperNavHome, WrapperReverse } from './styles'
+import { Grid, Col, RowCol, Title, GlobalButton, Text } from '../../assets/styles/global'
+import Navbar from '../../components/Navbar';
+import CarouselFade from "../../components/Carousel";
 import Port1 from "../../assets/misc/masta10.jpg";
 
 const Home = () => {
   return (
     <>
-    <WrapperNavHeadear>
-      <Navbar />
-    </WrapperNavHeadear>
+      <WrapperNavHome>
+        <Navbar />
+      </WrapperNavHome>
       {/* <CarouselFade /> */}
       <Grid>
-        <Row>
-          <ColImage
-            alt="teste"
-            src={Port1}
-          />
-          <ColText>
-            <p>
-              Lorem Ipsum is simply dummy text of the printing and typesetting industry.
-              Lorem Ipsum is simply dummy text of the printing and typesetting industry.
-              Lorem Ipsum is simply dummy text of the printing and typesetting industry.
-            </p>
-          </ColText>
-        </Row>
-        <WrapperElements>
-          <ColText>
-            <p>
-              Lorem Ipsum is simply dummy text of the printing and typesetting industry.
-              Lorem Ipsum is simply dummy text of the printing and typesetting industry.
-              Lorem Ipsum is simply dummy text of the printing and typesetting industry.
-            </p>
-          </ColText>
-          <ColImage
-            alt="teste"
-            src={Port1}
-          />
-        </WrapperElements>
+        <RowCol>
+          <Col>
+            <img
+              alt="teste"
+              src={Port1}
+            />
+          </Col>
+          <Col>
+            <WrapperText>
+              <Title>
+                Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+              </Title>
+              
+              <Text style={{marginTop: '3rem'}}>
+                Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+              </Text>
+              <GlobalButton>Learn More</GlobalButton>
+            </WrapperText>
+          </Col>
+        </RowCol>
+        <WrapperReverse>
+          <Col>
+            <WrapperText>
+              <Title>
+                Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+              </Title>
+              
+              <Text style={{marginTop: '3rem'}}>
+                Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+              </Text>
+              <GlobalButton>Learn More</GlobalButton>
+            </WrapperText>
+          </Col>
+          <Col>
+            <img
+              alt="teste"
+              src={Port1}
+            />
+          </Col>
+        </WrapperReverse>
       </Grid>
     </>
   );

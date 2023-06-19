@@ -21,6 +21,7 @@ export const RightContainer = styled.div`
   display: flex;
   justify-content: flex-end;
   padding-right: 50px;
+  margin-top: 1rem;
 `;
 
 export const NavbarInnerContainer = styled.div`
@@ -29,9 +30,7 @@ export const NavbarInnerContainer = styled.div`
   display: flex;
 `;
 
-export const NavbarLinkContainer = styled.div`
-  display: flex;  
-`;
+export const NavbarLinkContainer = styled.div``;
 
 export const NavbarLink = styled(Link)`
   color: snow;
@@ -41,7 +40,7 @@ export const NavbarLink = styled(Link)`
   margin: 10px;
 
   &:hover{
-    color: bisque;
+    color: black;
   }
 
   @media (max-width: 700px) {
@@ -54,17 +53,6 @@ export const NavbarLinkExtended = styled(Link)`
   font-size: x-large;
   font-family: Arial, Helvetica, sans-serif;
   text-decoration: none;
-`;
-
-export const Logo = styled.img`
-  margin: 10px;
-  max-width: 180px;
-  height: auto;
-  position: relative;
-  @media (max-width: 450px) {
-    margin: 5px;
-    margin-right: -20px;
-  }
 `;
 
 export const OpenLinksButton = styled.button`
@@ -85,11 +73,18 @@ export const OpenLinksButton = styled.button`
 export const NavbarExtendedContainer = styled.div`
   display: flex;
   flex-direction: column;
-  align-items: stretch;
-  background-color: black;
-  margin: 0px;
+  text-align: center;
+  background-color: transparent;
+  height: 100%;
 
   @media (min-width: 700px) {
     display: none;
   }
+`;
+
+export const Artist = styled.h1`
+  color: white;
+  font-family: Quicksand;
+  font-weight: bold;
+  font-size: 40px
 `;

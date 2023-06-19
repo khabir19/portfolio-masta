@@ -1,78 +1,42 @@
-/* eslint-disable no-undef */
-import React from "react";
-import '../../App.css';
-import '../../styles/global.css'
-import styled from 'styled-components';
-import Navbar from '../../Components/navbar';
 
-import backMandala from "../../assets/misc/mandalaWhite.png";
+import Navbar from '../../components/Navbar';
+import { ArtistBadge, BgImage } from "./styles.js"
+import { Grid, Row, Col, Title } from "../../assets/styles/global"
 import clientPhoto from "../../assets/misc/masta.png";
-
-
-export const Grid = styled.div` 
- 
-`;
-
-export const Row = styled.div`
-  display: flex;
-`;
-
-const media = {
-  xs: (styles) => `
-    @media only screen and (max-width: 480px) {
-      ${styles}
-    }
-  `,
-}
-
-export const Col = styled.div`
-  flex: ${(props) => props.size};
-  justify-content: ${(props) => props.align};
-  ${(props) => props.collapse && media[props.collapse](`
-    display: none;
-  `)}
-`;
-
-export const Title = styled.h1`
-  color: darkcyan;
-
-  font-family: Quicksand;
-`;
-
-export const BgImage = styled.image`
-  position: absolute;
-
-  mask-image: url(backMandala.png);
-  height: 560px;
-  /* pointer-events: none;
-  animation: App-logo-spin infinite 350s linear;     */
-`;
-
-export const IconPLay = styled.image`
-  position: absolute;
-  
-  width: 560px;
-  height: 560px;
-`;
+import { WrapperNavAbout } from './styles'
+import Mandala from "../../assets/misc/mandalaWhite.png";
+import { WrapperText } from '../Home/styles';
 
 const About = () => {
   return (
     <>
-      <Navbar />
-      <Grid>
-        <Row>
-          <Col size="1" align="center">
+      <WrapperNavAbout>
+        <Navbar />
+      </WrapperNavAbout>
+      <Grid style={{height: '100vh'}}>
+        <Row style={{
+            background: `url(${Mandala})`,   
+            backgroundRepeat: 'no-repeat',
+            backgroundSize: 'auto',
+            backgroundPosition: 'right',
+          }}>
+          <Col>
             <Title>
               Masta Ariane
             </Title>
           </Col>
-          <Col size="2" align="flex-end">
-            <BgImage>
-              <img alt="Rotating Mandala" src={backMandala} collapse="xs" />
-            </BgImage>
-            <IconPLay>
-              <img alt="Mugshot" src={clientPhoto} />
-            </IconPLay>
+          <Col style={{
+            flexDirection: 'row',
+            justifyContent: 'center',
+            alignItems: 'center'
+          }}>
+            <img alt="Mugshot" src={clientPhoto} 
+            style={{
+              borderRadius: '50%', 
+              width: '20%', 
+              height: '17%',
+              marginLeft: '11rem'
+            }} />
           </Col>
         </Row>
       </Grid>
