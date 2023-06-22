@@ -5,13 +5,19 @@ export const WrapperNavHome = styled.div`
   display: flex;  
 
   background-image: url(${imgBgHome});
-  height: 720px;
+  height: 860px;
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
   
   @media (max-width: 700px) {
-    background-image: url(${imgBgHome});
+    background-position-x: -700px;
+  }
+  @media (min-width: 768px) {
+    background-position-x: -500px;
+  }
+  @media (min-width: 1300px) {
+    background-position-x: 0px;
   }
 `;
 

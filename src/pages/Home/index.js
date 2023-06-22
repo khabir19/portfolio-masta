@@ -1,7 +1,7 @@
 import {WrapperText, WrapperNavHome, WrapperReverse } from './styles'
 import { Grid, Col, RowCol, Title, GlobalButton, Text } from '../../assets/styles/global'
 import Navbar from '../../components/Navbar';
-import CarouselFade from "../../components/Carousel";
+import Footer from '../../components/Footer';
 import Port1 from "../../assets/misc/masta10.jpg";
 
 const Home = () => {
@@ -10,7 +10,6 @@ const Home = () => {
       <WrapperNavHome>
         <Navbar />
       </WrapperNavHome>
-      {/* <CarouselFade /> */}
       <Grid>
         <RowCol>
           <Col>
@@ -53,6 +52,7 @@ const Home = () => {
           </Col>
         </WrapperReverse>
       </Grid>
+      <Footer/>
     </>
   );
 }

@@ -1,17 +1,23 @@
 import styled from 'styled-components';
-import imgBgPorfolio from '../../assets/portfolio/doresAmores/doresAmores2.jpg';
+import imgBgPorfolio from '../../assets/misc/masta08.jpg';
 
 export const WrapperNavPorfolio = styled.div`
   display: flex;  
 
   background-image: url(${imgBgPorfolio});
-  height: 720px;
+  height: 860px;
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
   
   @media (max-width: 700px) {
-    background-image: url(${imgBgPorfolio});
+    background-position-x: -900px;
+  }
+  @media (min-width: 768px) {
+    background-position-x: -680px;
+  }
+  @media (min-width: 1300px) {
+    background-position-x: 0px;
   }
 `;
 
