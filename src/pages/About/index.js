@@ -1,11 +1,9 @@
 
 import Navbar from '../../components/Navbar';
-import { ArtistBadge, BgImage } from "./styles.js"
 import { Grid, Row, Col, Title } from "../../assets/styles/global"
 import clientPhoto from "../../assets/misc/masta.png";
 import { WrapperNavAbout } from './styles'
 import Mandala from "../../assets/misc/mandalaWhite.png";
-import { WrapperText } from '../Home/styles';
 
 const About = () => {
   return (

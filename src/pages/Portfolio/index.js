@@ -9,7 +9,6 @@ const Portfolio = () => {
       <WrapperNavPorfolio>
         <Navbar />
       </WrapperNavPorfolio>
-      {/* <CarouselFade /> */}
       <Grid>
         <RowCol>
           <Col>

@@ -1,4 +1,4 @@
-import {WrapperText, WrapperNavHome, WrapperReverse } from './styles'
+import { WrapperText, WrapperNavHome, WrapperReverse } from './styles'
 import { Grid, Col, RowCol, Title, GlobalButton, Text } from '../../assets/styles/global'
 import Navbar from '../../components/Navbar';
 import Footer from '../../components/Footer';
@@ -51,8 +51,8 @@ const Home = () => {
             />
           </Col>
         </WrapperReverse>
-      </Grid>
       <Footer/>
+      </Grid>
     </>
   );
 }

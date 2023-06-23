@@ -22,7 +22,6 @@ export const Col = styled.div`
   flex: 1;
   justify-content: center;
   flex-direction: column;
-
   
   @media (max-width: 700px) {
     flex-direction: column;

@@ -14,6 +14,10 @@ export const LeftContainer = styled.div`
   display: flex;
   align-items: center;
   padding-left: 5%;
+
+  @media (max-width: 700px) {
+    flex: 30%
+  }
 `;
 
 export const RightContainer = styled.div`
@@ -21,7 +25,10 @@ export const RightContainer = styled.div`
   display: flex;
   justify-content: flex-end;
   padding-right: 50px;
-  margin-top: 1rem;
+
+  @media (max-width: 700px) {
+    flex: 70%
+  }
 `;
 
 export const NavbarInnerContainer = styled.div`
@@ -33,11 +40,13 @@ export const NavbarInnerContainer = styled.div`
 export const NavbarLinkContainer = styled.div``;
 
 export const NavbarLink = styled(Link)`
-  color: snow;
+  color: whitesmoke;
   font-size: x-large;
-  font-family: Quicksand, Helvetica, sans-serif;
+  font-family: Quicksand;
   text-decoration: none;
-  margin: 10px;
+  font-weight: bold;
+  margin: 20px;
+  padding: -20px;
 
   &:hover{
     color: black;
@@ -49,10 +58,13 @@ export const NavbarLink = styled(Link)`
 `;
 
 export const NavbarLinkExtended = styled(Link)`
-  color: snow;
+  color: whitesmoke;
   font-size: x-large;
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: Quicksand;
   text-decoration: none;
+  text-align: left;
+  font-weight: bold;
+  margin: 25px 25px 0px 25px;
 `;
 
 export const OpenLinksButton = styled.button`
@@ -60,7 +72,7 @@ export const OpenLinksButton = styled.button`
   height: 100px;
   background: none;
   border: none;
-  color: snow;
+  color: whitesmoke;
   font-size: 45px;
   cursor: pointer;
   position: relative;
@@ -73,9 +85,7 @@ export const OpenLinksButton = styled.button`
 export const NavbarExtendedContainer = styled.div`
   display: flex;
   flex-direction: column;
-  text-align: center;
-  background-color: transparent;
-  height: 100%;
+  height: 25%;
 
   @media (min-width: 700px) {
     display: none;
@@ -86,5 +96,12 @@ export const Artist = styled.h1`
   color: white;
   font-family: Quicksand;
   font-weight: bold;
-  font-size: 40px
+  font-size: 40px;
+  margin-top: 20px;
+  white-space: nowrap;
+
+  @media (max-width: 700px) {
+    font-size: 35px;
+    margin-right: -30px;
+  }
 `;
