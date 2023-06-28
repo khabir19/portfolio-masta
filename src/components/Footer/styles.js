@@ -27,7 +27,7 @@ export const FooterLink = styled(Link)`
 `;
 
 export const SocialsLink = styled(Link)`
-  margin: 10px;
+  margin: 6px;
   display: flex;
 `;
 

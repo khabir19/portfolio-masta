@@ -1,8 +1,11 @@
 import { WrapperText, WrapperNavHome, WrapperReverse } from './styles'
-import { Grid, Col, RowCol, Title, GlobalButton, Text } from '../../assets/styles/global'
+import { Grid, Col, RowCol, Title, GlobalButton, Text, PageBrake } from '../../assets/styles/global'
 import Navbar from '../../components/Navbar';
 import Footer from '../../components/Footer';
-import Port1 from "../../assets/misc/masta10.jpg";
+import Port1 from "../../assets/portfolio/fogareu/fogareu.jpg";
+import Port2 from "../../assets/portfolio/perdido/perdido4.jpg";
+import Port4 from "../../assets/misc/masta00.jpg";
+import Port3 from "../../assets/portfolio/semSeuSangue/semSeuSangue2.jpg";
 
 const Home = () => {
   return (
@@ -11,6 +14,9 @@ const Home = () => {
         <Navbar />
       </WrapperNavHome>
       <Grid>
+        <PageBrake>
+          Lorem Ipsum is simply dummy text of the printing
+        </PageBrake>
         <RowCol>
           <Col>
             <img
@@ -21,13 +27,15 @@ const Home = () => {
           <Col>
             <WrapperText>
               <Title>
-                Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+                Lorem Ipsum is simply dummy text of the printing
               </Title>
-              
-              <Text style={{marginTop: '3rem'}}>
-                Lorem Ipsum is simply dummy text of the printing and typesetting industry.
-              </Text>
-              <GlobalButton>Learn More</GlobalButton>
+
+              {/* <Text>
+              Lorem Ipsum is simply dummy text of the printing
+              </Text> */}
+              <a href="/Portfolio">
+                <GlobalButton>Conheça meu trabalho</GlobalButton>
+              </a>
             </WrapperText>
           </Col>
         </RowCol>
@@ -35,23 +43,69 @@ const Home = () => {
           <Col>
             <WrapperText>
               <Title>
-                Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+                Lorem Ipsum is simply dummy text of the printing
               </Title>
-              
-              <Text style={{marginTop: '3rem'}}>
+
+              <Text>
                 Lorem Ipsum is simply dummy text of the printing and typesetting industry.
               </Text>
-              <GlobalButton>Learn More</GlobalButton>
+              <a href="/Portfolio">
+                <GlobalButton>Conheça meu trabalho</GlobalButton>
+              </a>
             </WrapperText>
           </Col>
           <Col>
             <img
               alt="teste"
-              src={Port1}
+              src={Port2}
             />
           </Col>
         </WrapperReverse>
-      <Footer/>
+        <RowCol>
+          <Col>
+            <img
+              alt="teste"
+              src={Port3}
+            />
+          </Col>
+          <Col>
+            <WrapperText>
+              <Title>
+                Lorem Ipsum is simply dummy text of the printing
+              </Title>
+
+              {/* <Text>
+              Lorem Ipsum is simply dummy text of the printing
+              </Text> */}
+              <a href="/Portfolio">
+                <GlobalButton>Conheça meu trabalho</GlobalButton>
+              </a>
+            </WrapperText>
+          </Col>
+        </RowCol>
+        <WrapperReverse>
+          <Col>
+            <WrapperText>
+              <Title>
+                Lorem Ipsum is simply dummy text of the printing
+              </Title>
+
+              <Text>
+                Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+              </Text>
+              <a href="/Portfolio">
+                <GlobalButton>Conheça meu trabalho</GlobalButton>
+              </a>
+            </WrapperText>
+          </Col>
+          <Col>
+            <img
+              alt="teste"
+              src={Port4}
+            />
+          </Col>
+        </WrapperReverse>
+        <Footer />
       </Grid>
     </>
   );

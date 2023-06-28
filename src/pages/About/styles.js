@@ -20,4 +20,14 @@ export const WrapperNavAbout = styled.div`
   }
 `;
 
+export const WrapperArtist = styled.div`
+  display: flex;
+
+  @media (max-width: 700px) {
+    flex-direction: column;
+  }
+`
+
+
+
 

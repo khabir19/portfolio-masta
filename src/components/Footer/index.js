@@ -9,6 +9,7 @@ import {
 import Instagram from "../../assets/socials/instagram.png";
 import Imdb from "../../assets/socials/imdb.png";
 
+
 function Footer() {
   return (    
       <FooterContainer>
@@ -19,14 +20,14 @@ function Footer() {
           <FooterLink to="/">Home</FooterLink>
           <FooterLink to="/portfolio">Portfólio</FooterLink>
           <FooterLink to="/sobre">Sobre</FooterLink>
-          <SocialsLink to="https://www.instagram.com/mastaariane/">
+          <SocialsLink target="_blank" to="https://www.instagram.com/mastaariane/">
             <img alt="Instagram Logo" src={Instagram} />
           </SocialsLink>
-          <SocialsLink to="https://www.imdb.com/name/nm5756608/">
+          <SocialsLink target="_blank" to="https://www.imdb.com/name/nm5756608/">
             <img alt="Instagram Logo" src={Imdb} />
           </SocialsLink>
         </LinkContainer>
-          <Disclaimer>Todos os direitos reservados © 2023 Masta Ariane</Disclaimer>
+          <Disclaimer>Todos os direitos reservados {new Date().getFullYear()}</Disclaimer>
       </FooterContainer>    
   );
 }

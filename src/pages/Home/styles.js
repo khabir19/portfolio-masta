@@ -31,8 +31,7 @@ export const WrapperReverse = styled.div`
 
 export const WrapperText = styled.div`
   display: flex;
-  justify-content: space-between;
-  padding: 5rem;
+  padding: 1rem;
   flex-direction: column;
-
+  align-items: center;
 `;

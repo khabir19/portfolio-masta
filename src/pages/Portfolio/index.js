@@ -1,6 +1,7 @@
-import { Grid, Col, RowCol, Title, GlobalButton, Text } from '../../assets/styles/global'
-import {WrapperText, WrapperNavPorfolio, WrapperReverse } from './styles'
+import { Grid, Col, RowCol, Title, GlobalButton, Text, PageBrake } from '../../assets/styles/global'
+import { WrapperText, WrapperNavPorfolio, WrapperReverse } from './styles'
 import Navbar from "../../components/Navbar";
+import Footer from '../../components/Footer';
 import Port1 from "../../assets/misc/masta10.jpg";
 
 const Portfolio = () => {
@@ -10,6 +11,7 @@ const Portfolio = () => {
         <Navbar />
       </WrapperNavPorfolio>
       <Grid>
+        <PageBrake/>
         <RowCol>
           <Col>
             <img
@@ -20,8 +22,8 @@ const Portfolio = () => {
               <Title>
                 Lorem Ipsum is simply dummy text of the printing and typesetting industry.
               </Title>
-              
-              <Text style={{marginTop: '3rem'}}>
+
+              <Text style={{ marginTop: '3rem' }}>
                 Lorem Ipsum is simply dummy text of the printing and typesetting industry.
               </Text>
               <GlobalButton>Learn More</GlobalButton>
@@ -36,8 +38,8 @@ const Portfolio = () => {
               <Title>
                 Lorem Ipsum is simply dummy text of the printing and typesetting industry.
               </Title>
-              
-              <Text style={{marginTop: '3rem'}}>
+
+              <Text style={{ marginTop: '3rem' }}>
                 Lorem Ipsum is simply dummy text of the printing and typesetting industry.
               </Text>
               <GlobalButton>Learn More</GlobalButton>
@@ -52,8 +54,8 @@ const Portfolio = () => {
               <Title>
                 Lorem Ipsum is simply dummy text of the printing and typesetting industry.
               </Title>
-              
-              <Text style={{marginTop: '3rem'}}>
+
+              <Text style={{ marginTop: '3rem' }}>
                 Lorem Ipsum is simply dummy text of the printing and typesetting industry.
               </Text>
               <GlobalButton>Learn More</GlobalButton>
@@ -70,8 +72,8 @@ const Portfolio = () => {
               <Title>
                 Lorem Ipsum is simply dummy text of the printing and typesetting industry.
               </Title>
-              
-              <Text style={{marginTop: '3rem'}}>
+
+              <Text style={{ marginTop: '3rem' }}>
                 Lorem Ipsum is simply dummy text of the printing and typesetting industry.
               </Text>
               <GlobalButton>Learn More</GlobalButton>
@@ -86,8 +88,8 @@ const Portfolio = () => {
               <Title>
                 Lorem Ipsum is simply dummy text of the printing and typesetting industry.
               </Title>
-              
-              <Text style={{marginTop: '3rem'}}>
+
+              <Text style={{ marginTop: '3rem' }}>
                 Lorem Ipsum is simply dummy text of the printing and typesetting industry.
               </Text>
               <GlobalButton>Learn More</GlobalButton>
@@ -102,14 +104,15 @@ const Portfolio = () => {
               <Title>
                 Lorem Ipsum is simply dummy text of the printing and typesetting industry.
               </Title>
-              
-              <Text style={{marginTop: '3rem'}}>
+
+              <Text style={{ marginTop: '3rem' }}>
                 Lorem Ipsum is simply dummy text of the printing and typesetting industry.
               </Text>
               <GlobalButton>Learn More</GlobalButton>
             </WrapperText>
           </Col>
         </RowCol>
+        <Footer />
       </Grid>
     </>
   );
