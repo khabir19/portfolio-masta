@@ -1,9 +1,9 @@
 import styled from 'styled-components';
+import clientPhoto from "../../assets/misc/masta.png";
 
 export const Grid = styled.div` 
   display: flex;
   flex-direction: column;
-  background-color: black;
 `;
 
 export const Row = styled.div`
@@ -87,5 +87,18 @@ export const GlobalButton = styled.button`
     font-size: 20px;
     margin-top: 3rem;
   }
+
+`;
+
+export const Parallax = styled.div`
+  background-image: url(${clientPhoto});
+  background-attachment: fixed;
+  background-position: center;
+  background-size: cover;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 
 `;
