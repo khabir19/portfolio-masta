@@ -37,13 +37,17 @@ export const FooterArtist = styled.h1`
   font-weight: bold;
   font-size: 40px;
   text-align: center;
-  margin-top: 50px;
+  margin-top: 40px;
+  margin-bottom: 20px;
 `;
 
 export const Disclaimer = styled.h3`
   text-align: center;
   color: black;
   opacity: 40%;
+  font-size: 20px;
+  margin-top: 20px;
+  margin-bottom: 20px;
 
   @media (max-width: 700px) {
     margin-top: 25px;

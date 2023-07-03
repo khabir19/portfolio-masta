@@ -1,46 +1,37 @@
-import styled from "styled-components";
+import styled, { keyframes } from 'styled-components';
 
-export const CarouselItemImg = styled.img`
+export const CarouselContainer = styled.div`
   width: 100%;
-`
-export const CarouselCaptionFade = styled.div`
-  font-size: 50px;
-  font-family: Quicksand, Helvetica, sans-serif;
-  display: flex;
-  opacity: 80%;
-  color: white; 
-  text-align: justify;
-
-  @media (max-width: 700px){
-    font-size: 20px;  
+  margin: 20px;
+  overflow: hidden;
+  position: relative;
+  `;
+  
+  const scrollAnimation = keyframes`
+  0% {
+    transform: translateX(0);
   }
-`
 
-export const CarouselButton = styled.a`
-  padding: 10px 60px;  
+  100% {
+    transform: translateX(calc(-100% * 3));
+  }
+  `;
 
-  border-style: solid;
-  
-  background-color: none;
-  color: white;
-  border: 2px solid white;
-  text-align: center;
-  text-decoration: none;
-  display: inline-block;
+export const CarouselWrapper = styled.div`
+  display: flex;
+  width: 200%;
+  animation: ${scrollAnimation} 60s linear infinite;
+`;
 
-  opacity: 50%;
-  font-family: Quicksand, Helvetica, sans-serif;
-  
-  &:hover {
-    opacity: 100%;
-    color: #FFF;
-  }  
-  
-  @media (max-width: 700px) {
-    padding: 5px 20px;    
-    display: block;
-    margin-bottom: -25px;
-    opacity: 80%;
-  }  
-  
-  `
+export const CarouselItem = styled.div`
+  flex: 0 0 33.3333%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+`;
+
+export const CarouselImage = styled.img`
+  max-width: 100%;
+  height: 100%;
+`;
+

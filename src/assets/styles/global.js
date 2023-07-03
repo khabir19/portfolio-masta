@@ -23,6 +23,7 @@ export const Col = styled.div`
   justify-content: center;
   flex-direction: column;
   width: 50%;
+  background-color: whitesmoke;
   
   @media (max-width: 700px) {
     flex-direction: column;
@@ -32,20 +33,17 @@ export const Col = styled.div`
 `;
 
 export const PageBrake = styled.div`
-  color: black;
-  background-color: whitesmoke;
-  font-family: Quicksand;
-  display: flex;
   align-items: center;
+  background-color: inherit;
+  display: flex;
+  font-weight: bold;
   justify-content: center;
   text-align: center;
-  font-weight: bold;
-  font-size: 40px;
-  height: 150px;
+  height: auto;
 `;
 
 export const Title = styled.h1`
-  color: whitesmoke;
+  color: black;
   font-family: Quicksand;
   font-weight: bold;
   font-size: 48px;
@@ -76,29 +74,35 @@ export const RowCol = styled.div`
 
 export const GlobalButton = styled.button`
   width: auto;
-  padding: 1rem;
+  padding: 2rem;
   border-radius: 0.5rem;
-  border-color: whitesmoke;
-  color: whitesmoke;
+  border-color: black;
+  color: black;
+  font-size: x-large;
   font-family: Quicksand;
+  font-weight: bold;
   background-color: transparent;
+  margin: 2rem;
   
-  @media (min-width: 700px) {
+  @media (max-width: 700px) {
     font-size: 20px;
-    margin-top: 3rem;
   }
-
 `;
 
 export const Parallax = styled.div`
-  background-image: url(${clientPhoto});
+  background-image: url(${props => props.imageUrl});
   background-attachment: fixed;
-  background-position: center;
-  background-size: cover;
-  min-height: 100vh;
+  background-position: ${props => props.position};
+  background-size: ${props => props.size};
+  background-repeat: no-repeat;
+  height: 100vh;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
+
+  @media (max-width: 700px) {
+    background-position: ${props => props.mobilePosition};
+  }
 
 `;

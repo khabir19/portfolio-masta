@@ -2,6 +2,7 @@ import { Grid, Col, RowCol, Title, GlobalButton, Text, PageBrake } from '../../a
 import { WrapperText, WrapperNavPorfolio, WrapperReverse } from './styles'
 import Navbar from "../../components/Navbar";
 import Footer from '../../components/Footer';
+import Carousel from '../../components/Carousel';
 import Port1 from "../../assets/misc/masta10.jpg";
 
 const Portfolio = () => {
@@ -10,8 +11,13 @@ const Portfolio = () => {
       <WrapperNavPorfolio>
         <Navbar />
       </WrapperNavPorfolio>
+      <PageBrake>
+        <Title>
+          Assinaturas
+        </Title>
+      </PageBrake>
+        <Carousel/>
       <Grid>
-        <PageBrake/>
         <RowCol>
           <Col>
             <img

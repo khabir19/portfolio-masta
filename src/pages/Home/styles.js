@@ -1,14 +1,13 @@
 import styled from 'styled-components';
-import imgBgHome from '../../assets/portfolio/semSeuSangue/semSeuSangue.jpg';
 
+import imgBgHome from '../../assets/portfolio/semSeuSangue/semSeuSangue.jpg';
 export const WrapperNavHome = styled.div`
   display: flex;  
 
   background-image: url(${imgBgHome});
-  height: 860px;
+  height: 100vh;
   background-repeat: no-repeat;
   background-size: cover;
-  background-position: center;
   
   @media (max-width: 700px) {
     background-position-x: -700px;

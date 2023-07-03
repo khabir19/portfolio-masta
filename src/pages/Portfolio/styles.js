@@ -5,7 +5,7 @@ export const WrapperNavPorfolio = styled.div`
   display: flex;  
 
   background-image: url(${imgBgPorfolio});
-  height: 860px;
+  height: 100vh;
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;

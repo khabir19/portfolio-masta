@@ -1,63 +1,44 @@
-import 'bootstrap/dist/css/bootstrap.min.css';
-import Carousel from 'react-bootstrap/Carousel';
-import { 
-  CarouselItemImg, 
-  CarouselCaptionFade,
-  CarouselButton 
-} from './styles';
+import React, { useRef, useEffect } from 'react';
+import { CarouselContainer, CarouselWrapper, CarouselItem, CarouselImage } from './styles';
 
-import AliceSo from "../../assets/portfolio/aliceSo/aliceSo.jpg";
-import Fogareu from "../../assets/portfolio/fogareu/fogareu.jpg";
-import RioDesejo2 from "../../assets/portfolio/rioDesejo/rioDesejo2.jpg";
+const Carousel = () => {
+  const carouselRef = useRef(null);
 
-const CarouselFade = () => {
+  const images = [
+    require("../../assets/portfolio/cartazes/aliceSoCartaz.jpg"),
+    require("../../assets/portfolio/cartazes/doresAmoresCartaz.jpg"),
+    require("../../assets/portfolio/cartazes/fogareuCartaz.jpg"),
+    require("../../assets/portfolio/cartazes/perdidoCartaz2.jpg"),
+    require("../../assets/portfolio/cartazes/rioDesejoCartaz.jpg"),
+  ];
+
+  useEffect(() => {
+    const intervalId = setInterval(() => {
+      if (carouselRef.current) {
+        carouselRef.current.style.animation = 'none';
+        void carouselRef.current.offsetHeight; // Trigger reflow
+        carouselRef.current.style.animation = 'scroll linear infinite';
+      }
+    }, 50000); // Adjust the interval value to control the scroll speed
+
+    return () => clearInterval(intervalId);
+  }, []);
+
   return (
-    <>
-      <Carousel
-        fade
-        controls={true}
-        pause={'hover' | false}
-        indicators={true}
-      >
-        <Carousel.Item>
-          <CarouselItemImg
-            src={AliceSo}
-            alt="Alice e Só"
-          />
-          <Carousel.Caption>
-            <CarouselCaptionFade>
-              Masta Ariane é uma figurinista do Rio de Janeiro.
-            </CarouselCaptionFade>
-            <CarouselButton href='/portfolio'> Meu Trabalho</CarouselButton>
-          </Carousel.Caption>
-        </Carousel.Item>
-        <Carousel.Item>
-          <CarouselItemImg
-            src={Fogareu}
-            alt="Fogaréu"
-          />
-          <Carousel.Caption>
-            <CarouselCaptionFade>
-              Masta Ariane é uma figurinista do Rio de Janeiro.
-            </CarouselCaptionFade>
-            <CarouselButton href='/portfolio'> Meu Trabalho</CarouselButton>
-          </Carousel.Caption>
-        </Carousel.Item>
-        <Carousel.Item>
-          <CarouselItemImg
-            src={RioDesejo2}
-            alt="Rio dos Desejos"
-          />
-          <Carousel.Caption>
-            <CarouselCaptionFade>
-              Masta Ariane é uma figurinista do Rio de Janeiro.
-            </CarouselCaptionFade>
-            <CarouselButton href='/portfolio'> Meu Trabalho</CarouselButton>
-          </Carousel.Caption>
-        </Carousel.Item>
-      </Carousel>
-    </>
+    <CarouselContainer>
+      <CarouselWrapper ref={carouselRef}>
+        {images.map((image, index) => (
+          <CarouselItem key={index}>
+            <CarouselImage src={image} alt={`Image ${index}`} />
+          </CarouselItem>
+        ))}
+        <CarouselItem>
+          <CarouselImage src={images[0]} alt={`Image 0`} />
+        </CarouselItem>
+      </CarouselWrapper>
+    </CarouselContainer>
   );
-}
+};
 
-export default CarouselFade;
+export default Carousel;
+

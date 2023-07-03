@@ -5,7 +5,7 @@ import clientPhoto from "../../assets/misc/masta.png";
 export const WrapperNavAbout = styled.div`
   display: flex;  
   background-image: url(${imgBgAbout});
-  height: 860px;
+  height: 100vh;
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;

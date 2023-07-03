@@ -1,8 +1,8 @@
 
 import Navbar from '../../components/Navbar';
 import Footer from '../../components/Footer';
-import { Grid, Col, Title, PageBrake } from "../../assets/styles/global"
-import { WrapperNavAbout, WrapperArtist, FadedCircle } from './styles'
+import { Grid, Col, Title, PageBrake } from "../../assets/styles/global";
+import { WrapperNavAbout, WrapperArtist, FadedCircle } from './styles';
 
 const About = () => {
   return (
