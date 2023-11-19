@@ -1,5 +1,4 @@
 import styled from 'styled-components';
-import clientPhoto from "../../assets/misc/masta.png";
 
 export const Grid = styled.div` 
   display: flex;
@@ -9,12 +8,6 @@ export const Grid = styled.div`
 export const Row = styled.div`
   display: flex;
   flex: 1;
-  justify-content: center;
-  flex-direction: row;
-  
-  @media (max-width: 700px) {
-    flex-direction: row;
-  }
 `;
 
 export const Col = styled.div`
@@ -22,7 +15,7 @@ export const Col = styled.div`
   flex: 1;
   justify-content: center;
   flex-direction: column;
-  width: 50%;
+  width: 80%;
   background-color: whitesmoke;
   
   @media (max-width: 700px) {
@@ -48,24 +41,31 @@ export const Title = styled.h1`
   font-weight: bold;
   font-size: 48px;
   text-align: center;
+
+  @media(max-width: 700px) {
+    margin-top: -40px;
+    font-size: x-large;
+  }
 `;
 
-export const Subtitle = styled.h2`
-  color: whitesmoke;
+export const Text = styled.h2`
+  color: black;
   font-family: Quicksand;
+
+  @media(max-width: 700px) {
+    font-size: large;
+  }
 `;
 
-export const Text = styled.h4`
-  color: whitesmoke;
+export const Subtitle = styled.h4`
+  color: black;
   font-family: Quicksand;
-  font-size: 1.3rem;
 `;
 
 export const RowCol = styled.div`
   display: flex;
   justify-content: center;
   flex-direction: row;
-
   
   @media (max-width: 700px) {
     flex-direction: column;
@@ -73,19 +73,33 @@ export const RowCol = styled.div`
 `;
 
 export const GlobalButton = styled.button`
+  cursor: pointer;
   width: auto;
-  padding: 2rem;
-  border-radius: 0.5rem;
-  border-color: black;
-  color: black;
+  margin: 2rem;
+  padding: ${props => props.pad};
   font-size: x-large;
   font-family: Quicksand;
   font-weight: bold;
-  background-color: transparent;
-  margin: 2rem;
+  border-radius: 0.5rem;
+  border-color: black;
+  color: black;
+  background-color: ${props => props.bgcolor};
+
+  &:hover {
+    background-color: ${props => props.hovercolor};
+    color: black;
+    border-color: gray;
+  }
   
   @media (max-width: 700px) {
     font-size: 20px;
+    color: black;
+    margin-bottom: -20px;
+
+    &:hover {
+    background-color: whitesmoke;
+    border-color: black;
+  }
   }
 `;
 

@@ -2,11 +2,10 @@ import { WrapperText, WrapperNavHome, WrapperReverse } from './styles';
 import { Grid, Col, RowCol, Title, GlobalButton, Text, PageBrake, Parallax } from '../../assets/styles/global';
 import Navbar from '../../components/Navbar';
 import Footer from '../../components/Footer';
-import Port1 from "../../assets/portfolio/fogareu/fogareu.jpg";
-import Port2 from "../../assets/portfolio/perdido/perdido4.jpg";
-import Port3 from "../../assets/portfolio/semSeuSangue/semSeuSangue2.jpg";
-import Port4 from "../../assets/portfolio/rioDesejo/rioDesejo.jpg";
-import Carousel from "../../components/Carousel/";
+import Port1 from "../../assets/portfolio/assinaturas/rioDesejo/RD4.jpg";
+import Port2 from "../../assets/portfolio/assistencias/deserto/DS3.jpg";
+import Port3 from "../../assets/portfolio/assistencias/palhaco/PL2.jpg";
+import Port4 from "../../assets/portfolio/assinaturas/fogareu/fogareu.jpg";
 
 const Home = () => {
   return (
@@ -15,12 +14,11 @@ const Home = () => {
         <Navbar />
       </WrapperNavHome>
       <Grid>
-        {/* <Carousel></Carousel> */}
         <RowCol>
           <Col>
             <Parallax
               imageUrl={Port1}
-              position="-65rem"
+              position="-55rem"
               mobilePosition="center"
               size="cover"
             />
@@ -44,7 +42,7 @@ const Home = () => {
           <Col>
             <Parallax
               imageUrl={Port2}
-              position="center"
+              position="-1rem"
               mobilePosition="center"
               size="cover"
             />
@@ -54,7 +52,7 @@ const Home = () => {
           <Col>
             <Parallax
               imageUrl={Port3}
-              position="center"
+              position="-25rem"
               mobilePosition="center"
               size="cover"
             />
@@ -71,7 +69,7 @@ const Home = () => {
           <Col>
             <Parallax
               imageUrl={Port4}
-              position
+              position="center"
               mobilePosition="center"
               size="cover"
             />
@@ -79,7 +77,13 @@ const Home = () => {
         </WrapperReverse>
         <PageBrake>
           <a href="/Portfolio">
-            <GlobalButton>Conheça meu trabalho</GlobalButton>
+            <GlobalButton
+              pad="2rem"
+              bgcolor="white"
+              hovercolor="whitesmoke"
+            >
+              Conheça meu trabalho
+            </GlobalButton>
           </a>
         </PageBrake>
         <Footer />

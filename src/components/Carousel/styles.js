@@ -1,37 +1,91 @@
-import styled, { keyframes } from 'styled-components';
+import styled from 'styled-components';
 
-export const CarouselContainer = styled.div`
+export const WrapperText = styled.div`
+  display: flex;
+  justify-content: flex-start;
+  flex-direction: column;
+  align-items: flex-start;
+`;
+
+export const SlideGrid = styled.div`
+  height: 600px;
   width: 100%;
-  margin: 20px;
-  overflow: hidden;
-  position: relative;
-  `;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  background-image: linear-gradient(90deg, #000000 2%, transparent),
+    url(${(props) => props.image});
+  background-size: contain;
+  background-repeat: no-repeat;
+
+  & > div {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding-left: 10px;
+  }
+/* display: flex;
+  flex-direction: row;
+  background-color: linear-gradient(90deg, black 20%, transparent);
+  background-image: url(${props => props.imageUrl});
+  height: 40vh;
+  background-repeat: no-repeat; */
+`;
+
+export const MovieTitle = styled.h2`
+  color: #ffffff;
+  font-family: Quicksand;
+  font-weight: bold;
+  font-size: 38px;
+  margin-bottom: -1rem;
+`;
+
+export const MovieDate = styled.h1`
+  color: #ffffff;
+  font-family: Quicksand;
+  font-weight: bold;
+  font-size: 28px;  
+`;
+
+export const SliderButton = styled.button`
+  cursor: pointer;
+  width: auto;
+  margin-bottom: 4rem;
+  padding: ${props => props.pad};
+  font-size: x-large;
+  font-family: Quicksand;
+  font-weight: bold;
+  border-radius: 0.5rem;
+  border-color: black;
+  color: black;
+  background-color: ${props => props.bgcolor};
+
+  &:hover {
+    background-color: ${props => props.hovercolor};
+    color: black;
+    border-color: gray;
+  }
   
-  const scrollAnimation = keyframes`
-  0% {
-    transform: translateX(0);
+  @media (max-width: 700px) {
+    font-size: 20px;
+    color: black;
+    margin-bottom: -20px;
+
+    &:hover {
+    background-color: whitesmoke;
+    border-color: black;
+    }
   }
+`;
 
-  100% {
-    transform: translateX(calc(-100% * 3));
+export const PortImage = styled.div`
+  background-image: url(${props => props.imageUrl});
+  /* display: flex; */
+  height: 40vh;
+  /* background-position: right; */
+  background-repeat: no-repeat;
+  
+  @media (max-width: 700px) {
+    background-position: ${props => props.mobilePosition};
   }
-  `;
-
-export const CarouselWrapper = styled.div`
-  display: flex;
-  width: 200%;
-  animation: ${scrollAnimation} 60s linear infinite;
 `;
-
-export const CarouselItem = styled.div`
-  flex: 0 0 33.3333%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-`;
-
-export const CarouselImage = styled.img`
-  max-width: 100%;
-  height: 100%;
-`;
-

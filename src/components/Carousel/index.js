@@ -1,44 +1,373 @@
-import React, { useRef, useEffect } from 'react';
-import { CarouselContainer, CarouselWrapper, CarouselItem, CarouselImage } from './styles';
+// Import Swiper React components
+import React, { useRef, useState } from 'react';
+import { Swiper, SwiperSlide } from 'swiper/react';
+import { Grid, Col, Row, RowCol, Title, GlobalButton, Text } from '../../assets/styles/global';
+import { WrapperText, PortImage, SlideGrid, MovieTitle, MovieDate, SliderButton } from './styles';
 
-const Carousel = () => {
-  const carouselRef = useRef(null);
+import Port1 from '../../assets/portfolio/cartazes/aliceSoCartaz.jpg';
 
-  const images = [
-    require("../../assets/portfolio/cartazes/aliceSoCartaz.jpg"),
-    require("../../assets/portfolio/cartazes/doresAmoresCartaz.jpg"),
-    require("../../assets/portfolio/cartazes/fogareuCartaz.jpg"),
-    require("../../assets/portfolio/cartazes/perdidoCartaz2.jpg"),
-    require("../../assets/portfolio/cartazes/rioDesejoCartaz.jpg"),
-  ];
+import 'swiper/css';
+import 'swiper/css/pagination';
+import 'swiper/css/navigation';
 
-  useEffect(() => {
-    const intervalId = setInterval(() => {
-      if (carouselRef.current) {
-        carouselRef.current.style.animation = 'none';
-        void carouselRef.current.offsetHeight; // Trigger reflow
-        carouselRef.current.style.animation = 'scroll linear infinite';
-      }
-    }, 50000); // Adjust the interval value to control the scroll speed
+import { Pagination, Navigation } from 'swiper/modules';
 
-    return () => clearInterval(intervalId);
-  }, []);
-
+function Carousel() {
   return (
-    <CarouselContainer>
-      <CarouselWrapper ref={carouselRef}>
-        {images.map((image, index) => (
-          <CarouselItem key={index}>
-            <CarouselImage src={image} alt={`Image ${index}`} />
-          </CarouselItem>
-        ))}
-        <CarouselItem>
-          <CarouselImage src={images[0]} alt={`Image 0`} />
-        </CarouselItem>
-      </CarouselWrapper>
-    </CarouselContainer>
+    <Swiper
+      slidesPerView={3}
+      loop={true}
+      pagination={{
+        clickable: true,
+      }}
+      navigation={true}
+      modules={[Pagination, Navigation]}
+      className="mySwiper"
+    >
+      <SwiperSlide>
+        <SlideGrid
+          imageUrl={Port1}
+        >
+          <WrapperText>
+            <MovieTitle>
+              O Rio do Desejo
+            </MovieTitle>
+
+            <MovieDate>
+              2022
+            </MovieDate>
+            <a target="_blank" rel="noreferrer" href="https://www.youtube.com/watch?v=ui_iKdGEI1c">
+              <SliderButton
+                pad="1rem 2rem 1rem 2rem"
+                hovercolor="white"
+              >
+                Trailer
+              </SliderButton>
+            </a>
+          </WrapperText>
+        </SlideGrid>
+      </SwiperSlide>
+      <SwiperSlide>
+        <SlideGrid
+          imageUrl={Port1}
+        >
+          <WrapperText>
+            <MovieTitle>
+              O Rio do Desejo
+            </MovieTitle>
+
+            <MovieDate>
+              2022
+            </MovieDate>
+            <a target="_blank" rel="noreferrer" href="https://www.youtube.com/watch?v=ui_iKdGEI1c">
+              <SliderButton
+                pad="1rem 2rem 1rem 2rem"
+                hovercolor="white"
+              >
+                Trailer
+              </SliderButton>
+            </a>
+          </WrapperText>
+        </SlideGrid>
+      </SwiperSlide>
+      <SwiperSlide>
+        <SlideGrid
+          imageUrl={Port1}
+        >
+          <WrapperText>
+            <MovieTitle>
+              O Rio do Desejo
+            </MovieTitle>
+
+            <MovieDate>
+              2022
+            </MovieDate>
+            <a target="_blank" rel="noreferrer" href="https://www.youtube.com/watch?v=ui_iKdGEI1c">
+              <SliderButton
+                pad="1rem 2rem 1rem 2rem"
+                hovercolor="white"
+              >
+                Trailer
+              </SliderButton>
+            </a>
+          </WrapperText>
+        </SlideGrid>
+      </SwiperSlide>
+      <SwiperSlide>
+        <SlideGrid
+          imageUrl={Port1}
+        >
+          <WrapperText>
+            <MovieTitle>
+              O Rio do Desejo
+            </MovieTitle>
+
+            <MovieDate>
+              2022
+            </MovieDate>
+            <a target="_blank" rel="noreferrer" href="https://www.youtube.com/watch?v=ui_iKdGEI1c">
+              <SliderButton
+                pad="1rem 2rem 1rem 2rem"
+                hovercolor="white"
+              >
+                Trailer
+              </SliderButton>
+            </a>
+          </WrapperText>
+        </SlideGrid>
+      </SwiperSlide>
+      <SwiperSlide>
+        <SlideGrid
+          imageUrl={Port1}
+        >
+          <WrapperText>
+            <MovieTitle>
+              O Rio do Desejo
+            </MovieTitle>
+
+            <MovieDate>
+              2022
+            </MovieDate>
+            <a target="_blank" rel="noreferrer" href="https://www.youtube.com/watch?v=ui_iKdGEI1c">
+              <SliderButton
+                pad="1rem 2rem 1rem 2rem"
+                hovercolor="white"
+              >
+                Trailer
+              </SliderButton>
+            </a>
+          </WrapperText>
+        </SlideGrid>
+      </SwiperSlide>
+      <SwiperSlide>
+        <SlideGrid
+          imageUrl={Port1}
+        >
+          <WrapperText>
+            <MovieTitle>
+              O Rio do Desejo
+            </MovieTitle>
+
+            <MovieDate>
+              2022
+            </MovieDate>
+            <a target="_blank" rel="noreferrer" href="https://www.youtube.com/watch?v=ui_iKdGEI1c">
+              <SliderButton
+                pad="1rem 2rem 1rem 2rem"
+                hovercolor="white"
+              >
+                Trailer
+              </SliderButton>
+            </a>
+          </WrapperText>
+        </SlideGrid>
+      </SwiperSlide>
+      
+    </Swiper>
   );
 };
 
 export default Carousel;
 
+<Grid>
+  <RowCol>
+    <Col>
+      <PortImage
+        imageUrl={Port1}
+      />
+      <WrapperText>
+        <Title>
+          O Rio do Desejo - 2022
+        </Title>
+
+        <Text>
+          Figurinista
+        </Text>
+        <a target="_blank" rel="noreferrer" href="https://www.youtube.com/watch?v=ui_iKdGEI1c">
+          <GlobalButton
+            pad="1rem 2rem 1rem 2rem"
+            hovercolor="white"
+          >
+            Trailer
+          </GlobalButton>
+        </a>
+      </WrapperText>
+    </Col>
+    <Col>
+      <PortImage
+        imageUrl={Port1}
+      />
+      <WrapperText>
+        <Title>
+          Fogaréu - 2022
+        </Title>
+
+        <Text>
+          Figurinista
+        </Text>
+        <a target="_blank" rel="noreferrer" href="https://www.youtube.com/watch?v=ui_iKdGEI1c">
+          <GlobalButton
+            pad="1rem 2rem 1rem 2rem"
+            hovercolor="white"
+          >
+            Trailer
+          </GlobalButton>
+        </a>
+      </WrapperText>
+    </Col>
+    <Col>
+      <PortImage
+        imageUrl={Port1}
+      />
+      <WrapperText>
+        <Title>
+          Alice e Só - 2020
+        </Title>
+        <Text>
+          Figurinista
+        </Text>
+        <a target="_blank" rel="noreferrer" href="https://www.youtube.com/watch?v=ui_iKdGEI1c">
+          <GlobalButton
+            pad="1rem 2rem 1rem 2rem"
+            hovercolor="white"
+          >
+            Trailer
+          </GlobalButton>
+        </a>
+      </WrapperText>
+    </Col>
+  </RowCol>
+  <RowCol>
+    <Col>
+      <PortImage
+        imageUrl={Port1}
+      />
+      <WrapperText>
+        <Title>
+          Perdido - 2020
+        </Title>
+        <Text>
+          Figurinista
+        </Text>
+        <a target="_blank" rel="noreferrer" href="https://www.youtube.com/watch?v=ui_iKdGEI1c">
+          <GlobalButton
+            pad="1rem 2rem 1rem 2rem"
+            hovercolor="white"
+          >
+            Trailer
+          </GlobalButton>
+        </a>
+      </WrapperText>
+    </Col>
+    <Col>
+      <PortImage
+        imageUrl={Port1}
+      />
+      <WrapperText>
+        <Title>
+          Sem Seu Sangue - 2019
+        </Title>
+        <Text>
+          Figurinista
+        </Text>
+        <a target="_blank" rel="noreferrer" href="https://www.youtube.com/watch?v=ui_iKdGEI1c">
+          <GlobalButton
+            pad="1rem 2rem 1rem 2rem"
+            hovercolor="white"
+          >
+            Trailer
+          </GlobalButton>
+        </a>
+      </WrapperText>
+    </Col>
+    <Col>
+      <PortImage
+        imageUrl={Port1}
+      />
+      <WrapperText>
+        <Title>
+          Dores de Amores - 2013
+        </Title>
+
+        <Text>
+          Figurinista
+        </Text>
+        <a target="_blank" rel="noreferrer" href="https://www.youtube.com/watch?v=ui_iKdGEI1c">
+          <GlobalButton
+            pad="1rem 2rem 1rem 2rem"
+            hovercolor="white"
+          >
+            Trailer
+          </GlobalButton>
+        </a>
+      </WrapperText>
+    </Col>
+  </RowCol>
+  <RowCol>
+    <Col>
+      <PortImage
+        imageUrl={Port1}
+      />
+      <WrapperText>
+        <Title>
+          Sambando nas Brasas, Morô? - 2007
+        </Title>
+
+        <Text>
+          Figurinista
+        </Text>
+        <a target="_blank" rel="noreferrer" href="https://www.youtube.com/watch?v=ui_iKdGEI1c">
+          <GlobalButton
+            pad="1rem 2rem 1rem 2rem"
+            hovercolor="white"
+          >
+            Trailer
+          </GlobalButton>
+        </a>
+      </WrapperText>
+    </Col>
+    <Col>
+      <PortImage
+        imageUrl={Port1}
+      />
+      <WrapperText>
+        <Title>
+          Memorias do Movimento Estudantil - 2007
+        </Title>
+
+        <Text>
+          Figurinista
+        </Text>
+        <a target="_blank" rel="noreferrer" href="https://www.youtube.com/watch?v=ui_iKdGEI1c">
+          <GlobalButton
+            pad="1rem 2rem 1rem 2rem"
+            hovercolor="white"
+          >
+            Trailer
+          </GlobalButton>
+        </a>
+      </WrapperText>
+    </Col>
+    <Col>
+      <PortImage
+        imageUrl={Port1}
+      />
+      <WrapperText>
+        <Title>
+          Oswaldo Cruz - O Médico do Brasil - 2003
+        </Title>
+        <Text>
+          Figurinista
+        </Text>
+        <a target="_blank" rel="noreferrer" href="https://www.youtube.com/watch?v=ui_iKdGEI1c">
+          <GlobalButton
+            pad="1rem 2rem 1rem 2rem"
+            hovercolor="white"
+          >
+            Trailer
+          </GlobalButton>
+        </a>
+      </WrapperText>
+    </Col>
+  </RowCol>
+</Grid>

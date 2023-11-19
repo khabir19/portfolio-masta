@@ -40,16 +40,19 @@ export const NavbarInnerContainer = styled.div`
 export const NavbarLinkContainer = styled.div``;
 
 export const NavbarLink = styled(Link)`
-  color: whitesmoke;
+  color: #ffffff;
   font-size: x-large;
   font-family: Quicksand;
   text-decoration: none;
   font-weight: bold;
   margin: 20px;
-  padding: -20px;
 
   &:hover{
-    color: black;
+    text-shadow: 0px 0px 15px #f5f5f5;
+    -moz-transition: all 0.2s ease-in;
+    -o-transition: all 0.2s ease-in;
+    -webkit-transition: all 0.2s ease-in;
+    transition: all 0.2s ease-in;
   }
 
   @media (max-width: 700px) {
@@ -58,7 +61,7 @@ export const NavbarLink = styled(Link)`
 `;
 
 export const NavbarLinkExtended = styled(Link)`
-  color: whitesmoke;
+  color: #f5f5f5;
   font-size: x-large;
   font-family: Quicksand;
   text-decoration: none;
@@ -72,7 +75,7 @@ export const OpenLinksButton = styled.button`
   height: 100px;
   background: none;
   border: none;
-  color: whitesmoke;
+  color: #f5f5f5;
   font-size: 45px;
   cursor: pointer;
   position: relative;

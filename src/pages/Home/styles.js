@@ -1,6 +1,6 @@
 import styled from 'styled-components';
 
-import imgBgHome from '../../assets/portfolio/semSeuSangue/semSeuSangue.jpg';
+import imgBgHome from "../../assets/portfolio/assistencias/circoMistico/CM5.jpg";
 export const WrapperNavHome = styled.div`
   display: flex;  
 
