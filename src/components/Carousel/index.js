@@ -1,10 +1,7 @@
 // Import Swiper React components
-import React, { useRef, useState } from 'react';
+import React from 'react';
 import { Swiper, SwiperSlide } from 'swiper/react';
-import { Grid, Col, Row, RowCol, Title, GlobalButton, Text } from '../../assets/styles/global';
-import { WrapperText, PortImage, SlideGrid, MovieTitle, MovieDate, SliderButton } from './styles';
-
-import Port1 from '../../assets/portfolio/cartazes/aliceSoCartaz.jpg';
+import { WrapperText, Container, MovieTitle, MovieDate, SliderButton } from './styles';
 
 import 'swiper/css';
 import 'swiper/css/pagination';
@@ -15,7 +12,15 @@ import { Pagination, Navigation } from 'swiper/modules';
 function Carousel() {
   return (
     <Swiper
-      slidesPerView={3}
+      breakpoints={{
+        640: {
+          slidesPerView: 1,
+        },
+        768: {
+          slidesPerView: 3,
+        },
+      }}
+      spaceBetween={30}
       loop={true}
       pagination={{
         clickable: true,
@@ -25,349 +30,160 @@ function Carousel() {
       className="mySwiper"
     >
       <SwiperSlide>
-        <SlideGrid
-          imageUrl={Port1}
+        <Container
+          image={"https://upload.wikimedia.org/wikipedia/pt/5/5c/O_Rio_do_Desejo.png"}
         >
           <WrapperText>
             <MovieTitle>
               O Rio do Desejo
             </MovieTitle>
-
             <MovieDate>
-              2022
+              Longa - 2022
             </MovieDate>
-            <a target="_blank" rel="noreferrer" href="https://www.youtube.com/watch?v=ui_iKdGEI1c">
-              <SliderButton
-                pad="1rem 2rem 1rem 2rem"
-                hovercolor="white"
-              >
-                Trailer
-              </SliderButton>
-            </a>
+            <SliderButton>
+              Mais Fotos
+            </SliderButton>
           </WrapperText>
-        </SlideGrid>
+        </Container>
       </SwiperSlide>
       <SwiperSlide>
-        <SlideGrid
-          imageUrl={Port1}
+        <Container
+          image={"https://br.web.img2.acsta.net/pictures/22/02/17/08/04/5758181.jpg"}
         >
           <WrapperText>
             <MovieTitle>
-              O Rio do Desejo
+              Fogaréu
             </MovieTitle>
-
             <MovieDate>
-              2022
+              Longa - 2022
             </MovieDate>
-            <a target="_blank" rel="noreferrer" href="https://www.youtube.com/watch?v=ui_iKdGEI1c">
-              <SliderButton
-                pad="1rem 2rem 1rem 2rem"
-                hovercolor="white"
-              >
-                Trailer
-              </SliderButton>
-            </a>
+            <SliderButton>
+              Mais Fotos
+            </SliderButton>
           </WrapperText>
-        </SlideGrid>
+        </Container>
       </SwiperSlide>
       <SwiperSlide>
-        <SlideGrid
-          imageUrl={Port1}
+        <Container
+          image={"https://upload.wikimedia.org/wikipedia/pt/thumb/b/be/Alice_%26_S%C3%B3.jpg/230px-Alice_%26_S%C3%B3.jpg"}
         >
           <WrapperText>
             <MovieTitle>
-              O Rio do Desejo
+              Alice e Só
             </MovieTitle>
-
             <MovieDate>
-              2022
+              Longa - 2020
             </MovieDate>
-            <a target="_blank" rel="noreferrer" href="https://www.youtube.com/watch?v=ui_iKdGEI1c">
-              <SliderButton
-                pad="1rem 2rem 1rem 2rem"
-                hovercolor="white"
-              >
-                Trailer
-              </SliderButton>
-            </a>
+            <SliderButton>
+              Mais Fotos
+            </SliderButton>
           </WrapperText>
-        </SlideGrid>
+        </Container>
       </SwiperSlide>
       <SwiperSlide>
-        <SlideGrid
-          imageUrl={Port1}
+        <Container
+          image={"https://m.media-amazon.com/images/M/MV5BOWExNGQ5MDQtMjQ3Mi00OTQ2LWI2YjMtNmYxZGIxZDBjNzExXkEyXkFqcGdeQXVyNjkyMjgxOTM@._V1_.jpg"}
         >
           <WrapperText>
             <MovieTitle>
-              O Rio do Desejo
+              Perdido
             </MovieTitle>
-
             <MovieDate>
-              2022
+              Série - 2020
             </MovieDate>
-            <a target="_blank" rel="noreferrer" href="https://www.youtube.com/watch?v=ui_iKdGEI1c">
-              <SliderButton
-                pad="1rem 2rem 1rem 2rem"
-                hovercolor="white"
-              >
-                Trailer
-              </SliderButton>
-            </a>
+            <SliderButton>
+              Mais Fotos
+            </SliderButton>
           </WrapperText>
-        </SlideGrid>
+        </Container>
       </SwiperSlide>
       <SwiperSlide>
-        <SlideGrid
-          imageUrl={Port1}
+        <Container
+          image={"https://vejasp.abril.com.br/wp-content/uploads/2020/10/Sem-seu-sangue-2.jpg?quality=70&strip=info"}
         >
           <WrapperText>
             <MovieTitle>
-              O Rio do Desejo
+              Sem Seu Sangue
             </MovieTitle>
-
             <MovieDate>
-              2022
+              Longa - 2019
             </MovieDate>
-            <a target="_blank" rel="noreferrer" href="https://www.youtube.com/watch?v=ui_iKdGEI1c">
-              <SliderButton
-                pad="1rem 2rem 1rem 2rem"
-                hovercolor="white"
-              >
-                Trailer
-              </SliderButton>
-            </a>
+            <SliderButton>
+              Mais Fotos
+            </SliderButton>
           </WrapperText>
-        </SlideGrid>
+        </Container>
       </SwiperSlide>
       <SwiperSlide>
-        <SlideGrid
-          imageUrl={Port1}
+        <Container
+          image={"https://vejasp.abril.com.br/wp-content/uploads/2016/12/poster-filme-final-kombat-pra-internet.jpeg?quality=70"}
         >
           <WrapperText>
             <MovieTitle>
-              O Rio do Desejo
+              Dores de Amores
             </MovieTitle>
-
             <MovieDate>
-              2022
+              Longa - 2013
             </MovieDate>
-            <a target="_blank" rel="noreferrer" href="https://www.youtube.com/watch?v=ui_iKdGEI1c">
-              <SliderButton
-                pad="1rem 2rem 1rem 2rem"
-                hovercolor="white"
-              >
-                Trailer
-              </SliderButton>
-            </a>
+            <SliderButton>
+              Mais Fotos
+            </SliderButton>
           </WrapperText>
-        </SlideGrid>
+        </Container>
       </SwiperSlide>
-      
+      <SwiperSlide>
+        <Container
+          image={"https://m.media-amazon.com/images/M/MV5BNmM1ZGUzMGYtNTA5NS00NGFmLTk0MDgtMmY0MzA5OWMzNDZiXkEyXkFqcGdeQXVyOTU3ODk4MQ@@._V1_FMjpg_UX1000_.jpg"}
+        >
+          <WrapperText>
+            <MovieTitle>
+              Sambando nas Brasas, Morô?
+            </MovieTitle>
+            <MovieDate>
+              Longa - 2007
+            </MovieDate>
+            <SliderButton>
+              Mais Fotos
+            </SliderButton>
+          </WrapperText>
+        </Container>
+      </SwiperSlide>
+      <SwiperSlide>
+        <Container
+          image={"https://caliban.com.br/wp-content/uploads/2016/02/MMEb.jpg"}
+        >
+          <WrapperText>
+            <MovieTitle>
+              Memórias do Movimento Estudantil
+            </MovieTitle>
+            <MovieDate>
+              Documentário - 2007
+            </MovieDate>
+            <SliderButton>
+              Mais Fotos
+            </SliderButton>
+          </WrapperText>
+        </Container>
+      </SwiperSlide>
+      <SwiperSlide>
+        <Container
+          image={"https://caliban.com.br/wp-content/uploads/2016/02/OSWALDO-CRUZb.jpg"}
+        >
+          <WrapperText>
+            <MovieTitle>
+              Oswaldo Cruz - O Médico do Brasil
+            </MovieTitle>
+            <MovieDate>
+              Documentário - 2003
+            </MovieDate>
+            <SliderButton>
+              Mais Fotos
+            </SliderButton>
+          </WrapperText>
+        </Container>
+      </SwiperSlide>
     </Swiper>
   );
 };
 
 export default Carousel;
-
-<Grid>
-  <RowCol>
-    <Col>
-      <PortImage
-        imageUrl={Port1}
-      />
-      <WrapperText>
-        <Title>
-          O Rio do Desejo - 2022
-        </Title>
-
-        <Text>
-          Figurinista
-        </Text>
-        <a target="_blank" rel="noreferrer" href="https://www.youtube.com/watch?v=ui_iKdGEI1c">
-          <GlobalButton
-            pad="1rem 2rem 1rem 2rem"
-            hovercolor="white"
-          >
-            Trailer
-          </GlobalButton>
-        </a>
-      </WrapperText>
-    </Col>
-    <Col>
-      <PortImage
-        imageUrl={Port1}
-      />
-      <WrapperText>
-        <Title>
-          Fogaréu - 2022
-        </Title>
-
-        <Text>
-          Figurinista
-        </Text>
-        <a target="_blank" rel="noreferrer" href="https://www.youtube.com/watch?v=ui_iKdGEI1c">
-          <GlobalButton
-            pad="1rem 2rem 1rem 2rem"
-            hovercolor="white"
-          >
-            Trailer
-          </GlobalButton>
-        </a>
-      </WrapperText>
-    </Col>
-    <Col>
-      <PortImage
-        imageUrl={Port1}
-      />
-      <WrapperText>
-        <Title>
-          Alice e Só - 2020
-        </Title>
-        <Text>
-          Figurinista
-        </Text>
-        <a target="_blank" rel="noreferrer" href="https://www.youtube.com/watch?v=ui_iKdGEI1c">
-          <GlobalButton
-            pad="1rem 2rem 1rem 2rem"
-            hovercolor="white"
-          >
-            Trailer
-          </GlobalButton>
-        </a>
-      </WrapperText>
-    </Col>
-  </RowCol>
-  <RowCol>
-    <Col>
-      <PortImage
-        imageUrl={Port1}
-      />
-      <WrapperText>
-        <Title>
-          Perdido - 2020
-        </Title>
-        <Text>
-          Figurinista
-        </Text>
-        <a target="_blank" rel="noreferrer" href="https://www.youtube.com/watch?v=ui_iKdGEI1c">
-          <GlobalButton
-            pad="1rem 2rem 1rem 2rem"
-            hovercolor="white"
-          >
-            Trailer
-          </GlobalButton>
-        </a>
-      </WrapperText>
-    </Col>
-    <Col>
-      <PortImage
-        imageUrl={Port1}
-      />
-      <WrapperText>
-        <Title>
-          Sem Seu Sangue - 2019
-        </Title>
-        <Text>
-          Figurinista
-        </Text>
-        <a target="_blank" rel="noreferrer" href="https://www.youtube.com/watch?v=ui_iKdGEI1c">
-          <GlobalButton
-            pad="1rem 2rem 1rem 2rem"
-            hovercolor="white"
-          >
-            Trailer
-          </GlobalButton>
-        </a>
-      </WrapperText>
-    </Col>
-    <Col>
-      <PortImage
-        imageUrl={Port1}
-      />
-      <WrapperText>
-        <Title>
-          Dores de Amores - 2013
-        </Title>
-
-        <Text>
-          Figurinista
-        </Text>
-        <a target="_blank" rel="noreferrer" href="https://www.youtube.com/watch?v=ui_iKdGEI1c">
-          <GlobalButton
-            pad="1rem 2rem 1rem 2rem"
-            hovercolor="white"
-          >
-            Trailer
-          </GlobalButton>
-        </a>
-      </WrapperText>
-    </Col>
-  </RowCol>
-  <RowCol>
-    <Col>
-      <PortImage
-        imageUrl={Port1}
-      />
-      <WrapperText>
-        <Title>
-          Sambando nas Brasas, Morô? - 2007
-        </Title>
-
-        <Text>
-          Figurinista
-        </Text>
-        <a target="_blank" rel="noreferrer" href="https://www.youtube.com/watch?v=ui_iKdGEI1c">
-          <GlobalButton
-            pad="1rem 2rem 1rem 2rem"
-            hovercolor="white"
-          >
-            Trailer
-          </GlobalButton>
-        </a>
-      </WrapperText>
-    </Col>
-    <Col>
-      <PortImage
-        imageUrl={Port1}
-      />
-      <WrapperText>
-        <Title>
-          Memorias do Movimento Estudantil - 2007
-        </Title>
-
-        <Text>
-          Figurinista
-        </Text>
-        <a target="_blank" rel="noreferrer" href="https://www.youtube.com/watch?v=ui_iKdGEI1c">
-          <GlobalButton
-            pad="1rem 2rem 1rem 2rem"
-            hovercolor="white"
-          >
-            Trailer
-          </GlobalButton>
-        </a>
-      </WrapperText>
-    </Col>
-    <Col>
-      <PortImage
-        imageUrl={Port1}
-      />
-      <WrapperText>
-        <Title>
-          Oswaldo Cruz - O Médico do Brasil - 2003
-        </Title>
-        <Text>
-          Figurinista
-        </Text>
-        <a target="_blank" rel="noreferrer" href="https://www.youtube.com/watch?v=ui_iKdGEI1c">
-          <GlobalButton
-            pad="1rem 2rem 1rem 2rem"
-            hovercolor="white"
-          >
-            Trailer
-          </GlobalButton>
-        </a>
-      </WrapperText>
-    </Col>
-  </RowCol>
-</Grid>

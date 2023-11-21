@@ -1,22 +1,14 @@
 import styled from 'styled-components';
 
-export const WrapperText = styled.div`
-  display: flex;
-  justify-content: flex-start;
-  flex-direction: column;
-  align-items: flex-start;
-`;
 
-export const SlideGrid = styled.div`
+export const Container = styled.div`
   height: 600px;
   width: 100%;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  background-image: linear-gradient(90deg, #000000 2%, transparent),
-    url(${(props) => props.image});
+  background-image: url(${(props) => props.image});
+  background-image: url(${(props) => props.image}), radial-gradient( circle farthest-corner at 17.1% 22.8%,  rgba(226,24,24,1) 50%, rgba(160,6,6,1) 10% );
   background-size: contain;
   background-repeat: no-repeat;
+  background-position: right;
 
   & > div {
     display: flex;
@@ -24,12 +16,13 @@ export const SlideGrid = styled.div`
     align-items: flex-start;
     padding-left: 10px;
   }
-/* display: flex;
-  flex-direction: row;
-  background-color: linear-gradient(90deg, black 20%, transparent);
-  background-image: url(${props => props.imageUrl});
-  height: 40vh;
-  background-repeat: no-repeat; */
+  `;
+
+export const WrapperText = styled.div`
+  display: flex;
+  justify-content: flex-start;
+  flex-direction: column;
+  align-items: flex-start;
 `;
 
 export const MovieTitle = styled.h2`
@@ -47,21 +40,28 @@ export const MovieDate = styled.h1`
   font-size: 28px;  
 `;
 
+export const ButtonContainer = styled.div`
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+`;
+
 export const SliderButton = styled.button`
   cursor: pointer;
   width: auto;
   margin-bottom: 4rem;
-  padding: ${props => props.pad};
+  padding: 1rem 2rem 1rem 2rem;
   font-size: x-large;
   font-family: Quicksand;
   font-weight: bold;
   border-radius: 0.5rem;
   border-color: black;
   color: black;
-  background-color: ${props => props.bgcolor};
+  background-color: #f5f5f5;
+  
 
   &:hover {
-    background-color: ${props => props.hovercolor};
+    background-color: #ffffff;
     color: black;
     border-color: gray;
   }
