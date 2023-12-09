@@ -4,8 +4,10 @@ import styled from 'styled-components';
 export const Container = styled.div`
   height: 600px;
   width: 100%;
+  box-shadow: inset 0 0 0 1000px rgba(0,0,0,.2);
   background-image: url(${(props) => props.image});
-  background-image: url(${(props) => props.image}), radial-gradient( circle farthest-corner at 17.1% 22.8%,  rgba(226,24,24,1) 50%, rgba(160,6,6,1) 10% );
+  background-image: url(${(props) => props.image}), 
+    linear-gradient(to right, #d7d2cc 0%, #304352 100%);
   background-size: contain;
   background-repeat: no-repeat;
   background-position: right;
@@ -13,10 +15,9 @@ export const Container = styled.div`
   & > div {
     display: flex;
     flex-direction: column;
-    align-items: flex-start;
-    padding-left: 10px;
+    /* align-items: flex-start; */
   }
-  `;
+`;
 
 export const WrapperText = styled.div`
   display: flex;
@@ -29,15 +30,21 @@ export const MovieTitle = styled.h2`
   color: #ffffff;
   font-family: Quicksand;
   font-weight: bold;
-  font-size: 38px;
-  margin-bottom: -1rem;
+  font-size: 120px;
+  opacity: 50%;
+  margin: 2rem 80rem 0rem 3rem;
+  line-height: 0.8;
+  text-shadow: 4px 4px 5px #000000;
 `;
 
 export const MovieDate = styled.h1`
   color: #ffffff;
   font-family: Quicksand;
   font-weight: bold;
-  font-size: 28px;  
+  font-size: 38px;  
+  opacity: 50%;
+  margin: 10px 0rem 0rem 3rem;
+  
 `;
 
 export const ButtonContainer = styled.div`
@@ -48,22 +55,23 @@ export const ButtonContainer = styled.div`
 
 export const SliderButton = styled.button`
   cursor: pointer;
-  width: auto;
-  margin-bottom: 4rem;
-  padding: 1rem 2rem 1rem 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 50%;
+  width: 100%;
+  padding: 1rem 2rem 0rem 2rem;
+  margin-bottom: 2rem;
   font-size: x-large;
   font-family: Quicksand;
   font-weight: bold;
-  border-radius: 0.5rem;
-  border-color: black;
+  border: none;
   color: black;
   background-color: #f5f5f5;
   
-
   &:hover {
     background-color: #ffffff;
     color: black;
-    border-color: gray;
   }
   
   @media (max-width: 700px) {
@@ -80,10 +88,8 @@ export const SliderButton = styled.button`
 
 export const PortImage = styled.div`
   background-image: url(${props => props.imageUrl});
-  /* display: flex; */
-  height: 40vh;
-  /* background-position: right; */
-  background-repeat: no-repeat;
+  display: flex;
+  height: 100vh;
   
   @media (max-width: 700px) {
     background-position: ${props => props.mobilePosition};

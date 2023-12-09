@@ -2,7 +2,9 @@ import styled from "styled-components";
 import { Link } from "react-router-dom";
 
 export const FooterContainer = styled.div`
-  background-color: whitesmoke;  
+  background-color: whitesmoke;
+  height: 100%;
+  padding: 1px;
 `;
 
 export const LinkContainer = styled.div`  
@@ -20,7 +22,7 @@ export const LinkContainer = styled.div`
 export const FooterLink = styled(Link)`
   color: black;
   font-weight: bold;
-  font-size: 25px;
+  font-size: 30px;
   font-family: Quicksand, Helvetica, sans-serif;
   text-decoration: none;
   margin: 10px;
@@ -29,15 +31,15 @@ export const FooterLink = styled(Link)`
 export const SocialsLink = styled(Link)`
   margin: 6px;
   display: flex;
+  margin: 0px 15px 0px 15px;
 `;
 
 export const FooterArtist = styled.h1`
   color: black;
   font-family: Quicksand;
   font-weight: bold;
-  font-size: 40px;
+  font-size: 50px;
   text-align: center;
-  margin-top: 40px;
   margin-bottom: 20px;
 `;
 

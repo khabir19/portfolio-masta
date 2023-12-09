@@ -7,13 +7,16 @@ import Port2 from "../../assets/portfolio/assistencias/deserto/DS3.jpg";
 import Port3 from "../../assets/portfolio/assistencias/palhaco/PL2.jpg";
 import Port4 from "../../assets/portfolio/assinaturas/fogareu/fogareu.jpg";
 
+import Mosaic from '../../components/Mosaic';
+
 const Home = () => {
   return (
     <>
       <WrapperNavHome>
         <Navbar />
       </WrapperNavHome>
-      <Grid>
+      <Mosaic/>
+      {/* <Grid>
         <RowCol>
           <Col>
             <Parallax
@@ -86,8 +89,8 @@ const Home = () => {
             </GlobalButton>
           </a>
         </PageBrake>
-        <Footer />
-      </Grid>
+      </Grid> */}
+      <Footer />
     </>
   );
 }

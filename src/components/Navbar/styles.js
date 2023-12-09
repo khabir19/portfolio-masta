@@ -14,6 +14,8 @@ export const LeftContainer = styled.div`
   display: flex;
   align-items: center;
   padding-left: 5%;
+  background-image: linear-gradient(90deg, rgba(245,245,245,0.8), transparent);
+  
 
   @media (max-width: 700px) {
     flex: 30%
@@ -25,6 +27,7 @@ export const RightContainer = styled.div`
   display: flex;
   justify-content: flex-end;
   padding-right: 50px;
+  background-image: linear-gradient(270deg, rgba(245,245,245,0.8), transparent);
 
   @media (max-width: 700px) {
     flex: 70%
@@ -40,8 +43,8 @@ export const NavbarInnerContainer = styled.div`
 export const NavbarLinkContainer = styled.div``;
 
 export const NavbarLink = styled(Link)`
-  color: #ffffff;
-  font-size: x-large;
+  color: #000000;
+  font-size: 30px;
   font-family: Quicksand;
   text-decoration: none;
   font-weight: bold;
@@ -61,13 +64,17 @@ export const NavbarLink = styled(Link)`
 `;
 
 export const NavbarLinkExtended = styled(Link)`
-  color: #f5f5f5;
+  color: #000000;
   font-size: x-large;
   font-family: Quicksand;
   text-decoration: none;
-  text-align: left;
+  text-align: center;
   font-weight: bold;
   margin: 25px 25px 0px 25px;
+  background-image: linear-gradient(270deg, rgba(245,245,245,0.8), transparent);
+  /* @media (max-width: 700px) {
+    display: none;
+  } */
 `;
 
 export const OpenLinksButton = styled.button`
@@ -99,8 +106,8 @@ export const Artist = styled.h1`
   color: white;
   font-family: Quicksand;
   font-weight: bold;
-  font-size: 40px;
-  margin-top: 20px;
+  font-size: 60px;
+  margin: 1px 0px 0px 20px;
   white-space: nowrap;
 
   @media (max-width: 700px) {

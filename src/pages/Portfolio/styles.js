@@ -1,10 +1,10 @@
 import styled from 'styled-components';
-import imgBgPorfolio from '../../assets/portfolio/perdido/perdido3.jpg';
+import imgBgPortfolio from '../../assets/portfolio/perdido/perdido3.jpg';
 
 export const WrapperNavPorfolio = styled.div`
   display: flex;
 
-  background-image: url(${imgBgPorfolio});
+  background-image: url(${imgBgPortfolio});
   height: 100vh;
   background-repeat: no-repeat;
   background-size: cover;

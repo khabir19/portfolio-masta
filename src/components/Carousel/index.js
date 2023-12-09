@@ -1,13 +1,14 @@
-// Import Swiper React components
 import React from 'react';
+import { SlArrowDown } from "react-icons/sl";
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { WrapperText, Container, MovieTitle, MovieDate, SliderButton } from './styles';
-
+import App from '../Collapsable';
 import 'swiper/css';
 import 'swiper/css/pagination';
 import 'swiper/css/navigation';
 
 import { Pagination, Navigation } from 'swiper/modules';
+
 
 function Carousel() {
   return (
@@ -17,14 +18,14 @@ function Carousel() {
           slidesPerView: 1,
         },
         768: {
-          slidesPerView: 3,
+          slidesPerView: 2,
         },
       }}
-      spaceBetween={30}
+      spaceBetween={0}
       loop={true}
-      pagination={{
-        clickable: true,
-      }}
+      // pagination={{
+      //   clickable: false,
+      // }}
       navigation={true}
       modules={[Pagination, Navigation]}
       className="mySwiper"
@@ -40,11 +41,13 @@ function Carousel() {
             <MovieDate>
               Longa - 2022
             </MovieDate>
-            <SliderButton>
-              Mais Fotos
-            </SliderButton>
           </WrapperText>
         </Container>
+        <SliderButton>
+          Mais Fotos
+
+        <SlArrowDown />
+        </SliderButton>
       </SwiperSlide>
       <SwiperSlide>
         <Container
@@ -57,11 +60,13 @@ function Carousel() {
             <MovieDate>
               Longa - 2022
             </MovieDate>
-            <SliderButton>
-              Mais Fotos
-            </SliderButton>
           </WrapperText>
         </Container>
+        <SliderButton>
+          Mais Fotos
+
+        <SlArrowDown />
+        </SliderButton>
       </SwiperSlide>
       <SwiperSlide>
         <Container
@@ -74,11 +79,13 @@ function Carousel() {
             <MovieDate>
               Longa - 2020
             </MovieDate>
-            <SliderButton>
-              Mais Fotos
-            </SliderButton>
           </WrapperText>
         </Container>
+        <SliderButton>
+          Mais Fotos
+
+        <SlArrowDown />
+        </SliderButton>
       </SwiperSlide>
       <SwiperSlide>
         <Container
@@ -91,11 +98,13 @@ function Carousel() {
             <MovieDate>
               Série - 2020
             </MovieDate>
-            <SliderButton>
-              Mais Fotos
-            </SliderButton>
           </WrapperText>
         </Container>
+        <SliderButton>
+          Mais Fotos
+
+        <SlArrowDown />
+        </SliderButton>
       </SwiperSlide>
       <SwiperSlide>
         <Container
@@ -108,11 +117,13 @@ function Carousel() {
             <MovieDate>
               Longa - 2019
             </MovieDate>
-            <SliderButton>
-              Mais Fotos
-            </SliderButton>
           </WrapperText>
         </Container>
+        <SliderButton>
+          Mais Fotos
+
+        <SlArrowDown />
+        </SliderButton>
       </SwiperSlide>
       <SwiperSlide>
         <Container
@@ -125,11 +136,13 @@ function Carousel() {
             <MovieDate>
               Longa - 2013
             </MovieDate>
-            <SliderButton>
-              Mais Fotos
-            </SliderButton>
           </WrapperText>
         </Container>
+        <SliderButton>
+          Mais Fotos
+
+        <SlArrowDown />
+        </SliderButton>
       </SwiperSlide>
       <SwiperSlide>
         <Container
@@ -142,11 +155,13 @@ function Carousel() {
             <MovieDate>
               Longa - 2007
             </MovieDate>
-            <SliderButton>
-              Mais Fotos
-            </SliderButton>
           </WrapperText>
         </Container>
+        <SliderButton>
+          Mais Fotos
+
+        <SlArrowDown />
+        </SliderButton>
       </SwiperSlide>
       <SwiperSlide>
         <Container
@@ -159,11 +174,13 @@ function Carousel() {
             <MovieDate>
               Documentário - 2007
             </MovieDate>
-            <SliderButton>
-              Mais Fotos
-            </SliderButton>
           </WrapperText>
         </Container>
+        <SliderButton>
+          Mais Fotos
+
+        <SlArrowDown />
+        </SliderButton>
       </SwiperSlide>
       <SwiperSlide>
         <Container
@@ -171,16 +188,18 @@ function Carousel() {
         >
           <WrapperText>
             <MovieTitle>
-              Oswaldo Cruz - O Médico do Brasil
+              Oswaldo Cruz
             </MovieTitle>
             <MovieDate>
               Documentário - 2003
             </MovieDate>
-            <SliderButton>
-              Mais Fotos
-            </SliderButton>
           </WrapperText>
         </Container>
+        <SliderButton>
+          Mais Fotos
+
+        <SlArrowDown />
+        </SliderButton>
       </SwiperSlide>
     </Swiper>
   );

@@ -11,6 +11,9 @@ import {
   RightContainer,
   Artist
 } from "./styles";
+import { SocialsLink } from "../Footer/styles";
+import Instagram from "../../assets/socials/instagram.png";
+import Imdb from "../../assets/socials/imdb.png";
 
 function Navbar() {
   const [extendNavbar, setExtendNavbar] = useState(false);

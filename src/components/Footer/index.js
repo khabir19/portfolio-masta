@@ -46,6 +46,8 @@ function Footer() {
         >
           Sobre
         </FooterLink>
+      </LinkContainer>
+      <LinkContainer>
         <SocialsLink target="_blank" to="https://www.instagram.com/mastaariane/">
           <img alt="Instagram Logo" src={Instagram} />
         </SocialsLink>
