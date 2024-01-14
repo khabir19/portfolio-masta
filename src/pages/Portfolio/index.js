@@ -2,7 +2,8 @@ import { Grid, Col, RowCol, Title, GlobalButton, Text, Subtitle, PageBrake } fro
 import { WrapperText, WrapperNavPorfolio, WrapperReverse, PortImage } from './styles'
 import Navbar from '../../components/Navbar';
 import Footer from '../../components/Footer';
-import Carousel from '../../components/Carousel';
+import CarouselAssinaturas from '../../components/CarouselAssinaturas';
+import CarouselAssistencias from '../../components/CarouselAssistencias';
 import Port1 from '../../assets/portfolio/cartazes/aliceSoCartaz.jpg'
 
 const Portfolio = () => {
@@ -16,12 +17,13 @@ const Portfolio = () => {
           Assinaturas
         </Text>
       </PageBrake>
-      <Carousel />
+      <CarouselAssinaturas />
       <PageBrake>
         <Text>
           Assistências
         </Text>
       </PageBrake>       
+      <CarouselAssistencias/>
       <Footer />
     </>
   );

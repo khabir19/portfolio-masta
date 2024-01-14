@@ -1,38 +1,14 @@
 import styled from 'styled-components';
-
-export const Grid = styled.div` 
-  display: flex;
-  flex-direction: column;
-`;
-
-export const Row = styled.div`
-  display: flex;
-  flex: 1;
-`;
-
-export const Col = styled.div`
-  display: flex;
-  flex: 1;
-  justify-content: center;
-  flex-direction: column;
-  width: 80%;
-  background-color: whitesmoke;
-  
-  @media (max-width: 700px) {
-    flex-direction: column;
-    width: 100%;
-    height: 150px;
-  }
-`;
+import '../styles/global.css';
 
 export const PageBrake = styled.div`
   align-items: center;
   background-color: inherit;
   display: flex;
-  font-weight: bold;
+  font-family: Inter;
+  font-size: 2rem;
   justify-content: center;
   text-align: center;
-  height: auto;
 `;
 
 export const Title = styled.h1`
@@ -101,22 +77,4 @@ export const GlobalButton = styled.button`
     border-color: black;
   }
   }
-`;
-
-export const Parallax = styled.div`
-  background-image: url(${props => props.imageUrl});
-  background-attachment: fixed;
-  background-position: ${props => props.position};
-  background-size: ${props => props.size};
-  background-repeat: no-repeat;
-  height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-
-  @media (max-width: 700px) {
-    background-position: ${props => props.mobilePosition};
-  }
-
 `;

@@ -1,5 +1,5 @@
 import styled from 'styled-components';
-import imgBgPortfolio from '../../assets/portfolio/perdido/perdido3.jpg';
+import imgBgPortfolio from '../../assets/portfolio/assinaturas/rioDesejo/RD8.jpg';
 
 export const WrapperNavPorfolio = styled.div`
   display: flex;
@@ -8,6 +8,7 @@ export const WrapperNavPorfolio = styled.div`
   height: 100vh;
   background-repeat: no-repeat;
   background-size: cover;
+  background-position-y: bottom;
   
   @media (max-width: 700px) {
     background-position-x: -650px;

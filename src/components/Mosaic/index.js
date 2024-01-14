@@ -40,7 +40,7 @@ import Port9 from "../../assets/portfolio/assinaturas/fogareu/fogareu.jpg";
 
 import Port10 from "../../assets/portfolio/assistencias/circoMistico/CM7.webp";
 import Port11 from "../../assets/portfolio/assinaturas/sambandoBrasas/SB1.jpg";
-import Port12 from "../../assets/portfolio/assistencias/gonzaga/GZ4.jpg";
+import Port12 from "../../assets/portfolio/assinaturas/doresAmores/DA5.jpg";
 import Port13 from "../../assets/portfolio/assistencias/deserto/DS2.jpg";
 import Port14 from "../../assets/portfolio/assinaturas/doresAmores/DA4.jpg";
 import Port15 from "../../assets/portfolio/assistencias/homemFuturo/HF2.jpg";
@@ -51,7 +51,7 @@ import Port18 from "../../assets/portfolio/assinaturas/fogareu/fogareu.jpg";
 function Mosaic() {
   return (
     <Swiper
-      modules={[Autoplay]}
+      // modules={[Autoplay]}
       slidesPerView={1}
       loop={true}
       autoplay={true}

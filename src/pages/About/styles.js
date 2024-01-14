@@ -1,5 +1,5 @@
 import styled from 'styled-components';
-import imgBgAbout from "../../assets/portfolio/aliceSo/aliceSo.jpg";
+import imgBgAbout from "../../assets/portfolio/assinaturas/meuSangueFerve/MF4.jpg";
 import clientPhoto from "../../assets/misc/masta.png";
 
 export const WrapperNavAbout = styled.div`

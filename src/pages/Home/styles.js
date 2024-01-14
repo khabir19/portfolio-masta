@@ -1,6 +1,6 @@
 import styled from 'styled-components';
 
-import imgBgHome from "../../assets/portfolio/assistencias/circoMistico/CM5.jpg";
+import imgBgHome from "../../assets/portfolio/assinaturas/meuSangueFerve/MF1.jpg";
 export const WrapperNavHome = styled.div`
   display: flex;  
 
@@ -8,6 +8,8 @@ export const WrapperNavHome = styled.div`
   height: 100vh;
   background-repeat: no-repeat;
   background-size: cover;
+  background-position-y: bottom;
+  
   
   @media (max-width: 700px) {
     background-position-x: -700px;
