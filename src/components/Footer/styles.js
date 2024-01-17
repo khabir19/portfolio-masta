@@ -12,47 +12,51 @@ export const LinkContainer = styled.div`
   display: flex;
   align-items: center;
   justify-content: center;
-
-  @media (max-width: 700px) {
-    flex-direction: column;
-    height: 100%;
-  }
 `;
 
 export const FooterLink = styled(Link)`
   color: black;
-  font-weight: bold;
   font-size: 30px;
-  font-family: Quicksand, Helvetica, sans-serif;
+  font-family: Inter, Arial, Helvetica, sans-serif;
+  font-weight: 200;
   text-decoration: none;
-  margin: 10px;
+  margin: 0px 10px;
+
+  @media (max-width: 700px) {
+    font-size: 20px;
+  }
 `;
 
 export const SocialsLink = styled(Link)`
-  margin: 6px;
   display: flex;
-  margin: 0px 15px 0px 15px;
+  margin: 5px 15px;
 `;
 
 export const FooterArtist = styled.h1`
   color: black;
-  font-family: Quicksand;
-  font-weight: bold;
+  font-family: Inter, Arial, Helvetica, sans-serif;
+  font-weight: 300;
   font-size: 50px;
   text-align: center;
-  margin-bottom: 20px;
-`;
-
-export const Disclaimer = styled.h3`
-  text-align: center;
-  color: black;
-  opacity: 40%;
-  font-size: 20px;
-  margin-top: 20px;
+  margin-top: 15px;
   margin-bottom: 20px;
 
   @media (max-width: 700px) {
-    margin-top: 25px;
-    font-size: 15px;
+    font-size: 40px;
+    margin-bottom: 10px;
+    margin-top: 10px;
+  }
+`;
+
+export const Disclaimer = styled.h3`  
+  font-family: Inter, Arial, Helvetica, sans-serif;
+  font-weight: 100;
+  text-align: center;
+  color: black;
+  font-size: 20px;
+  margin-top: 10px;
+
+  @media (max-width: 700px) {
+    font-size: 12px;
   }
 `;

@@ -16,7 +16,6 @@ export const LeftContainer = styled.div`
   padding-left: 5%;
   background-image: linear-gradient(90deg, rgba(245,245,245,0.8), transparent);
   
-
   @media (max-width: 700px) {
     flex: 30%
   }
@@ -43,11 +42,11 @@ export const NavbarInnerContainer = styled.div`
 export const NavbarLinkContainer = styled.div``;
 
 export const NavbarLink = styled(Link)`
-  color: #000000;
+  color: #ffffff;
   font-size: 30px;
-  font-family: Quicksand;
+  font-family: Inter, Arial, Helvetica, sans-serif;
+  font-weight: 200;
   text-decoration: none;
-  font-weight: bold;
   margin: 20px;
 
   &:hover{
@@ -64,17 +63,18 @@ export const NavbarLink = styled(Link)`
 `;
 
 export const NavbarLinkExtended = styled(Link)`
-  color: #000000;
+  color: #ffffff;
   font-size: x-large;
-  font-family: Quicksand;
+  font-family: Inter, Arial, Helvetica, sans-serif;
+  font-weight: 200;
   text-decoration: none;
   text-align: center;
-  font-weight: bold;
   margin: 25px 25px 0px 25px;
   background-image: linear-gradient(270deg, rgba(245,245,245,0.8), transparent);
-  /* @media (max-width: 700px) {
-    display: none;
-  } */
+
+  @media (max-width: 700px) {
+    font-weight: 300;
+  }
 `;
 
 export const OpenLinksButton = styled.button`
@@ -99,19 +99,20 @@ export const NavbarExtendedContainer = styled.div`
 
   @media (min-width: 700px) {
     display: none;
+    
   }
 `;
 
 export const Artist = styled.h1`
-  color: white;
-  font-family: Quicksand;
-  font-weight: bold;
+  color: #ffffff;
+  font-family: Inter, Arial, Helvetica, sans-serif;
+  font-weight: 300;
   font-size: 60px;
-  margin: 1px 0px 0px 20px;
+  margin: 1px 20px 0px 0px;
   white-space: nowrap;
 
   @media (max-width: 700px) {
     font-size: 35px;
-    margin-right: -30px;
+    margin: 15px -30px 0px 0px;
   }
 `;

@@ -12,27 +12,12 @@ export const WrapperNavHome = styled.div`
   
   
   @media (max-width: 700px) {
-    background-position-x: -700px;
+    background-position-x: -370px;
   }
   @media (min-width: 768px) {
-    background-position-x: -500px;
+    background-position-x: -620px;
   }
   @media (min-width: 1300px) {
     background-position-x: 0px;
   }
-`;
-
-export const WrapperReverse = styled.div`
-  display: flex;
-
-  @media (max-width: 700px) {
-      flex-direction: column-reverse;
-    }
-`;
-
-export const WrapperText = styled.div`
-  display: flex;
-  padding: 1rem;
-  flex-direction: column;
-  align-items: center;
 `;

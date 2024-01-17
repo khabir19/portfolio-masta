@@ -8,13 +8,13 @@ export const WrapperNavPorfolio = styled.div`
   height: 100vh;
   background-repeat: no-repeat;
   background-size: cover;
-  background-position-y: bottom;
+  /* background-position-y: bottom; */
   
   @media (max-width: 700px) {
-    background-position-x: -650px;
+    background-position-x: -950px;
   }
   @media (min-width: 768px) {
-    background-position-x: -680px;
+    background-position-x: -1200px;
   }
   @media (min-width: 1300px) {
     background-position-x: -250px;

@@ -4,7 +4,6 @@ import Navbar from '../../components/Navbar';
 import Footer from '../../components/Footer';
 import CarouselAssinaturas from '../../components/CarouselAssinaturas';
 import CarouselAssistencias from '../../components/CarouselAssistencias';
-import Port1 from '../../assets/portfolio/cartazes/aliceSoCartaz.jpg'
 
 const Portfolio = () => {
   return (

@@ -2,7 +2,7 @@ import { WrapperNavHome } from './styles';
 
 import Navbar from '../../components/Navbar';
 import Footer from '../../components/Footer';
-import MosaicSign from '../../components/MosaicSign';
+import GridGallery from '../../components/GridGallery';
 
 const Home = () => {
   return (
@@ -10,7 +10,7 @@ const Home = () => {
         <WrapperNavHome>
           <Navbar />
         </WrapperNavHome>
-        <MosaicSign />
+        <GridGallery />
         <Footer />
     </>
   );

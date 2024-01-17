@@ -18,8 +18,11 @@ function CarouselAssinaturas() {
           slidesPerView: 1,
         },
         768: {
-          slidesPerView: 6,
+          slidesPerView: 3,
         },
+        900: {
+          slidesPerView: 6,
+        }
       }}
       spaceBetween={2}
       loop={true}
