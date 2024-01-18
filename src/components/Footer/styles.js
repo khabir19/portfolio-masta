@@ -1,10 +1,17 @@
 import styled from "styled-components";
 import { Link } from "react-router-dom";
 
+import Mandala from '../../assets/misc/mandalaWhite.png';
+
 export const FooterContainer = styled.div`
-  background-color: whitesmoke;
+  background-color: #c9c9c9;
   height: 100%;
   padding: 1px;
+
+  background-image: url(${Mandala});
+  background-repeat: no-repeat;
+  background-position: top;
+  background-size: 50%;
 `;
 
 export const LinkContainer = styled.div`  
@@ -12,6 +19,11 @@ export const LinkContainer = styled.div`
   display: flex;
   align-items: center;
   justify-content: center;
+`;
+
+export const LogoBox = styled.div`
+  background-image: url(${Mandala});
+  height: 10%;
 `;
 
 export const FooterLink = styled(Link)`

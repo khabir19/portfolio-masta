@@ -172,6 +172,20 @@ function CarouselAssinaturas() {
       </SwiperSlide>
       <SwiperSlide>
         <Container
+          image={"https://br.web.img3.acsta.net/pictures/18/12/11/23/34/2379375.jpg"}
+        >
+          {/* <WrapperText>
+              <MovieTitle>
+                Rio da Dúvida
+              </MovieTitle>
+              <MovieDate>
+                Documentário
+              </MovieDate>
+            </WrapperText> */}
+        </Container>
+      </SwiperSlide>
+      <SwiperSlide>
+        <Container
           image={"https://caliban.com.br/wp-content/uploads/2016/02/OSWALDO-CRUZb.jpg"}
         >
           {/* <WrapperText>

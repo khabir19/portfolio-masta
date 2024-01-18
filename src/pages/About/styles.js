@@ -1,5 +1,5 @@
 import styled from 'styled-components';
-import imgBgAbout from "../../assets/portfolio/assistencias/impuros/IP2.jpg";
+import imgBgAbout from "../../assets/portfolio/assinaturas/fogareu/FG8.jpg";
 import clientPhoto from "../../assets/misc/masta.png";
 
 export const WrapperNavAbout = styled.div`
@@ -11,42 +11,67 @@ export const WrapperNavAbout = styled.div`
   background-position: center;
   
   @media (max-width: 700px) {
-    background-position-x: -1070px;
+    /* background-position-x: -1070px; */
   }
   @media (min-width: 768px) {
-    background-position-x: -860px;
+    /* background-position-x: -860px; */
   }
   @media (min-width: 1300px) {
-    background-position-x: 0px;
+    background-position-x: -300px;
   }
 `;
 
-export const WrapperArtist = styled.div`
-  display: flex;
+export const AboutWrapper = styled.div`
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(3, 16vw);
+  grid-gap: 2px;
+  margin: 2px 2px 0px 0px;
+
+  background-color: whitesmoke;
+`;
+
+export const AboutImg = styled.img`
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+`;
+
+export const AboutItem1 = styled.div`
+  grid-column-start: 1;
+  grid-column-end: 3;
+  grid-row-start: 2;
+  grid-row-end: 4;
 
   @media (max-width: 700px) {
-    flex-direction: column;
+    grid-column-start: 1;
+    grid-column-end: 5;
+    grid-row-start: 2;
+    grid-row-end: 6;
   }
-`
-export const FadedCircle = styled.div`
-  height: 520px;
-  width: 500px;
-  background: url(${clientPhoto});
-  background-repeat: no-repeat;
-  background-size: cover;
-  border-radius: 50%;
-  box-shadow: 
-    inset -5px -5px 100px white, 
-    inset 0 0 90px white, 
-    inset 0 0 80px white, 
-    inset 0 0 70px white, 
-    inset 0 0 60px white, 
-    inset 0 0 50px white, 
-    inset 0 0 40px white, 
-    inset 0 0 30px white, 
-    inset 0 0 20px white, 
-    inset 0 0 10px red; 
+`;
+export const AboutItem2 = styled.div`
+  grid-column-start: 3;
+  grid-column-end: 5;
+  grid-row-start: 2;
+  grid-row-end: 4;
+
+  @media (max-width: 700px) {
+    grid-column-start: 1;
+    grid-column-end: 5;
+    grid-row-start: 6;
+    grid-row-end: 8;
+  }
 `;
 
+export const AboutText = styled.h1`
+  color: black;
+  font-family: Inter, Arial, Helvetica, sans-serif;
+  font-weight: 300;
+  font-size: 50px;
+  text-align: justify;
 
-
+  @media (max-width: 700px) {
+    font-size: 30px;
+  }
+`;

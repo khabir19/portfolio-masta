@@ -1,6 +1,8 @@
 import styled from "styled-components";
 import { Link } from "react-router-dom";
 
+import Logo from '../../assets/misc/mandalaWhite.png';
+
 export const NavbarContainer = styled.nav`
   width: 100%;
   height: ${(props) => (props.extendNavbar ? "100vh" : "80px")};
@@ -22,14 +24,22 @@ export const LeftContainer = styled.div`
 `;
 
 export const RightContainer = styled.div`
-  flex: 30%;
+  flex: 20%;
   display: flex;
   justify-content: flex-end;
   padding-right: 50px;
   background-image: linear-gradient(270deg, rgba(245,245,245,0.8), transparent);
 
+  background-image: url(${Logo});
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: left;
+  background-position-x: 40px;
+
   @media (max-width: 700px) {
-    flex: 70%
+    flex: 70%;
+    background-position: right;
+    background-position-x: none;
   }
 `;
 
@@ -98,8 +108,7 @@ export const NavbarExtendedContainer = styled.div`
   height: 25%;
 
   @media (min-width: 700px) {
-    display: none;
-    
+    display: none;    
   }
 `;
 
@@ -115,4 +124,9 @@ export const Artist = styled.h1`
     font-size: 35px;
     margin: 15px -30px 0px 0px;
   }
+`;
+
+export const LogoImg = styled.div`
+  background-image: url(${Logo});
+  width: 10%;
 `;

@@ -2,7 +2,11 @@
 import Navbar from '../../components/Navbar';
 import Footer from '../../components/Footer';
 import { GlobalStyle } from "../../assets/styles/global";
-import { WrapperNavAbout, WrapperArtist, FadedCircle } from './styles';
+import { WrapperNavAbout, AboutWrapper, AboutImg, AboutItem1, AboutItem2, AboutText } from './styles';
+
+
+import Pic1 from '../../assets/portfolio/about/artist1.JPG';
+import Pic2 from '../../assets/portfolio/about/artist2.JPG';
 
 const About = () => {
   return (
@@ -10,6 +14,14 @@ const About = () => {
       <WrapperNavAbout>
         <Navbar />
       </WrapperNavAbout>
+      <AboutWrapper>
+        <AboutItem1>
+          <AboutImg src={Pic2} />
+        </AboutItem1>
+        <AboutItem2>
+          <AboutText>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</AboutText>
+        </AboutItem2>
+      </AboutWrapper>
       <Footer />
     </>
   );

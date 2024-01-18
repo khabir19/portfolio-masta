@@ -31,13 +31,13 @@ import Port7 from "../../assets/portfolio/assinaturas/semSeuSangue/SS9.jpg";
 import Port8 from "../../assets/portfolio/assinaturas/perdido/PD6.jpg";
 import Port9 from "../../assets/portfolio/assinaturas/fogareu/FG4.jpg";
 
-import Port10 from "../../assets/portfolio/assinaturas/meuSangueFerve/MF4.jpg";
+import Port10 from "../../assets/portfolio/assinaturas/rioDesejo/RD13.webp";
 import Port11 from "../../assets/portfolio/assinaturas/aliceSo/AS6.png";
-import Port12 from "../../assets/portfolio/assinaturas/sambandoBrasas/SB3.jpg";
+import Port12 from "../../assets/portfolio/assinaturas/rioDesejo/RD12.jpg";
 import Port13 from "../../assets/portfolio/assinaturas/fogareu/FG6.jpg";
-import Port14 from "../../assets/portfolio/assistencias/impuros/IP1.jpg";
+import Port14 from "../../assets/portfolio/assinaturas/meuSangueFerve/MF4.jpg";
 import Port15 from "../../assets/portfolio/assinaturas/fogareu/FG9.jpg";
-import Port16 from "../../assets/portfolio/assinaturas/rioDesejo/RD12.jpg";
+import Port16 from "../../assets/portfolio/assinaturas/sambandoBrasas/SB3.jpg";
 
 function GridGallery() {
   return (
@@ -72,9 +72,6 @@ function GridGallery() {
         <GalleryItem9>
           <GalleryImg src={Port9} />
         </GalleryItem9>
-      </GridWrapper>
-      <GridWrapper>
-
       </GridWrapper>
       <GridWrapper>
         <GalleryItem10>

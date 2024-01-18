@@ -9,7 +9,8 @@ import {
   OpenLinksButton,
   NavbarLinkExtended,
   RightContainer,
-  Artist
+  Artist,
+  LogoImg
 } from "./styles";
 
 function Navbar() {
@@ -33,6 +34,7 @@ function Navbar() {
           </NavbarLinkContainer>
         </LeftContainer>
         <RightContainer>
+          <LogoImg/>     
           <Artist>masta ariane</Artist>
         </RightContainer>
       </NavbarInnerContainer>

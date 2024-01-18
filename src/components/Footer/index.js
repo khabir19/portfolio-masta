@@ -4,12 +4,12 @@ import {
   FooterLink,
   SocialsLink,
   FooterArtist,
+  LogoBox,
   Disclaimer
 } from "./styles";
 import Instagram from "../../assets/socials/instagram.png";
 import Imdb from "../../assets/socials/imdb.png";
 import { useEffect } from "react";
-
 
 function Footer() {
   useEffect(() => {
@@ -19,6 +19,7 @@ function Footer() {
   return (
     <FooterContainer>
       <FooterArtist>
+      <LogoBox/>
         masta ariane
       </FooterArtist>
       <LinkContainer>
