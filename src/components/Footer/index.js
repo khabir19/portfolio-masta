@@ -1,14 +1,14 @@
 import {
-  FooterContainer,
-  LinkContainer,
-  FooterLink,
+  GridWrapper,
+  GridLogoWrapper,
+  GridSocialsWrapper,
   SocialsLink,
-  FooterArtist,
-  LogoBox,
+  SocialsIcon,
   Disclaimer
 } from "./styles";
 import Instagram from "../../assets/socials/instagram.png";
 import Imdb from "../../assets/socials/imdb.png";
+import Whatsapp from "../../assets/socials/whatsapp.png";
 import { useEffect } from "react";
 
 function Footer() {
@@ -17,47 +17,23 @@ function Footer() {
   }, []);
 
   return (
-    <FooterContainer>
-      <FooterArtist>
-      <LogoBox/>
-        masta ariane
-      </FooterArtist>
-      <LinkContainer>
-        <FooterLink
-          to="/"
-          onClick={() => {
-            window.scrollTo({ top: 0, left: 0, behavior: 'smooth' });
-          }}
-        >
-          Home
-        </FooterLink>
-        <FooterLink
-          to="/portfolio"
-          onClick={() => {
-            window.scrollTo({ top: 0, left: 0, behavior: 'smooth' });
-          }}
-        >
-          Portfólio
-        </FooterLink>
-        <FooterLink
-          to="/sobre"
-          onClick={() => {
-            window.scrollTo({ top: 0, left: 0, behavior: 'smooth' });
-          }}
-        >
-          Sobre
-        </FooterLink>
-      </LinkContainer>
-      <LinkContainer>
-        <SocialsLink target="_blank" to="https://www.instagram.com/mastaariane/">
-          <img alt="Instagram Logo" src={Instagram} />
-        </SocialsLink>
-        <SocialsLink target="_blank" to="https://www.imdb.com/name/nm5756608/">
-          <img alt="Instagram Logo" src={Imdb} />
-        </SocialsLink>
-      </LinkContainer>
-      <Disclaimer>Todos os direitos reservados {new Date().getFullYear()}</Disclaimer>
-    </FooterContainer>
+    <>
+      <GridWrapper>
+        <GridLogoWrapper/>
+        <GridSocialsWrapper>
+          <SocialsLink target="_blank" to="https:www.imdb.com/name/nm5756608/">
+            <SocialsIcon alt="IMDB Logo" src={Imdb} />
+          </SocialsLink>
+          <SocialsLink target="_blank" to="https://www.instagram.com/mastaariane/">
+            <SocialsIcon alt="Instagram Logo" src={Instagram} />
+          </SocialsLink>
+          <SocialsLink target="_blank" to="https://wa.me/5521981017549">
+            <SocialsIcon alt="Whatsapp Logo" src={Whatsapp} />
+          </SocialsLink>
+        </GridSocialsWrapper>
+         <Disclaimer>Todos os direitos reservados©️ {new Date().getFullYear()}</Disclaimer>
+      </GridWrapper>
+    </>
   );
 }
 

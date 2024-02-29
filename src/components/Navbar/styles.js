@@ -1,58 +1,71 @@
 import styled from "styled-components";
 import { Link } from "react-router-dom";
 
-import Logo from '../../assets/misc/mandalaWhite.png';
+import LogoW from '../../assets/misc/mandalaWhite.png';
 
-export const NavbarContainer = styled.nav`
-  width: 100%;
-  height: ${(props) => (props.extendNavbar ? "100vh" : "80px")};
+export const NavbarContainer = styled.div`
+  width: auto;
+  height: 100px;
   display: flex;
-  flex-direction: column;
-  position: sticky;  
-`;
+  justify-content: space-around;
 
-export const LeftContainer = styled.div`
-  flex: 70%;
-  display: flex;
-  align-items: center;
-  padding-left: 5%;
-  background-image: linear-gradient(90deg, rgba(245,245,245,0.8), transparent);
+  position: sticky;
+  top: 0;
+  background-color: rgba(158, 121, 140, 0.8);
   
-  @media (max-width: 700px) {
-    flex: 30%
-  }
-`;
-
-export const RightContainer = styled.div`
-  flex: 20%;
-  display: flex;
-  justify-content: flex-end;
-  padding-right: 50px;
-  background-image: linear-gradient(270deg, rgba(245,245,245,0.8), transparent);
-
-  background-image: url(${Logo});
-  background-size: contain;
+  background-image: url(${LogoW});
+  background-size: 100px;  
   background-repeat: no-repeat;
-  background-position: left;
-  background-position-x: 40px;
+  background-position-x: 50.1%, center;
+  background-position-y: center;
 
-  @media (max-width: 700px) {
-    flex: 70%;
-    background-position: right;
-    background-position-x: none;
+  @media (max-width: 900px) {
+    
+  background-position-x: 50.2%, center;
+  background-size: 60px;  
+  height: 60px;  
   }
 `;
 
-export const NavbarInnerContainer = styled.div`
-  width: 100%;
-  height: 80px;
+export const NavbarLinkContainer = styled.div`
   display: flex;
+  flex-direction: row;
+  align-items: center;
 `;
 
-export const NavbarLinkContainer = styled.div``;
+export const Artist = styled(Link)`
+  color: #ffffff;
+  font-family: Inter, Arial, Helvetica, sans-serif;
+  font-weight: 200;
+  text-decoration: none;
+  font-size: 50px;
+  word-spacing: 70px;
+
+  &:hover{
+    color: #000000;
+    -moz-transition: all 0.2s ease-in;
+    -o-transition: all 0.2s ease-in;
+    -webkit-transition: all 0.2s ease-in;
+    transition: all 0.2s ease-in;
+  }
+
+  @media (max-width: 820px) {
+    font-size: 30px;
+    word-spacing: 40px;
+
+    &:hover{
+      color: #ffffff;
+      -moz-transition: none;
+      -o-transition: none;
+      -webkit-transition: none;
+      transition: none;
+  }
+  }
+`;
 
 export const NavbarLink = styled(Link)`
   color: #ffffff;
+
   font-size: 30px;
   font-family: Inter, Arial, Helvetica, sans-serif;
   font-weight: 200;
@@ -60,7 +73,7 @@ export const NavbarLink = styled(Link)`
   margin: 20px;
 
   &:hover{
-    text-shadow: 0px 0px 15px #f5f5f5;
+    color: #000000;
     -moz-transition: all 0.2s ease-in;
     -o-transition: all 0.2s ease-in;
     -webkit-transition: all 0.2s ease-in;
@@ -73,28 +86,20 @@ export const NavbarLink = styled(Link)`
 `;
 
 export const NavbarLinkExtended = styled(Link)`
-  color: #ffffff;
+  color: #000000;
   font-size: x-large;
   font-family: Inter, Arial, Helvetica, sans-serif;
-  font-weight: 200;
+  font-weight: 300;
   text-decoration: none;
-  text-align: center;
-  margin: 25px 25px 0px 25px;
-  background-image: linear-gradient(270deg, rgba(245,245,245,0.8), transparent);
-
-  @media (max-width: 700px) {
-    font-weight: 300;
-  }
+  padding: 10px;
 `;
 
 export const OpenLinksButton = styled.button`
   width: 50px;
-  height: 100px;
   background: none;
   border: none;
   color: #f5f5f5;
   font-size: 45px;
-  cursor: pointer;
   position: relative;
 
   @media (min-width: 700px) {
@@ -104,29 +109,11 @@ export const OpenLinksButton = styled.button`
 
 export const NavbarExtendedContainer = styled.div`
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   height: 25%;
+  justify-content: center;
 
   @media (min-width: 700px) {
     display: none;    
   }
-`;
-
-export const Artist = styled.h1`
-  color: #ffffff;
-  font-family: Inter, Arial, Helvetica, sans-serif;
-  font-weight: 300;
-  font-size: 60px;
-  margin: 1px 20px 0px 0px;
-  white-space: nowrap;
-
-  @media (max-width: 700px) {
-    font-size: 35px;
-    margin: 15px -30px 0px 0px;
-  }
-`;
-
-export const LogoImg = styled.div`
-  background-image: url(${Logo});
-  width: 10%;
 `;

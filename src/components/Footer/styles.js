@@ -1,74 +1,77 @@
 import styled from "styled-components";
 import { Link } from "react-router-dom";
 
-import Mandala from '../../assets/misc/mandalaWhite.png';
+import LogoB from '../../assets/misc/mandalaBlack.png';
 
-export const FooterContainer = styled.div`
-  background-color: #c9c9c9;
-  height: 100%;
-  padding: 1px;
+export const GridWrapper = styled.div`
+  display: grid;
+  grid-template-columns: repeat(1, 1fr 1fr 0.5fr 1fr 1fr);
+  grid-template-rows: repeat(1, 6vw);
+  grid-template-areas:
+    "a b c d e";
+  grid-auto-flow: row;
+  background-color: #c9c9c9;  
 
-  background-image: url(${Mandala});
-  background-repeat: no-repeat;
-  background-position: top;
-  background-size: 50%;
+  @media (max-width: 900px) {
+    grid-template-rows: repeat(1, 12vw);
+    grid-template-columns: repeat(1, 1.5fr 0.5fr 1fr 0.5fr 1.5fr);
+   }
 `;
 
-export const LinkContainer = styled.div`  
-  height: 100%; 
+export const GridLogoWrapper = styled.div`
+  grid-area: c; 
+  /* display: flex;
+  align-items: center;
+  justify-content: center; */
+
+  background-image: url(${LogoB});
+  background-size: contain;  
+  background-repeat: no-repeat;
+  background-position-x: center;
+  background-position-y: center;
+  
+`;
+
+export const GridSocialsWrapper = styled.div`
+  grid-area: e;
   display: flex;
   align-items: center;
-  justify-content: center;
-`;
-
-export const LogoBox = styled.div`
-  background-image: url(${Mandala});
-  height: 10%;
-`;
-
-export const FooterLink = styled(Link)`
-  color: black;
-  font-size: 30px;
-  font-family: Inter, Arial, Helvetica, sans-serif;
-  font-weight: 200;
-  text-decoration: none;
-  margin: 0px 10px;
-
-  @media (max-width: 700px) {
-    font-size: 20px;
-  }
+  justify-content: flex-end;  
 `;
 
 export const SocialsLink = styled(Link)`
-  display: flex;
-  margin: 5px 15px;
+
 `;
 
-export const FooterArtist = styled.h1`
-  color: black;
+export const SocialsIcon = styled.img`
+  width: 50px;
+  padding: 25px;
+
+  @media (max-width: 700px) {
+    width: 21px;
+    padding: 8px;
+  }
+
+  @media (min-width: 820px) {
+    width: 40px;
+    padding: 25px;
+  }
+`;
+
+export const Disclaimer = styled.div`  
+  grid-area: e;
   font-family: Inter, Arial, Helvetica, sans-serif;
   font-weight: 300;
-  font-size: 50px;
-  text-align: center;
-  margin-top: 15px;
-  margin-bottom: 20px;
-
-  @media (max-width: 700px) {
-    font-size: 40px;
-    margin-bottom: 10px;
-    margin-top: 10px;
-  }
-`;
-
-export const Disclaimer = styled.h3`  
-  font-family: Inter, Arial, Helvetica, sans-serif;
-  font-weight: 100;
-  text-align: center;
   color: black;
-  font-size: 20px;
-  margin-top: 10px;
-
-  @media (max-width: 700px) {
-    font-size: 12px;
+  font-size: 15px;
+  position: absolute;
+  
+  @media (max-width: 900px) {
+    font-size: 4px;
+  } 
+  
+  @media (min-width: 820px) {
+    font-size: 10px;
   }
 `;
+  

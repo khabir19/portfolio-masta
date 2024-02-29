@@ -9,6 +9,7 @@ export const PageBrake = styled.div`
   font-size: 2rem;
   justify-content: center;
   text-align: center;
+  height: 800px;
 `;
 
 export const Title = styled.h1`

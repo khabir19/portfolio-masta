@@ -1,25 +1,4 @@
 import styled from 'styled-components';
-import imgBgAbout from "../../assets/portfolio/assinaturas/fogareu/FG8.jpg";
-import clientPhoto from "../../assets/misc/masta.png";
-
-export const WrapperNavAbout = styled.div`
-  display: flex;  
-  background-image: url(${imgBgAbout});
-  height: 100vh;
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
-  
-  @media (max-width: 700px) {
-    /* background-position-x: -1070px; */
-  }
-  @media (min-width: 768px) {
-    /* background-position-x: -860px; */
-  }
-  @media (min-width: 1300px) {
-    background-position-x: -300px;
-  }
-`;
 
 export const AboutWrapper = styled.div`
   display: grid;
@@ -37,23 +16,74 @@ export const AboutImg = styled.img`
   object-fit: cover;
 `;
 
+export const AboutText = styled.h1`
+    color: black;
+    font-family: Inter, Arial, Helvetica, sans-serif;
+    font-weight: 300;
+    font-size: 30px;
+    text-align: justify;
+    margin: 20px;
+  
+    grid-column-start: 2;
+    grid-column-end: 4;
+    grid-row-start: 3;
+    grid-row-end: 5;
+
+    @media (max-width: 700px) {
+      font-size: 30px;
+      grid-column-start: 1;
+      grid-column-end: 5;
+      grid-row-start: 4;
+      grid-row-end: 6;
+    }
+`;
+
 export const AboutItem1 = styled.div`
+  grid-column-start: 2;
+  grid-column-end: 4;
+  grid-row-start: 1;
+  grid-row-end: 3;
+
+  @media (max-width: 700px) {
+    grid-column-start: 1;
+    grid-column-end: 5;
+    grid-row-start: 1;
+    grid-row-end: 4;
+  }
+`;
+
+export const AboutItem2 = styled.div`
   grid-column-start: 1;
   grid-column-end: 3;
-  grid-row-start: 2;
-  grid-row-end: 4;
+  grid-row-start: 1;
+  grid-row-end: 3;
 
   @media (max-width: 700px) {
     grid-column-start: 1;
     grid-column-end: 5;
     grid-row-start: 2;
-    grid-row-end: 6;
+    grid-row-end: 8;
   }
 `;
-export const AboutItem2 = styled.div`
-  grid-column-start: 3;
+
+export const AboutItem3 = styled.div`
+  grid-column-start: 4;
   grid-column-end: 5;
-  grid-row-start: 2;
+  grid-row-start: 1;
+  grid-row-end: 3;
+
+  @media (max-width: 700px) {
+    grid-column-start: 1;
+    grid-column-end: 5;
+    grid-row-start: 6;
+    grid-row-end: 8;
+  }
+`;
+
+export const AboutItem4 = styled.div`
+  grid-column-start: 3;
+  grid-column-end: 4;
+  grid-row-start: 1;
   grid-row-end: 4;
 
   @media (max-width: 700px) {
@@ -64,14 +94,44 @@ export const AboutItem2 = styled.div`
   }
 `;
 
-export const AboutText = styled.h1`
-  color: black;
-  font-family: Inter, Arial, Helvetica, sans-serif;
-  font-weight: 300;
-  font-size: 50px;
-  text-align: justify;
+export const AboutItem5 = styled.div`
+  grid-column-start: 4;
+  grid-column-end: 5;
+  grid-row-start: 3;
+  grid-row-end: 5;
 
   @media (max-width: 700px) {
-    font-size: 30px;
+    grid-column-start: 1;
+    grid-column-end: 5;
+    grid-row-start: 6;
+    grid-row-end: 8;
+  }
+`;
+
+export const AboutItem6 = styled.div`
+  grid-column-start: 1;
+  grid-column-end: 3;
+  grid-row-start: 3;
+  grid-row-end: 5;
+
+  @media (max-width: 700px) {
+    grid-column-start: 1;
+    grid-column-end: 5;
+    grid-row-start: 6;
+    grid-row-end: 8;
+  }
+`;
+
+export const AboutItem7 = styled.div`
+  grid-column-start: 3;
+  grid-column-end: 4;
+  grid-row-start: 4;
+  grid-row-end: 5;
+
+  @media (max-width: 700px) {
+    grid-column-start: 1;
+    grid-column-end: 5;
+    grid-row-start: 6;
+    grid-row-end: 8;
   }
 `;

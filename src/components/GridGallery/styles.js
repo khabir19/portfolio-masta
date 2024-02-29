@@ -1,11 +1,12 @@
 import styled from 'styled-components';
+import { Link } from "react-router-dom";
 
 export const GridWrapper = styled.div`
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   grid-template-rows: repeat(3, 16vw);
   grid-gap: 2px;
-  margin: 2px 2px 0px 0px;
+  margin: 2px 2px 2px 2px;
 `;
 
 export const GalleryImg = styled.img`
@@ -14,11 +15,19 @@ export const GalleryImg = styled.img`
   object-fit: cover;
 `;
 
-export const GalleryItem1 = styled.div`
+export const GalleryItem1 = styled(Link)`
   grid-column-start: 1;
   grid-column-end: 3;
   grid-row-start: 1;
   grid-row-end: 3;
+
+  &:hover,
+  &:focus {
+    color: palevioletred;
+  }
+  &:active {
+    color: red;
+  }
 `;
 export const GalleryItem2 = styled.div`
   grid-column-start: 1;

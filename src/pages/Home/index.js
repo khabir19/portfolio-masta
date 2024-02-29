@@ -1,4 +1,4 @@
-import { WrapperNavHome } from './styles';
+import {  } from './styles';
 
 import Navbar from '../../components/Navbar';
 import Footer from '../../components/Footer';
@@ -7,11 +7,9 @@ import GridGallery from '../../components/GridGallery';
 const Home = () => {
   return (
     <>
-        <WrapperNavHome>
-          <Navbar />
-        </WrapperNavHome>
-        <GridGallery />
-        <Footer />
+      <Navbar />
+      <GridGallery />
+      <Footer />
     </>
   );
 }
