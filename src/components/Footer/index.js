@@ -21,7 +21,7 @@ function Footer() {
       <GridWrapper>
         <GridLogoWrapper/>
         <GridSocialsWrapper>
-          <SocialsLink target="_blank" to="https:www.imdb.com/name/nm5756608/">
+          <SocialsLink target="_blank" to="https://www.imdb.com/name/nm5756608/">
             <SocialsIcon alt="IMDB Logo" src={Imdb} />
           </SocialsLink>
           <SocialsLink target="_blank" to="https://www.instagram.com/mastaariane/">

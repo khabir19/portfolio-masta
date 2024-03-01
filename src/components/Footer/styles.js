@@ -20,9 +20,6 @@ export const GridWrapper = styled.div`
 
 export const GridLogoWrapper = styled.div`
   grid-area: c; 
-  /* display: flex;
-  align-items: center;
-  justify-content: center; */
 
   background-image: url(${LogoB});
   background-size: contain;  
