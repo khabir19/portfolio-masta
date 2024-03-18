@@ -9,7 +9,7 @@ export const NavbarContainer = styled.div`
   display: flex;
   justify-content: space-around;
 
-  position: sticky;
+  position: sticky!;
   top: 0;
   background-color: rgba(158, 121, 140, 0.8);
   

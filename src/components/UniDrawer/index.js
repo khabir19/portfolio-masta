@@ -1,7 +1,7 @@
 import React from 'react'
 import {
   ContactBarContainer, ContactBarArrowContainer, ContactBarArrowIcon, IconsContainer,
-  MenuTitleContainer, IconContainer 
+  IconContainer
 } from './styles.js'
 
 const ContactBar = () => {
@@ -14,18 +14,18 @@ const ContactBar = () => {
   return (
     <>
       <ContactBarContainer>
+        <ContactBarArrowContainer onClick={toggle}>
+          <ContactBarArrowIcon isOpen={isDisplayed} />
+        </ContactBarArrowContainer>
         <IconsContainer isOpen={isDisplayed}>
-          <MenuTitleContainer>
-            MENU
-          </MenuTitleContainer>
-          <IconContainer to="/sobre" rel="noreferrer">            
+          <IconContainer to="/sobre" rel="noreferrer">
             BIO
           </IconContainer>
           <IconContainer>
             Filmes
           </IconContainer>
           <IconContainer>
-            Séries 
+            Séries
           </IconContainer>
           <IconContainer>
             Teatro
@@ -33,25 +33,7 @@ const ContactBar = () => {
           <IconContainer>
             Publicidade
           </IconContainer>
-          {/* <IconContainer>
-            <a href="https://github.com/sjgutta" target="_blank" rel="noreferrer">
-              <GitHubIcon size={"100%"} />
-            </a>
-          </IconContainer>
-          <IconContainer>
-            <a href="https://www.instagram.com/sjgutta/?hl=en" target="_blank" rel="noreferrer">
-              <InstagramIcon size={"100%"} />
-            </a>
-          </IconContainer>
-          <IconContainer>
-            <a href="https://gutta.medium.com" target="_blank" rel="noreferrer">
-              <MediumIcon size={"100%"} />
-            </a>
-          </IconContainer> */}
         </IconsContainer>
-        <ContactBarArrowContainer onClick={toggle}>
-          <ContactBarArrowIcon isOpen={isDisplayed} />
-        </ContactBarArrowContainer>
       </ContactBarContainer>
     </>
   )

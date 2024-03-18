@@ -2,6 +2,8 @@ import React from 'react';
 import {
   GridWrapper,
   GalleryImg,
+  Middle,
+  MiddleText,
   GalleryItem1,
   GalleryItem2,
   GalleryItem3,
@@ -45,6 +47,9 @@ function GridGallery() {
       <GridWrapper>
         <GalleryItem1>
           <GalleryImg src={Port1} />
+          <Middle>
+            <MiddleText>Olá</MiddleText>
+          </Middle>
         </GalleryItem1>
         <GalleryItem2>
           <GalleryImg src={Port2} />
@@ -52,19 +57,17 @@ function GridGallery() {
         <GalleryItem3>
           <GalleryImg src={Port3} />
         </GalleryItem3>
-      </GridWrapper>
-      <GridWrapper>
         <GalleryItem4>
           <GalleryImg src={Port4} />
         </GalleryItem4>
         <GalleryItem5>
-          <GalleryImg src={Port5} />
+          <GalleryImg src={Port7} />
         </GalleryItem5>
         <GalleryItem6>
           <GalleryImg src={Port6} />
         </GalleryItem6>
         <GalleryItem7>
-          <GalleryImg src={Port7} />
+          <GalleryImg src={Port5} />
         </GalleryItem7>
         <GalleryItem8>
           <GalleryImg src={Port8} />
@@ -72,8 +75,6 @@ function GridGallery() {
         <GalleryItem9>
           <GalleryImg src={Port9} />
         </GalleryItem9>
-      </GridWrapper>
-      <GridWrapper>
         <GalleryItem10>
           <GalleryImg src={Port10} />
         </GalleryItem10>
