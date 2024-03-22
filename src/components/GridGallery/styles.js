@@ -1,21 +1,34 @@
-import styled from 'styled-components';
+import { styled, keyframes } from 'styled-components';
 import { Link } from "react-router-dom";
+
+const fadeIn = keyframes`
+0%
+{
+    opacity: 0.5;
+    transform: translateY(10px);
+}
+100%
+{
+    opacity: 1;
+    transform: translateY(0px);
+}
+`;
 
 export const GridWrapper = styled.div`
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   grid-template-rows: auto;
   grid-gap: 2px;
+  background-color: rgba(158, 121, 140, 0.8);
   /* margin: 2px 2px 2px 2px;   */
 `;
 
 export const GalleryImg = styled.img`
-  opacity: 1;
-  display: block;
+  /* display: block!; */
   width: 100%;
   height: 100%;
   transition: .5s ease;
-  backface-visibility: hidden;
+  /* backface-visibility: hidden; */
   object-fit: cover;
 
   &:hover{
@@ -24,22 +37,29 @@ export const GalleryImg = styled.img`
 `;
 
 export const Middle = styled.div`
+  display: flex;
+  align-items: flex-end;
+  justify-content: flex-end;
   transition: .5s ease;
-  opacity: 0;
-  position: absolute;
-  transform: translate(-50%, -50%);
-  -ms-transform: translate(-50%, -50%);
-  text-align: center;
   
-  &:hover{
-    opacity: 1;
-  }
-  `;
-
-export const MiddleText = styled.h3`
-  background-color: #04AA6D;
+  text-align: center;
   color: white;
   font-size: 16px;
+  
+  &:hover > p {
+    animation: ${fadeIn} 2s forwards;
+    }
+    overflow: hidden;
+    `;
+
+export const MiddleText = styled.p`
+  opacity: 0;
+  font-family: Inter, Arial, Helvetica, sans-serif;
+  position: absolute;
+  justify-content: center;
+  background-color: rgba(158, 121, 140, 0.8);
+  color: white;
+  font-size: 25px;
   padding: 16px 32px;
 `
 

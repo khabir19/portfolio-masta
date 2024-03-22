@@ -45,10 +45,12 @@ function GridGallery() {
   return (
     <>
       <GridWrapper>
-        <GalleryItem1>
-          <GalleryImg src={Port1} />
+        <GalleryItem1 to="/filmes" >
           <Middle>
-            <MiddleText>Olá</MiddleText>
+            <GalleryImg src={Port1} />
+            <MiddleText>         
+              Fogaréu (2022)
+            </MiddleText>
           </Middle>
         </GalleryItem1>
         <GalleryItem2>

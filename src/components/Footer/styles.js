@@ -12,7 +12,7 @@ export const GridWrapper = styled.div`
   grid-template-areas:
     "a b c d e";
   grid-auto-flow: row;
-  background-color: rgba(158, 121, 140, 0.8);  
+  background-color: rgba(158, 121, 140, 0.8);
 
   @media (max-width: 900px) {
     grid-template-rows: repeat(1, 1fr);
