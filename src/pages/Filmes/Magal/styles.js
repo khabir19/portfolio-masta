@@ -66,12 +66,7 @@ export const AboutItem1 = styled.div`
   grid-row-start: 1;
   grid-row-end: 4;
 
-  @media (max-width: 700px) {
-    grid-column-start: 1;
-    grid-column-end: 5;
-    grid-row-start: 1;
-    grid-row-end: 4;
-  }
+
 `;
 
 export const AboutItem2 = styled.div`
@@ -80,12 +75,7 @@ export const AboutItem2 = styled.div`
   grid-row-start: 1;
   grid-row-end: 3;
 
-  @media (max-width: 700px) {
-    grid-column-start: 1;
-    grid-column-end: 5;
-    grid-row-start: 2;
-    grid-row-end: 8;
-  }
+
 `;
 
 export const AboutItem3 = styled.div`
@@ -94,12 +84,7 @@ export const AboutItem3 = styled.div`
   grid-row-start: 1;
   grid-row-end: 3;
 
-  @media (max-width: 700px) {
-    grid-column-start: 1;
-    grid-column-end: 5;
-    grid-row-start: 6;
-    grid-row-end: 8;
-  }
+
 `;
 
 export const AboutItem4 = styled.div`
@@ -108,12 +93,7 @@ export const AboutItem4 = styled.div`
   grid-row-start: 1;
   grid-row-end: 4;
 
-  @media (max-width: 700px) {
-    grid-column-start: 1;
-    grid-column-end: 5;
-    grid-row-start: 6;
-    grid-row-end: 8;
-  }
+
 `;
 
 export const AboutItem5 = styled.div`
@@ -122,12 +102,7 @@ export const AboutItem5 = styled.div`
   grid-row-start: 3;
   grid-row-end: 4;
 
-  @media (max-width: 700px) {
-    grid-column-start: 1;
-    grid-column-end: 5;
-    grid-row-start: 6;
-    grid-row-end: 8;
-  }
+
 `;
 
 export const AboutItem6 = styled.div`
@@ -136,12 +111,7 @@ export const AboutItem6 = styled.div`
   grid-row-start: 3;
   grid-row-end: 5;
 
-  @media (max-width: 700px) {
-    grid-column-start: 1;
-    grid-column-end: 5;
-    grid-row-start: 6;
-    grid-row-end: 8;
-  }
+  
 `;
 
 export const AboutItem7 = styled.div`
@@ -150,10 +120,5 @@ export const AboutItem7 = styled.div`
   grid-row-start: 4;
   grid-row-end: 5;
 
-  @media (max-width: 700px) {
-    grid-column-start: 1;
-    grid-column-end: 5;
-    grid-row-start: 6;
-    grid-row-end: 8;
-  }
+
 `;
