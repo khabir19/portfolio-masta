@@ -19,19 +19,16 @@ const ContactBar = () => {
         </ContactBarArrowContainer>
         <IconsContainer isOpen={isDisplayed}>
           <IconContainer to="/sobre" rel="noreferrer">
-            BIO
+            SOBRE
           </IconContainer>
           <IconContainer to="/filmes" rel="noreferrer">
-            Filmes
-          </IconContainer>
-          <IconContainer to="/series" rel="noreferrer">
-            Séries
+            FILMES E SÉRIES
           </IconContainer>
           <IconContainer to="/teatro" rel="noreferrer">
-            Teatro
+            TEATRO
           </IconContainer>
           <IconContainer to="/publicidade" rel="noreferrer">
-            Publicidade
+            PUBLICIDADE
           </IconContainer>
         </IconsContainer>
       </ContactBarContainer>

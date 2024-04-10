@@ -13,6 +13,10 @@ export const GridWrapper = styled.div`
     "a b c d e";
   grid-auto-flow: row;
   background-color: rgba(158, 121, 140, 0.8);
+  /* margin-top: auto;
+  min-width: 100vw;
+  min-height: 100vw;
+  position: absolute; */
 
   @media (max-width: 900px) {
     grid-template-rows: repeat(1, 1fr);
@@ -27,8 +31,7 @@ export const GridLogoWrapper = styled.div`
   background-size: contain;  
   background-repeat: no-repeat;
   background-position-x: center;
-  background-position-y: center;
-  
+  background-position-y: center;  
 `
 
 export const GridSocialsWrapper = styled.div`

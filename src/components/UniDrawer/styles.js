@@ -9,7 +9,7 @@ export const ContactBarContainer = styled.div`
     position: fixed;
     top: 0;
     left: 0;
-    z-index: 1;
+    z-index: 10;
     overflow-y: scroll;
     max-height: calc(110vh);
     
@@ -28,7 +28,6 @@ export const IconsContainer = styled.div`
     overflow-y: scroll;
     max-height: calc(110vh);
     margin: 25px 0px 0px 25px;
-    
     &::-webkit-scrollbar {
       display: none;
     }
@@ -47,7 +46,6 @@ export const IconContainer = styled(Link)`
     color: rgba(250, 250, 250, 1);
     text-decoration: none;
     display: flex;
-    flex-direction: column;
     padding: 1.5vh;
     transition: all 0.2s ease-in;
 

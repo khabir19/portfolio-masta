@@ -4,17 +4,17 @@ import {
   GalleryImg,
   Middle,
   MiddleText,
-  GalleryItem1,
-  GalleryItem2,
-  GalleryItem3,
-  GalleryItem4,
-  GalleryItem5,
-  GalleryItem6,
-  GalleryItem7,
-  GalleryItem8,
-  GalleryItem9,
-  GalleryItem10,
-  GalleryItem11,
+  GalleryMagal,
+  GalleryFogareu,
+  GalleryRioDesejo,
+  GalleryTungstenio,
+  GallerySemSeuSangue,
+  GalleryDoresAmores,
+  GalleryAliceSo,
+  GallerySambandoBrasas,
+  GallerySanto,
+  GalleryPerdido,
+  GalleryMusicopolis,
   GalleryItem12,
   GalleryItem13,
   GalleryItem14,
@@ -22,82 +22,119 @@ import {
   GalleryItem16
 } from './styles';
 
-import Port1 from "../../assets/portfolio/assinaturas/fogareu/FG1.jpg";
-import Port2 from "../../assets/portfolio/assinaturas/perdido/PD5.jpg";
-import Port3 from "../../assets/portfolio/assinaturas/rioDesejo/RD4.jpg";
+import Magal from "../../assets/portfolio/assinaturas/meuSangueFerve/MF1.jpg";
+import Fogareu from "../../assets/portfolio/assinaturas/fogareu/FG3.jpg";
+import RioDesejo from "../../assets/portfolio/assinaturas/rioDesejo/RD4.jpg";
+import Tungstenio from "../../assets/portfolio/assinaturas/tungstenio/TG1.png";
+import SemSeuSangue from "../../assets/portfolio/assinaturas/semSeuSangue/SS9.jpg";
+import DoresAmores from "../../assets/portfolio/assinaturas/doresAmores/DA6.jpg";
+import AliceSo from "../../assets/portfolio/assinaturas/aliceSo/AS6.png";
+import SambandoBrasas from "../../assets/portfolio/assinaturas/sambandoBrasas/SB3.jpg";
+import Santo from "../../assets/portfolio/assinaturas/santo/ST5.jpg";
+import Perdido from "../../assets/portfolio/assinaturas/perdido/PD5.jpg";
+import Musicopolis from "../../assets/portfolio/assinaturas/musicopolis/MS2.jpg";
 
-import Port4 from "../../assets/portfolio/assinaturas/tungstenio/TG1.png";
-import Port5 from "../../assets/portfolio/assinaturas/rioDesejo/RD3.jpg";
-import Port6 from "../../assets/portfolio/assinaturas/doresAmores/DA6.jpg";
-import Port7 from "../../assets/portfolio/assinaturas/semSeuSangue/SS9.jpg";
-import Port8 from "../../assets/portfolio/assinaturas/perdido/PD6.jpg";
-import Port9 from "../../assets/portfolio/assinaturas/fogareu/FG4.jpg";
 
-import Port10 from "../../assets/portfolio/assinaturas/rioDesejo/RD13.webp";
-import Port11 from "../../assets/portfolio/assinaturas/aliceSo/AS6.png";
-import Port12 from "../../assets/portfolio/assinaturas/rioDesejo/RD12.jpg";
-import Port13 from "../../assets/portfolio/assinaturas/fogareu/FG6.jpg";
-import Port14 from "../../assets/portfolio/assinaturas/meuSangueFerve/MF4.jpg";
-import Port15 from "../../assets/portfolio/assinaturas/fogareu/FG9.jpg";
-import Port16 from "../../assets/portfolio/assinaturas/sambandoBrasas/SB3.jpg";
+// import Port9 from "../../assets/portfolio/assinaturas/fogareu/FG4.jpg";
+
+// import Port10 from "../../assets/portfolio/assinaturas/rioDesejo/RD13.webp";
+// import Port12 from "../../assets/portfolio/assinaturas/rioDesejo/RD12.jpg";
+// import Port13 from "../../assets/portfolio/assinaturas/fogareu/FG6.jpg";
+// import Port14 from "../../assets/portfolio/assinaturas/meuSangueFerve/MF4.jpg";
+// import Port15 from "../../assets/portfolio/assinaturas/fogareu/FG9.jpg";
 
 function GridGallery() {
   return (
     <>
       <GridWrapper>
-        <GalleryItem1 to="/filmes" >
+        <GalleryMagal to="/filmeseseries/meu-sangue-ferve-por-voce" >
           <Middle>
-            <GalleryImg src={Port1} />
-            <MiddleText>         
+            <GalleryImg src={Magal} />
+            <MiddleText>
+              Meu Sangue Ferve Por Você (2024)
+            </MiddleText>
+          </Middle>
+        </GalleryMagal>
+        <GalleryRioDesejo>
+          <Middle>
+            <GalleryImg src={RioDesejo} />
+            <MiddleText>
+              Rio do Desejo (2022)
+            </MiddleText>
+          </Middle>
+        </GalleryRioDesejo>
+        <GalleryFogareu>
+          <Middle>
+            <GalleryImg src={Fogareu} />
+            <MiddleText>
               Fogaréu (2022)
             </MiddleText>
           </Middle>
-        </GalleryItem1>
-        <GalleryItem2>
-          <GalleryImg src={Port2} />
-        </GalleryItem2>
-        <GalleryItem3>
-          <GalleryImg src={Port3} />
-        </GalleryItem3>
-        <GalleryItem4>
-          <GalleryImg src={Port4} />
-        </GalleryItem4>
-        <GalleryItem5>
-          <GalleryImg src={Port7} />
-        </GalleryItem5>
-        <GalleryItem6>
-          <GalleryImg src={Port6} />
-        </GalleryItem6>
-        <GalleryItem7>
-          <GalleryImg src={Port5} />
-        </GalleryItem7>
-        <GalleryItem8>
-          <GalleryImg src={Port8} />
-        </GalleryItem8>
-        <GalleryItem9>
-          <GalleryImg src={Port9} />
-        </GalleryItem9>
-        <GalleryItem10>
-          <GalleryImg src={Port10} />
-        </GalleryItem10>
-        <GalleryItem11>
-          <GalleryImg src={Port11} />
-        </GalleryItem11>
-        <GalleryItem12>
-          <GalleryImg src={Port12} />
-        </GalleryItem12>
-        <GalleryItem13>
-          <GalleryImg src={Port13} />
-        </GalleryItem13>
-        <GalleryItem14>
-          <GalleryImg src={Port14} />
-        </GalleryItem14>
-        <GalleryItem15>
-          <GalleryImg src={Port15} />
-        </GalleryItem15>
-        <GalleryItem16>
-          <GalleryImg src={Port16} />
-        </GalleryItem16>
+        </GalleryFogareu>
+        <GalleryTungstenio>
+          <Middle>
+            <GalleryImg src={Tungstenio} />
+            <MiddleText>
+              Tungstênio (2018)
+            </MiddleText>
+          </Middle>
+        </GalleryTungstenio>
+        <GallerySemSeuSangue>
+          <Middle>
+            <GalleryImg src={SemSeuSangue} />
+            <MiddleText>
+              Sem Seu Sangue (2019)
+            </MiddleText>
+          </Middle>
+        </GallerySemSeuSangue>
+        <GalleryDoresAmores>
+          <Middle>
+            <GalleryImg src={DoresAmores} />
+            <MiddleText>
+              Dores de Amores (2013)
+            </MiddleText>
+          </Middle>
+        </GalleryDoresAmores>
+        <GalleryAliceSo>
+          <Middle>
+            <GalleryImg src={AliceSo} />
+            <MiddleText>
+              Alice e Só (2020)
+            </MiddleText>
+          </Middle>
+        </GalleryAliceSo>
+        <GallerySambandoBrasas>
+          <Middle>
+            <GalleryImg src={SambandoBrasas} />
+            <MiddleText>
+              Sambando nas Brasas, Morô? (2007)
+            </MiddleText>
+          </Middle>
+        </GallerySambandoBrasas>
+        <GallerySanto>
+          <Middle>
+            <GalleryImg src={Santo} />
+            <MiddleText>
+              Santo (2022)
+            </MiddleText>
+          </Middle>
+        </GallerySanto>
+        <GalleryPerdido>
+          <Middle>
+            <GalleryImg src={Perdido} />
+            <MiddleText>
+              Perdido (2022)
+            </MiddleText>
+          </Middle>
+        </GalleryPerdido>
+        <GalleryMusicopolis>
+        <Middle>
+            <GalleryImg src={Musicopolis} />
+            <MiddleText>
+              Musicópolis (2022)
+            </MiddleText>
+          </Middle>
+        </GalleryMusicopolis>
       </GridWrapper>
     </>
   );

@@ -17,9 +17,11 @@ function CarouselAssinaturas() {
         breakpoints={{
           640: {
             slidesPerView: 1,
+            spaceBetween: 0,
           },
           1024: {
             slidesPerView: 2,
+            // spaceBetween: 50,
           },
           1366: {
             slidesPerView: 3,
@@ -29,7 +31,7 @@ function CarouselAssinaturas() {
           }
 
         }}
-        spaceBetween={50}
+        spaceBetween={200}
         loop={true}
         navigation={true}
         modules={[Navigation]}
