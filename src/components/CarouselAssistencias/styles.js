@@ -12,16 +12,15 @@ export const Title = styled.h1`
   justify-content: center;
 
   @media(max-width: 700px) {
-    /* margin-top: -40px; */
     font-size: 30px;
   }
 `;
 
 export const Container = styled.div`
-  padding: 100px 10px 100px 10px;  
+ padding: 100px 10px 100px 10px;  
   height: 60vh;
   width: 100vw;
-  
+  background-color: whitesmoke;
   @media screen and (max-width: 1015px) {
     height: auto;
     width: 100vw;

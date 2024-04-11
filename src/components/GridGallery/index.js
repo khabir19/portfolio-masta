@@ -33,7 +33,7 @@ function GridGallery() {
   return (
     <>
       <GridWrapper>
-        <GalleryMagal to="/filmeseseries/meu-sangue-ferve-por-voce" >
+        <GalleryMagal to="/assinaturas/meu-sangue-ferve-por-voce" >
           <Middle>
             <GalleryImg src={Magal} />
             <MiddleText>
@@ -41,7 +41,7 @@ function GridGallery() {
             </MiddleText>
           </Middle>
         </GalleryMagal>
-        <GalleryRioDesejo to="/filmeseseries/rio-do-desejo">
+        <GalleryRioDesejo to="/assinaturas/rio-do-desejo">
           <Middle>
             <GalleryImg src={RioDesejo} />
             <MiddleText>
@@ -49,7 +49,7 @@ function GridGallery() {
             </MiddleText>
           </Middle>
         </GalleryRioDesejo>
-        <GalleryFogareu to="/filmeseseries/fogareu">
+        <GalleryFogareu to="/assinaturas/fogareu">
           <Middle>
             <GalleryImg src={Fogareu} />
             <MiddleText>
@@ -57,7 +57,7 @@ function GridGallery() {
             </MiddleText>
           </Middle>
         </GalleryFogareu>
-        <GalleryTungstenio to="/filmeseseries/tungstenio">
+        <GalleryTungstenio to="/assinaturas/tungstenio">
           <Middle>
             <GalleryImg src={Tungstenio} />
             <MiddleText>
@@ -65,7 +65,7 @@ function GridGallery() {
             </MiddleText>
           </Middle>
         </GalleryTungstenio>
-        <GallerySemSeuSangue to="/filmeseseries/sem-seu-sangue">
+        <GallerySemSeuSangue to="/assinaturas/sem-seu-sangue">
           <Middle>
             <GalleryImg src={SemSeuSangue} />
             <MiddleText>
@@ -73,7 +73,7 @@ function GridGallery() {
             </MiddleText>
           </Middle>
         </GallerySemSeuSangue>
-        <GalleryDoresAmores to="/filmeseseries/dores-de-amores">
+        <GalleryDoresAmores to="/assinaturas/dores-de-amores">
           <Middle>
             <GalleryImg src={DoresAmores} />
             <MiddleText>
@@ -81,7 +81,7 @@ function GridGallery() {
             </MiddleText>
           </Middle>
         </GalleryDoresAmores>
-        <GalleryAliceSo to="/filmeseseries/alice-e-so">
+        <GalleryAliceSo to="/assinaturas/alice-e-so">
           <Middle>
             <GalleryImg src={AliceSo} />
             <MiddleText>
@@ -89,7 +89,7 @@ function GridGallery() {
             </MiddleText>
           </Middle>
         </GalleryAliceSo>
-        <GallerySambandoBrasas to="/filmeseseries">
+        <GallerySambandoBrasas to="/assinaturas">
           <Middle>
             <GalleryImg src={SambandoBrasas} />
             <MiddleText>
@@ -97,7 +97,7 @@ function GridGallery() {
             </MiddleText>
           </Middle>
         </GallerySambandoBrasas>
-        <GallerySanto to="/filmeseseries/santo">
+        <GallerySanto to="/assinaturas/santo">
           <Middle>
             <GalleryImg src={Santo} />
             <MiddleText>
@@ -105,7 +105,7 @@ function GridGallery() {
             </MiddleText>
           </Middle>
         </GallerySanto>
-        <GalleryPerdido to="/filmeseseries/perdido">
+        <GalleryPerdido to="/assinaturas/perdido">
           <Middle>
             <GalleryImg src={Perdido} />
             <MiddleText>
@@ -113,7 +113,7 @@ function GridGallery() {
             </MiddleText>
           </Middle>
         </GalleryPerdido>
-        <GalleryMusicopolis to="/filmeseseries/musicopolis">
+        <GalleryMusicopolis to="/assinaturas/musicopolis">
           <Middle>
             <GalleryImg src={Musicopolis} />
             <MiddleText>

@@ -1,6 +1,9 @@
 import React from 'react'
 import {
-  ContactBarContainer, ContactBarArrowContainer, ContactBarArrowIcon, IconsContainer,
+  ContactBarContainer, 
+  ContactBarArrowContainer, 
+  ContactBarArrowIcon, 
+  IconsContainer,
   IconContainer
 } from './styles.js'
 
@@ -21,15 +24,18 @@ const ContactBar = () => {
           <IconContainer to="/sobre" rel="noreferrer">
             SOBRE
           </IconContainer>
-          <IconContainer to="/filmeseseries" rel="noreferrer">
-            FILMES E SÉRIES
+          <IconContainer to="/assinaturas" rel="noreferrer">
+            ASSINATURAS
           </IconContainer>
-          <IconContainer to="/teatro" rel="noreferrer">
+          <IconContainer to="/assistencias" rel="noreferrer">
+            ASSISTÊNCIAS
+          </IconContainer>
+          {/* <IconContainer to="/teatro" rel="noreferrer">
             TEATRO
           </IconContainer>
           <IconContainer to="/publicidade" rel="noreferrer">
             PUBLICIDADE
-          </IconContainer>
+          </IconContainer> */}
         </IconsContainer>
       </ContactBarContainer>
     </>

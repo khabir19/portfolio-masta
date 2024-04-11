@@ -13,16 +13,12 @@ export const GridWrapper = styled.div`
     "a b c d e";
   grid-auto-flow: row;
   background-color: rgba(158, 121, 140, 0.8);
-  /* margin-top: auto;
-  min-width: 100vw;
-  min-height: 100vw;
-  position: absolute; */
 
   @media (max-width: 900px) {
     grid-template-rows: repeat(1, 1fr);
     grid-template-columns: repeat(1, 1.5fr 0.5fr 1fr 0.5fr 1.5fr);
    }
-`
+`;
 
 export const GridLogoWrapper = styled.div`
   grid-area: c; 
@@ -32,18 +28,17 @@ export const GridLogoWrapper = styled.div`
   background-repeat: no-repeat;
   background-position-x: center;
   background-position-y: center;  
-`
+`;
 
 export const GridSocialsWrapper = styled.div`
   grid-area: e;
+
   display: flex;
   align-items: center;
   justify-content: flex-end;  
-`
+`;
 
-export const SocialsLink = styled(Link)`
-
-`
+export const SocialsLink = styled(Link)``;
 
 export const ImdbIcon = styled(FaImdb)`
   width: 100px;
@@ -73,7 +68,7 @@ export const ImdbIcon = styled(FaImdb)`
     width: 40px;
     padding: 25px;
   }
-`
+`;
 
 export const InstagramIcon = styled(FaInstagram)`
   width: 100px;
@@ -103,7 +98,7 @@ export const InstagramIcon = styled(FaInstagram)`
     width: 40px;
     padding: 25px;    
   }  
-`
+`;
 
 export const WhatsappIcon = styled(FaWhatsapp)`
   width: 100px;
@@ -126,14 +121,14 @@ export const WhatsappIcon = styled(FaWhatsapp)`
     
     &:hover {
     color: black;
-  }
+    }
   }
 
   @media (min-width: 820px) {
     width: 40px;
     padding: 25px;
   }
-`
+`;
 
 export const Disclaimer = styled.div`  
   grid-area: e;
@@ -150,5 +145,5 @@ export const Disclaimer = styled.div`
   @media (min-width: 820px) {
     font-size: 10px;
   }
-`
+`;
   

@@ -19,11 +19,10 @@ export const NavbarContainer = styled.div`
   background-position-x: 50.1%, center;
   background-position-y: center;
 
-  @media (max-width: 900px) {
-    
-  background-position-x: 50.2%, center;
-  background-size: 60px;  
-  height: 60px;  
+  @media (max-width: 900px) {    
+    background-position-x: 50.2%, center;
+    background-size: 60px;  
+    height: 60px;  
   }
 `;
 
@@ -59,13 +58,12 @@ export const Artist = styled(Link)`
       -o-transition: none;
       -webkit-transition: none;
       transition: none;
-  }
+    }
   }
 `;
 
 export const NavbarLink = styled(Link)`
   color: #ffffff;
-
   font-size: 30px;
   font-family: Inter, Arial, Helvetica, sans-serif;
   font-weight: 200;
