@@ -15,13 +15,13 @@ import {
   Synopsis
 } from './styles';
 
-import Pic1 from '../../../assets/portfolio/assinaturas/meuSangueFerve/MF8.jpg';
-import Pic3 from '../../../assets/portfolio/assinaturas/meuSangueFerve/MF2.jpg';
-import Pic5 from '../../../assets/portfolio/assinaturas/meuSangueFerve/MF3.jpg';
-import Pic4 from '../../../assets/portfolio/assinaturas/meuSangueFerve/MF4.jpg';
-import Pic2 from '../../../assets/portfolio/assinaturas/meuSangueFerve/MF5.jpg';
-import Pic6 from '../../../assets/portfolio/assinaturas/meuSangueFerve/MF6.jpg';
-import Pic7 from '../../../assets/portfolio/assinaturas/meuSangueFerve/MF7.jpg';
+import Pic1 from '../../../assets/portfolio/assinaturas/aliceSo/AS1.jpg';
+import Pic3 from '../../../assets/portfolio/assinaturas/aliceSo/AS2.jpg';
+import Pic4 from '../../../assets/portfolio/assinaturas/aliceSo/AS3.jpg';
+import Pic5 from '../../../assets/portfolio/assinaturas/aliceSo/AS4.jpg';
+import Pic2 from '../../../assets/portfolio/assinaturas/aliceSo/AS5.jpg';
+import Pic6 from '../../../assets/portfolio/assinaturas/aliceSo/AS8.jpg';
+import Pic7 from '../../../assets/portfolio/assinaturas/aliceSo/AS7.jpg';
 
 const About = () => {
   return (
@@ -32,22 +32,21 @@ const About = () => {
           <AboutImg src={Pic1} />
         </AboutItem1>
         <Title>
-          Meu Sangue Ferve Por Você
+          Alice e Só
           <br />
           <Synopsis>
-            Ano: 2024
+            Ano: 2020
             <br />
-            Direção: Paulo Machline
+            Direção: Daniel Lieff
             <br />
             <br />
-            Em 1979, Magal, um dos artistas mais populares e celebrados do país, segue a rotina de ensaios e compromissos em Salvador.
-            Durante um programa de TV, conhece a deslumbrante Magali e é acometido por uma paixão inédita e avassaladora.
+            Alice, uma jovem amante da música, e seu melhor amigo Sócrates fazem uma viagem, acompanhados por Tinho, um ex-roqueiro, para tocar no maior festival de bandas cover do mundo.
           </Synopsis>
         </Title>
       </AboutWrapper>
       <AboutWrapper>
         <AboutItem2>
-          <AboutImg src={Pic2} />
+          <AboutImg src={Pic3} />
         </AboutItem2>
         <AboutItem3>
           <AboutImg src={Pic6} />
@@ -56,7 +55,7 @@ const About = () => {
           <AboutImg src={Pic7} />
         </AboutItem4>
         <AboutItem5>
-          <AboutImg src={Pic3} />
+          <AboutImg src={Pic2} />
         </AboutItem5>
         <AboutItem6>
           <AboutImg src={Pic5} />

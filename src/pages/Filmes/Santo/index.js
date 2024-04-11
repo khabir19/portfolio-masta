@@ -17,8 +17,8 @@ import {
 
 import Pic1 from '../../../assets/portfolio/assinaturas/meuSangueFerve/MF8.jpg';
 import Pic3 from '../../../assets/portfolio/assinaturas/meuSangueFerve/MF2.jpg';
-import Pic5 from '../../../assets/portfolio/assinaturas/meuSangueFerve/MF3.jpg';
-import Pic4 from '../../../assets/portfolio/assinaturas/meuSangueFerve/MF4.jpg';
+import Pic4 from '../../../assets/portfolio/assinaturas/meuSangueFerve/MF3.jpg';
+import Pic5 from '../../../assets/portfolio/assinaturas/meuSangueFerve/MF4.jpg';
 import Pic2 from '../../../assets/portfolio/assinaturas/meuSangueFerve/MF5.jpg';
 import Pic6 from '../../../assets/portfolio/assinaturas/meuSangueFerve/MF6.jpg';
 import Pic7 from '../../../assets/portfolio/assinaturas/meuSangueFerve/MF7.jpg';

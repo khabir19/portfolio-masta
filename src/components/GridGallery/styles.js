@@ -23,7 +23,7 @@ export const GridWrapper = styled.div`
 
 export const GalleryImg = styled.img`
   width: 100%;
-  height: 60vh;
+  height: 80vh;
   transition: .5s ease;
   object-fit: cover;
 

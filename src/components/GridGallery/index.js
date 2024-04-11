@@ -15,11 +15,6 @@ import {
   GallerySanto,
   GalleryPerdido,
   GalleryMusicopolis,
-  GalleryItem12,
-  GalleryItem13,
-  GalleryItem14,
-  GalleryItem15,
-  GalleryItem16
 } from './styles';
 
 import Magal from "../../assets/portfolio/assinaturas/meuSangueFerve/MF1.jpg";
@@ -34,15 +29,6 @@ import Santo from "../../assets/portfolio/assinaturas/santo/ST5.jpg";
 import Perdido from "../../assets/portfolio/assinaturas/perdido/PD5.jpg";
 import Musicopolis from "../../assets/portfolio/assinaturas/musicopolis/MS2.jpg";
 
-
-// import Port9 from "../../assets/portfolio/assinaturas/fogareu/FG4.jpg";
-
-// import Port10 from "../../assets/portfolio/assinaturas/rioDesejo/RD13.webp";
-// import Port12 from "../../assets/portfolio/assinaturas/rioDesejo/RD12.jpg";
-// import Port13 from "../../assets/portfolio/assinaturas/fogareu/FG6.jpg";
-// import Port14 from "../../assets/portfolio/assinaturas/meuSangueFerve/MF4.jpg";
-// import Port15 from "../../assets/portfolio/assinaturas/fogareu/FG9.jpg";
-
 function GridGallery() {
   return (
     <>
@@ -55,7 +41,7 @@ function GridGallery() {
             </MiddleText>
           </Middle>
         </GalleryMagal>
-        <GalleryRioDesejo>
+        <GalleryRioDesejo to="/filmeseseries/rio-do-desejo">
           <Middle>
             <GalleryImg src={RioDesejo} />
             <MiddleText>
@@ -63,7 +49,7 @@ function GridGallery() {
             </MiddleText>
           </Middle>
         </GalleryRioDesejo>
-        <GalleryFogareu>
+        <GalleryFogareu to="/filmeseseries/fogareu">
           <Middle>
             <GalleryImg src={Fogareu} />
             <MiddleText>
@@ -71,7 +57,7 @@ function GridGallery() {
             </MiddleText>
           </Middle>
         </GalleryFogareu>
-        <GalleryTungstenio>
+        <GalleryTungstenio to="/filmeseseries/tungstenio">
           <Middle>
             <GalleryImg src={Tungstenio} />
             <MiddleText>
@@ -79,7 +65,7 @@ function GridGallery() {
             </MiddleText>
           </Middle>
         </GalleryTungstenio>
-        <GallerySemSeuSangue>
+        <GallerySemSeuSangue to="/filmeseseries/sem-seu-sangue">
           <Middle>
             <GalleryImg src={SemSeuSangue} />
             <MiddleText>
@@ -87,7 +73,7 @@ function GridGallery() {
             </MiddleText>
           </Middle>
         </GallerySemSeuSangue>
-        <GalleryDoresAmores>
+        <GalleryDoresAmores to="/filmeseseries/dores-de-amores">
           <Middle>
             <GalleryImg src={DoresAmores} />
             <MiddleText>
@@ -95,7 +81,7 @@ function GridGallery() {
             </MiddleText>
           </Middle>
         </GalleryDoresAmores>
-        <GalleryAliceSo>
+        <GalleryAliceSo to="/filmeseseries/alice-e-so">
           <Middle>
             <GalleryImg src={AliceSo} />
             <MiddleText>
@@ -103,7 +89,7 @@ function GridGallery() {
             </MiddleText>
           </Middle>
         </GalleryAliceSo>
-        <GallerySambandoBrasas>
+        <GallerySambandoBrasas to="/filmeseseries">
           <Middle>
             <GalleryImg src={SambandoBrasas} />
             <MiddleText>
@@ -111,7 +97,7 @@ function GridGallery() {
             </MiddleText>
           </Middle>
         </GallerySambandoBrasas>
-        <GallerySanto>
+        <GallerySanto to="/filmeseseries/santo">
           <Middle>
             <GalleryImg src={Santo} />
             <MiddleText>
@@ -119,7 +105,7 @@ function GridGallery() {
             </MiddleText>
           </Middle>
         </GallerySanto>
-        <GalleryPerdido>
+        <GalleryPerdido to="/filmeseseries/perdido">
           <Middle>
             <GalleryImg src={Perdido} />
             <MiddleText>
@@ -127,8 +113,8 @@ function GridGallery() {
             </MiddleText>
           </Middle>
         </GalleryPerdido>
-        <GalleryMusicopolis>
-        <Middle>
+        <GalleryMusicopolis to="/filmeseseries/musicopolis">
+          <Middle>
             <GalleryImg src={Musicopolis} />
             <MiddleText>
               Musicópolis (2022)

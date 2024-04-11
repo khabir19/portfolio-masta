@@ -21,7 +21,7 @@ const ContactBar = () => {
           <IconContainer to="/sobre" rel="noreferrer">
             SOBRE
           </IconContainer>
-          <IconContainer to="/filmes" rel="noreferrer">
+          <IconContainer to="/filmeseseries" rel="noreferrer">
             FILMES E SÉRIES
           </IconContainer>
           <IconContainer to="/teatro" rel="noreferrer">

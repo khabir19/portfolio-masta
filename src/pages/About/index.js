@@ -7,11 +7,10 @@ import { AboutWrapper, AboutImg, AboutItem1, AboutItem2, AboutItem3, AboutItem4,
 
 import Pic1 from '../../assets/portfolio/about/artist1.JPG';
 import Pic2 from '../../assets/portfolio/about/mastaBT.JPG';
-import Pic3 from '../../assets/portfolio/about/mastaBT6.JPG';
-import Pic4 from '../../assets/portfolio/about/mastaBT5.jpg';
-import Pic5 from '../../assets/portfolio/about/mastaBT9.jpeg';
-import Pic6 from '../../assets/portfolio/about/mastaBT2.JPG';
-import Pic7 from '../../assets/portfolio/about/mastaBT4.JPG';
+import Pic3 from '../../assets/portfolio/about/mastaBT2.JPG';
+import Pic4 from '../../assets/portfolio/about/mastaBT3.png';
+import Pic5 from '../../assets/portfolio/about/mastaBT4.png';
+import Pic6 from '../../assets/portfolio/about/mastaBT5.JPG';
 
 const About = () => {
   return (
@@ -53,9 +52,6 @@ const About = () => {
         <AboutItem6>
           <AboutImg src={Pic6} />
         </AboutItem6>
-        <AboutItem7>
-          <AboutImg src={Pic7} />
-        </AboutItem7>
       </AboutWrapper>
       <Footer />
     </>
