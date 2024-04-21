@@ -19,14 +19,14 @@ import {
 
 import Magal from "../../assets/portfolio/assinaturas/meuSangueFerve/MF1.jpg";
 import Fogareu from "../../assets/portfolio/assinaturas/fogareu/FG3.jpg";
-import RioDesejo from "../../assets/portfolio/assinaturas/rioDesejo/RD4.jpg";
+import RioDesejo from "../../assets/portfolio/assinaturas/rioDesejo/RDGrid.jpg";
 import Tungstenio from "../../assets/portfolio/assinaturas/tungstenio/TG1.png";
 import SemSeuSangue from "../../assets/portfolio/assinaturas/semSeuSangue/SS9.jpg";
 import DoresAmores from "../../assets/portfolio/assinaturas/doresAmores/DA6.jpg";
 import AliceSo from "../../assets/portfolio/assinaturas/aliceSo/AS6.png";
 import SambandoBrasas from "../../assets/portfolio/assinaturas/sambandoBrasas/SB3.jpg";
 import Santo from "../../assets/portfolio/assinaturas/santo/ST5.jpg";
-import Perdido from "../../assets/portfolio/assinaturas/perdido/PD5.jpg";
+import Perdido from "../../assets/portfolio/assinaturas/perdido/PDGrid.jpg";
 import Musicopolis from "../../assets/portfolio/assinaturas/musicopolis/MS2.jpg";
 
 function GridGallery() {
@@ -45,7 +45,7 @@ function GridGallery() {
           <Middle>
             <GalleryImg src={RioDesejo} />
             <MiddleText>
-              Rio do Desejo (2022)
+              O Rio do Desejo (2022)
             </MiddleText>
           </Middle>
         </GalleryRioDesejo>

@@ -4,6 +4,8 @@ export const AboutWrapper = styled.div`
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   grid-template-rows: auto;
+  grid-gap: 10px;
+  margin: 10px;
   background-color: whitesmoke;
 `;
 
@@ -68,17 +70,17 @@ export const AboutItem2 = styled.div`
 `;
 
 export const AboutItem3 = styled.div`
-  grid-column-start: 4;
-  grid-column-end: 5;
-  grid-row-start: 1;
-  grid-row-end: 3;
-`;
-
-export const AboutItem4 = styled.div`
   grid-column-start: 3;
   grid-column-end: 4;
   grid-row-start: 1;
   grid-row-end: 4;
+`;
+
+export const AboutItem4 = styled.div`
+  grid-column-start: 4;
+  grid-column-end: 5;
+  grid-row-start: 1;
+  grid-row-end: 3;
 `;
 
 export const AboutItem5 = styled.div`

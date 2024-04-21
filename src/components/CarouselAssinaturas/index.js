@@ -14,12 +14,11 @@ function CarouselAssinaturas() {
       <Swiper
         breakpoints={{
           640: {
-            slidesPerView: 1,
+            slidesPerView: 2,
             spaceBetween: 0,
-          },
+          },          
           1024: {
             slidesPerView: 2,
-            // spaceBetween: 50,
           },
           1366: {
             slidesPerView: 3,
@@ -119,7 +118,7 @@ function CarouselAssinaturas() {
         <SwiperSlide>
           <LinkWrapper to="/assinaturas/rio-da-duvida">
             <PosterSlide
-              image={"https://br.web.img3.acsta.net/pictures/18/12/11/23/34/2379375.jpg"}
+              image={"https://rondonriodaduvida.com/wp-content/uploads/2023/10/banner-28-09-23-web-2-725x1024.jpg"}
             >
             </PosterSlide>
           </LinkWrapper>

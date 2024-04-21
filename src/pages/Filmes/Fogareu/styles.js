@@ -4,6 +4,8 @@ export const AboutWrapper = styled.div`
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   grid-template-rows: auto;
+  grid-gap: 10px;
+  margin: 10px;
   background-color: whitesmoke;
 `;
 
@@ -14,26 +16,26 @@ export const AboutImg = styled.img`
 `;
 
 export const Title = styled.h1`
-    color: black;
-    font-family: Inter, Arial, Helvetica, sans-serif;
-    font-weight: 600;
-    font-size: 30px;
-    text-align: justify;
-    margin: 35px;
-  
-    grid-column-start: 3;
-    grid-column-end: 5;
-    grid-row-start: 1;
-    grid-row-end: 3;
+  color: black;
+  font-family: Inter, Arial, Helvetica, sans-serif;
+  font-weight: 600;
+  font-size: 30px;
+  text-align: justify;
+  margin: 35px;
 
-    @media (max-width: 700px) {
-      font-size: 25px;
-      text-align: center;
-      grid-column-start: 1;
-      grid-column-end: 5;
-      grid-row-start: 4;
-      grid-row-end: 6;
-    }
+  grid-column-start: 3;
+  grid-column-end: 5;
+  grid-row-start: 1;
+  grid-row-end: 3;
+
+  @media (max-width: 700px) {
+    font-size: 25px;
+    text-align: center;
+    grid-column-start: 1;
+    grid-column-end: 5;
+    grid-row-start: 4;
+    grid-row-end: 6;
+  }
 `;
 
 export const Synopsis = styled.h2`
@@ -68,10 +70,10 @@ export const AboutItem2 = styled.div`
 `;
 
 export const AboutItem3 = styled.div`
-  grid-column-start: 4;
-  grid-column-end: 5;
-  grid-row-start: 1;
-  grid-row-end: 3;
+  grid-column-start: 1;
+  grid-column-end: 3;
+  grid-row-start: 3;
+  grid-row-end: 4;
 `;
 
 export const AboutItem4 = styled.div`
@@ -89,14 +91,14 @@ export const AboutItem5 = styled.div`
 `;
 
 export const AboutItem6 = styled.div`
-  grid-column-start: 1;
-  grid-column-end: 3;
-  grid-row-start: 3;
-  grid-row-end: 5;  
+  grid-column-start: 4;
+  grid-column-end: 5;
+  grid-row-start: 1;
+  grid-row-end: 3;  
 `;
 
 export const AboutItem7 = styled.div`
-  grid-column-start: 3;
+  grid-column-start: 1;
   grid-column-end: 6;
   grid-row-start: 4;
   grid-row-end: 5;

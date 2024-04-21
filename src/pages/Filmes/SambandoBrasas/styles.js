@@ -4,6 +4,8 @@ export const AboutWrapper = styled.div`
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   grid-template-rows: auto;
+  grid-gap: 10px;
+  margin: 10px;
   background-color: whitesmoke;
 `;
 

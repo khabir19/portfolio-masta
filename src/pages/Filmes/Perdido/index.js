@@ -15,13 +15,13 @@ import {
   Synopsis
 } from './styles';
 
-import Pic1 from '../../../assets/portfolio/assinaturas/meuSangueFerve/MF8.jpg';
-import Pic3 from '../../../assets/portfolio/assinaturas/meuSangueFerve/MF2.jpg';
-import Pic4 from '../../../assets/portfolio/assinaturas/meuSangueFerve/MF3.jpg';
-import Pic5 from '../../../assets/portfolio/assinaturas/meuSangueFerve/MF4.jpg';
-import Pic2 from '../../../assets/portfolio/assinaturas/meuSangueFerve/MF5.jpg';
-import Pic6 from '../../../assets/portfolio/assinaturas/meuSangueFerve/MF6.jpg';
-import Pic7 from '../../../assets/portfolio/assinaturas/meuSangueFerve/MF7.jpg';
+import Pic1 from '../../../assets/portfolio/assinaturas/perdido/PD1.jpg';
+import Pic2 from '../../../assets/portfolio/assinaturas/perdido/PD2.png';
+import Pic3 from '../../../assets/portfolio/assinaturas/perdido/PD3.png';
+import Pic4 from '../../../assets/portfolio/assinaturas/perdido/PD4.png';
+import Pic5 from '../../../assets/portfolio/assinaturas/perdido/PD5.jpg';
+import Pic6 from '../../../assets/portfolio/assinaturas/perdido/PD6.png';
+import Pic7 from '../../../assets/portfolio/assinaturas/perdido/PD7.jpg';
 
 const About = () => {
   return (
@@ -32,34 +32,34 @@ const About = () => {
           <AboutImg src={Pic1} />
         </AboutItem1>
         <Title>
-          Meu Sangue Ferve Por Você
+          Perdido
           <br />
           <Synopsis>
-            Ano: 2024
+            Ano: 2020
             <br />
-            Direção: Paulo Machline
+            Direção: Paulo Tiefenthaler
             <br />
             <br />
-            Em 1979, Magal, um dos artistas mais populares e celebrados do país, segue a rotina de ensaios e compromissos em Salvador.
-            Durante um programa de TV, conhece a deslumbrante Magali e é acometido por uma paixão inédita e avassaladora.
+            Com a morte da tia, Derek herda uma antiga loja de lingeries em Copacabana. 
+            Pelo testamento ele é obrigado a manter na loja o funcionário fiel da tia, Roberto, uma jovem gay e trans que vai mudar sua vida.
           </Synopsis>
         </Title>
       </AboutWrapper>
       <AboutWrapper>
         <AboutItem2>
-          <AboutImg src={Pic2} />
+          <AboutImg src={Pic3} />
         </AboutItem2>
         <AboutItem3>
-          <AboutImg src={Pic6} />
+          <AboutImg src={Pic5} />
         </AboutItem3>
         <AboutItem4>
           <AboutImg src={Pic7} />
         </AboutItem4>
         <AboutItem5>
-          <AboutImg src={Pic3} />
+          <AboutImg src={Pic2} />
         </AboutItem5>
         <AboutItem6>
-          <AboutImg src={Pic5} />
+          <AboutImg src={Pic6} />
         </AboutItem6>
         <AboutItem7>
           <AboutImg src={Pic4} />

@@ -4,6 +4,8 @@ export const AboutWrapper = styled.div`
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   grid-template-rows: auto;
+  grid-gap: 10px;
+  margin: 10px;
   background-color: whitesmoke;
 `;
 
@@ -62,42 +64,49 @@ export const AboutItem1 = styled.div`
 
 export const AboutItem2 = styled.div`
   grid-column-start: 1;
-  grid-column-end: 3;
-  grid-row-start: 1;
-  grid-row-end: 3;
+  grid-column-end: 2;
+  grid-row-start: 4;
+  grid-row-end: 6;
 `;
 
 export const AboutItem3 = styled.div`
-  grid-column-start: 4;
-  grid-column-end: 5;
-  grid-row-start: 1;
-  grid-row-end: 3;
+  grid-column-start: 2;
+  grid-column-end: 6;
+  grid-row-start: 4;
+  grid-row-end: 6;
 `;
 
 export const AboutItem4 = styled.div`
-  grid-column-start: 3;
-  grid-column-end: 4;
-  grid-row-start: 1;
+  grid-column-start: 1;
+  grid-column-end: 2;
+  grid-row-start: 3;
   grid-row-end: 4;
 `;
 
 export const AboutItem5 = styled.div`
-  grid-column-start: 4;
-  grid-column-end: 5;
+  grid-column-start: 2;
+  grid-column-end: 3;
   grid-row-start: 3;
   grid-row-end: 4;
 `;
 
 export const AboutItem6 = styled.div`
-  grid-column-start: 1;
-  grid-column-end: 3;
-  grid-row-start: 3;
-  grid-row-end: 5;  
+  grid-column-start: 4;
+  grid-column-end: 6;
+  grid-row-start: 1;
+  grid-row-end: 3;  
 `;
 
 export const AboutItem7 = styled.div`
   grid-column-start: 3;
   grid-column-end: 6;
-  grid-row-start: 4;
-  grid-row-end: 5;
+  grid-row-start: 3;
+  grid-row-end: 4;
+`;
+
+export const AboutItem8 = styled.div`
+  grid-column-start: 1;
+  grid-column-end: 4;
+  grid-row-start: 1;
+  grid-row-end: 3;
 `;
