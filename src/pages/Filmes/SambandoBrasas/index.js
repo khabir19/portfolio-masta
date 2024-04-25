@@ -15,13 +15,10 @@ import {
   Synopsis
 } from './styles';
 
-import Pic1 from '../../../assets/portfolio/assinaturas/meuSangueFerve/MF8.jpg';
-import Pic3 from '../../../assets/portfolio/assinaturas/meuSangueFerve/MF2.jpg';
-import Pic4 from '../../../assets/portfolio/assinaturas/meuSangueFerve/MF3.jpg';
-import Pic5 from '../../../assets/portfolio/assinaturas/meuSangueFerve/MF4.jpg';
-import Pic2 from '../../../assets/portfolio/assinaturas/meuSangueFerve/MF5.jpg';
-import Pic6 from '../../../assets/portfolio/assinaturas/meuSangueFerve/MF6.jpg';
-import Pic7 from '../../../assets/portfolio/assinaturas/meuSangueFerve/MF7.jpg';
+import Pic1 from '../../../assets/portfolio/assinaturas/sambandoBrasas/SB1.jpg';
+import Pic2 from '../../../assets/portfolio/assinaturas/sambandoBrasas/SB2.jpg';
+import Pic3 from '../../../assets/portfolio/assinaturas/sambandoBrasas/SB3.jpg';
+import Pic4 from '../../../assets/portfolio/assinaturas/sambandoBrasas/SB4.jpg';
 
 const About = () => {
   return (
@@ -32,17 +29,18 @@ const About = () => {
           <AboutImg src={Pic1} />
         </AboutItem1>
         <Title>
-          Meu Sangue Ferve Por Você
+          Sambando nas Brasas, Morô?
           <br />
           <Synopsis>
             Ano: 2024
             <br />
-            Direção: Paulo Machline
+            Direção: Elizeu Ewald
             <br />
             <br />
-            Em 1979, Magal, um dos artistas mais populares e celebrados do país, segue a rotina de ensaios e compromissos em Salvador.
-            Durante um programa de TV, conhece a deslumbrante Magali e é acometido por uma paixão inédita e avassaladora.
-          </Synopsis>
+            Pedro é um músico que sonha entrar no mercado do Rio de Janeiro, em plenos anos 50. Com a ajuda de seu irmão Carlos, Pedro deixa Belo Horizonte para com ele dividir o mesmo teto em um distante subúrbio do na época Distrito Federal. 
+            Já no Rio, numa de suas apresentações, Pedro conhece Arlete, que integra um conjunto vocal. 
+            Logo eles se apaixonam. Neste mesma época o atentado a Carlos Lacerda tumultua o ambiente político do país, fazendo com que as Forças Armadas queiram a renúncia do presidente Getúlio Vargas.
+            </Synopsis>
         </Title>
       </AboutWrapper>
       <AboutWrapper>
@@ -50,20 +48,11 @@ const About = () => {
           <AboutImg src={Pic2} />
         </AboutItem2>
         <AboutItem3>
-          <AboutImg src={Pic6} />
+          <AboutImg src={Pic3} />
         </AboutItem3>
         <AboutItem4>
-          <AboutImg src={Pic7} />
-        </AboutItem4>
-        <AboutItem5>
-          <AboutImg src={Pic3} />
-        </AboutItem5>
-        <AboutItem6>
-          <AboutImg src={Pic5} />
-        </AboutItem6>
-        <AboutItem7>
           <AboutImg src={Pic4} />
-        </AboutItem7>
+        </AboutItem4>
       </AboutWrapper>
       <Footer />
     </>

@@ -70,31 +70,31 @@ export const AboutItem2 = styled.div`
 `;
 
 export const AboutItem3 = styled.div`
-  grid-column-start: 4;
-  grid-column-end: 5;
-  grid-row-start: 1;
-  grid-row-end: 3;
+  grid-column-start: 1;
+  grid-column-end: 3;
+  grid-row-start: 3;
+  grid-row-end: 5;
 `;
 
 export const AboutItem4 = styled.div`
   grid-column-start: 3;
-  grid-column-end: 4;
-  grid-row-start: 1;
-  grid-row-end: 4;
+  grid-column-end: 5;
+  grid-row-start: 3;
+  grid-row-end: 5;
 `;
 
 export const AboutItem5 = styled.div`
-  grid-column-start: 4;
-  grid-column-end: 5;
-  grid-row-start: 3;
-  grid-row-end: 4;
+  grid-column-start: 1;
+  grid-column-end: 3;
+  grid-row-start: 1;
+  grid-row-end: 3;
 `;
 
 export const AboutItem6 = styled.div`
-  grid-column-start: 1;
-  grid-column-end: 3;
-  grid-row-start: 3;
-  grid-row-end: 5;  
+  grid-column-start: 3;
+  grid-column-end: 5;
+  grid-row-start: 1;
+  grid-row-end: 3;  
 `;
 
 export const AboutItem7 = styled.div`

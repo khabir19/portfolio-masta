@@ -6,14 +6,16 @@ import Filmes from "../pages/Filmes";
   import DoresAmores from "../pages/Filmes/DoresAmores"
   import Fogareu from "../pages/Filmes/Fogareu"
   import Magal from "../pages/Filmes/Magal"
-  import MemoriaEstudantil from "../pages/Filmes/MemoriaEstudantil"
-  import OswaldoCruz from "../pages/Filmes/OswaldoCruz"
+  import Musicopolis from "../pages/Filmes/Musicopolis"
+  // import MemoriaEstudantil from "../pages/Filmes/MemoriaEstudantil"
+  // import OswaldoCruz from "../pages/Filmes/OswaldoCruz"
   import Perdido from "../pages/Filmes/Perdido"
   import RioDesejo from "../pages/Filmes/RioDesejo"
   import RioDuvida from "../pages/Filmes/RioDuvida"
   import SambandoBrasas from "../pages/Filmes/SambandoBrasas"
   import Santo from "../pages/Filmes/Santo"
   import SemSeuSangue from "../pages/Filmes/SemSeuSangue"
+  import Tungstenio from "../pages/Filmes/Tungstenio"
 import Assistencias from "../pages/Assistencias";
 // import Teatro from "../pages/Teatro";
 // import Publicidade from "../pages/Publicidade";
@@ -28,14 +30,16 @@ const RouteBuild = () => (
       <Route path='dores-de-amores' element={<DoresAmores />} />
       <Route path='fogareu' element={<Fogareu />} />
       <Route path='meu-sangue-ferve-por-voce' element={<Magal />} />
-      <Route path='memoria-do-movimento-estudantil' element={<MemoriaEstudantil />} />
-      <Route path='oswaldo-cruz' element={<OswaldoCruz />} />
+      {/* <Route path='memoria-do-movimento-estudantil' element={<MemoriaEstudantil />} /> */}
+      {/* <Route path='oswaldo-cruz' element={<OswaldoCruz />} /> */}
       <Route path='perdido' element={<Perdido />} />
       <Route path='rio-do-desejo' element={<RioDesejo />} />
       <Route path='rio-da-duvida' element={<RioDuvida />} />
       <Route path='sambando-nas-brasas-moro' element={<SambandoBrasas />} />
       <Route path='santo' element={<Santo />} />
       <Route path='sem-seu-sangue' element={<SemSeuSangue />} />
+      <Route path='tungstenio' element={<Tungstenio />} />
+      <Route path='musicopolis' element={<Musicopolis />} />
     </Route>
     <Route path="/assistencias" element={<Assistencias />}/>
     {/* <Route path="/teatro" element={<Teatro />} />

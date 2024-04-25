@@ -33,9 +33,6 @@ function CarouselAssinaturas() {
         navigation={true}
         modules={[Navigation]}
         >
-        <Title>
-          Assistências de Figurino
-        </Title>
         <SwiperSlide>
           {/* O Palhaço */}
           <LinkWrapper>

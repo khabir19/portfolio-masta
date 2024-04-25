@@ -41,7 +41,7 @@ const About = () => {
             Direção: Raphael Vieira
             <br />
             <br />
-            Um casal (Milhem Cortaz e Fabíula Nascimento) enfrenta problemas por ele não conseguir mais ter relações sexuais com ela. Sempre cobrado devido à ausência de tesão, ele sente-se cada vez mais diminuído na relação.
+            Um casal enfrenta problemas por ele não conseguir mais ter relações sexuais com ela. Sempre cobrado devido à ausência de tesão, ele sente-se cada vez mais diminuído na relação.
             É quando ela apresenta uma proposta ousada: que eles troquem de função no sexo, como forma de provar o comprometimento de ambos no relacionamento.
           </Synopsis>
         </Title>

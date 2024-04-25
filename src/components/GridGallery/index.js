@@ -20,12 +20,12 @@ import {
 import Magal from "../../assets/portfolio/assinaturas/meuSangueFerve/MF1.jpg";
 import Fogareu from "../../assets/portfolio/assinaturas/fogareu/FG3.jpg";
 import RioDesejo from "../../assets/portfolio/assinaturas/rioDesejo/RDGrid.jpg";
-import Tungstenio from "../../assets/portfolio/assinaturas/tungstenio/TG1.png";
-import SemSeuSangue from "../../assets/portfolio/assinaturas/semSeuSangue/SS9.jpg";
+import Tungstenio from "../../assets/portfolio/assinaturas/tungstenio/TGGrid.png";
+import SemSeuSangue from "../../assets/portfolio/assinaturas/semSeuSangue/SSGrid.jpg";
 import DoresAmores from "../../assets/portfolio/assinaturas/doresAmores/DA6.jpg";
 import AliceSo from "../../assets/portfolio/assinaturas/aliceSo/AS6.png";
-import SambandoBrasas from "../../assets/portfolio/assinaturas/sambandoBrasas/SB3.jpg";
-import Santo from "../../assets/portfolio/assinaturas/santo/ST5.jpg";
+import SambandoBrasas from "../../assets/portfolio/assinaturas/rioDuvida/RD1.jpg";
+import Santo from "../../assets/portfolio/assinaturas/santo/STGrid.jpg";
 import Perdido from "../../assets/portfolio/assinaturas/perdido/PDGrid.jpg";
 import Musicopolis from "../../assets/portfolio/assinaturas/musicopolis/MS2.jpg";
 
@@ -89,11 +89,11 @@ function GridGallery() {
             </MiddleText>
           </Middle>
         </GalleryAliceSo>
-        <GallerySambandoBrasas to="/assinaturas">
+        <GallerySambandoBrasas to="/assinaturas/rio-da-duvida">
           <Middle>
             <GalleryImg src={SambandoBrasas} />
             <MiddleText>
-              Sambando nas Brasas, Morô? (2007)
+              Rio da Dúvida (2018)
             </MiddleText>
           </Middle>
         </GallerySambandoBrasas>

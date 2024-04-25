@@ -32,9 +32,9 @@ function CarouselAssinaturas() {
         navigation={true}
         modules={[Navigation]}
       >
-        <Title>
+        {/* <Title>
           Assinaturas
-        </Title>
+        </Title> */}
         <SwiperSlide>
           <LinkWrapper to="/assinaturas/meu-sangue-ferve-por-voce">
             <PosterSlide
@@ -100,6 +100,14 @@ function CarouselAssinaturas() {
           </LinkWrapper>
         </SwiperSlide>
         <SwiperSlide>
+          <LinkWrapper to="/assinaturas/musicopolis">
+            <PosterSlide
+              image={"https://s2-globo-play.glbimg.com/ujZErJd5YbViNU-YB3AzUYPLRLo=/362x536/https://s2-globo-play.glbimg.com/uIEO2bNP_1zDOtH-k-zNfZBfBTI=/https://s2.glbimg.com/FMsbenFy5ULCJxBCYMh-iNfYnLc=/i.s3.glbimg.com/v1/AUTH_c3c606ff68e7478091d1ca496f9c5625/internal_photos/bs/2022/3/I/kukhcSRfyAS7GOn7KYow/2022-65-musicopolis-poster-1-.jpg"}
+            >
+            </PosterSlide>
+          </LinkWrapper>
+        </SwiperSlide>
+        <SwiperSlide>
           <LinkWrapper to="/assinaturas/sambando-nas-brasas-moro">
             <PosterSlide
               image={"https://m.media-amazon.com/images/M/MV5BNmM1ZGUzMGYtNTA5NS00NGFmLTk0MDgtMmY0MzA5OWMzNDZiXkEyXkFqcGdeQXVyOTU3ODk4MQ@@._V1_FMjpg_UX1000_.jpg"}
@@ -108,7 +116,7 @@ function CarouselAssinaturas() {
           </LinkWrapper>
         </SwiperSlide>
         <SwiperSlide>
-          <LinkWrapper to="/assinaturas/memoria-do-movimento-estudantil">
+          <LinkWrapper to="/assinaturas/">
             <PosterSlide
               image={"https://caliban.com.br/wp-content/uploads/2016/02/MMEb.jpg"}
             >
@@ -124,7 +132,7 @@ function CarouselAssinaturas() {
           </LinkWrapper>
         </SwiperSlide>
         <SwiperSlide>
-          <LinkWrapper to="/assinaturas/oswaldo-cruz">
+          <LinkWrapper to="/assinaturas/">
             <PosterSlide
               image={"https://caliban.com.br/wp-content/uploads/2016/02/OSWALDO-CRUZb.jpg"}
             >

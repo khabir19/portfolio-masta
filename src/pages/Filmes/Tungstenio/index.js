@@ -15,11 +15,11 @@ import {
   Synopsis
 } from './styles';
 
-import Pic1 from '../../../assets/portfolio/assinaturas/semSeuSangue/SS1.jpg';
-import Pic2 from '../../../assets/portfolio/assinaturas/semSeuSangue/SS2.jpg';
-import Pic3 from '../../../assets/portfolio/assinaturas/semSeuSangue/SS3.jpg';
-import Pic4 from '../../../assets/portfolio/assinaturas/semSeuSangue/SS4.jpg';
-import Pic5 from '../../../assets/portfolio/assinaturas/semSeuSangue/SS5.png';
+import Pic1 from '../../../assets/portfolio/assinaturas/tungstenio/TG1.png';
+import Pic2 from '../../../assets/portfolio/assinaturas/tungstenio/TG2.jpg';
+import Pic3 from '../../../assets/portfolio/assinaturas/tungstenio/TG3.webp';
+import Pic4 from '../../../assets/portfolio/assinaturas/tungstenio/TG4.jpg';
+import Pic5 from '../../../assets/portfolio/assinaturas/tungstenio/TG5.jpg';
 
 const About = () => {
   return (
@@ -30,17 +30,15 @@ const About = () => {
           <AboutImg src={Pic1} />
         </AboutItem1>
         <Title>
-          Sem Seu Sangue
+          Tungstênio
           <br />
           <Synopsis>
-            Ano: 2019
+            Ano: 2018
             <br />
-            Direção: Alice Furtado
+            Direção: Heitor Dhalia
             <br />
             <br />
-            Silvia é uma jovem introvertida que possui completo desinteresse pela própria rotina.
-            Ela acredita ter encontrado em Artur um sentimento que a faz sentir-se mais viva e menos tímida. Apesar de ser hemofílico,
-            a sua força e vitalidade deixam Silvia completamente encantada, mas um grave acidente pode complicar ainda mais as coisas.
+            Um sargento do exército aposentado, um traficante, um policial e sua esposa se unem por um objetivo comum. Combater a pesca com explosivos na orla de Salvador, os quatro fazem de tudo para acabar com esse crime ambiental.
           </Synopsis>
         </Title>
       </AboutWrapper>

@@ -5,11 +5,12 @@ import { Link } from "react-router-dom";
 
 export const Container = styled.div`
   display: flex;
-  justify-content: center; 
   align-items: center; 
+  justify-content: center; 
   height: 100vh; 
   padding-left: 7px;
-  
+  margin: 100px 0px 0px 0px; 
+
   @media screen and (min-width: 360px) {
     margin: 0px 0px 0px 0px; 
     padding-left: 0px;
