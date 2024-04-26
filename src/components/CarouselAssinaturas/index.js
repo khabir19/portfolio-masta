@@ -15,8 +15,7 @@ function CarouselAssinaturas() {
         breakpoints={{
           640: {
             slidesPerView: 2,
-            spaceBetween: 0,
-          },          
+          },
           1024: {
             slidesPerView: 2,
           },
@@ -28,13 +27,11 @@ function CarouselAssinaturas() {
           }
         }}
         spaceBetween={200}
+        centeredSlides={true}
         loop={true}
         navigation={true}
         modules={[Navigation]}
       >
-        {/* <Title>
-          Assinaturas
-        </Title> */}
         <SwiperSlide>
           <LinkWrapper to="/assinaturas/meu-sangue-ferve-por-voce">
             <PosterSlide
@@ -86,7 +83,7 @@ function CarouselAssinaturas() {
         <SwiperSlide>
           <LinkWrapper to="/assinaturas/sem-seu-sangue">
             <PosterSlide
-              image={"https://br.web.img2.acsta.net/pictures/20/11/25/15/08/0885111.jpg"}
+              image={"https://www.itaucinemas.com.br/_img/_filmes/3948_capa.jpg?Sem-Seu-Sangue"}
             >
             </PosterSlide>
           </LinkWrapper>

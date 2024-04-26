@@ -2,8 +2,18 @@
 import Navbar from '../../components/Navbar';
 import Footer from '../../components/Footer';
 import {  } from "../../assets/styles/global";
-import { AboutWrapper, AboutImg, AboutItem1, AboutItem2, AboutItem3, AboutItem4, AboutItem5, AboutItem6, AboutItem7, AboutText } from './styles';
-
+import { 
+  AboutWrapper, 
+  AboutImg, 
+  AboutItem1, 
+  AboutItem2, 
+  AboutItem3, 
+  AboutItem4, 
+  AboutItem5, 
+  AboutItem6, 
+  AboutItem7, 
+  AboutText 
+} from './styles';
 
 import Pic1 from '../../assets/portfolio/about/artist1.JPG';
 import Pic2 from '../../assets/portfolio/about/mastaBT.JPG';
@@ -11,6 +21,7 @@ import Pic3 from '../../assets/portfolio/about/mastaBT2.JPG';
 import Pic4 from '../../assets/portfolio/about/mastaBT3.png';
 import Pic5 from '../../assets/portfolio/about/mastaBT4.png';
 import Pic6 from '../../assets/portfolio/about/mastaBT5.JPG';
+import Pic7 from '../../assets/portfolio/about/mastaBT6.jpeg';
 
 const About = () => {
   return (
@@ -35,6 +46,10 @@ const About = () => {
           O que mais me impressiona e encanta em criar figurinos é descobrir o que as personagens trazem com elas, é o contato com os atores e a troca entre esses mundos.
           Gosto quando acontece a mágica e os atores se sentem completamente à vontade para viverem outras vidas, dando formas e contornos que acrescentam em cada história que contamos.
         </AboutText>
+
+        <AboutItem7>
+          <AboutImg src={Pic7} />
+        </AboutItem7>
       </AboutWrapper>
       <AboutWrapper>
         <AboutItem2>

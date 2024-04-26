@@ -4,31 +4,25 @@ import '../../assets/styles/global.css';
 import { Link } from "react-router-dom";
 
 export const Container = styled.div`
-  display: flex;
-  justify-content: center; 
-  align-items: center; 
-  height: 100vh; 
-  padding-left: 7px;
-  
-  @media screen and (min-width: 360px) {
-    margin: 0px 0px 0px 0px; 
-    padding-left: 0px;
+  margin: 10vh 0px 10vh 0px;
+
+  @media(max-width: 1024px) {
+    margin: 23vh 0px 23vh 0px;
   }
-  @media screen and (min-width: 375px) {
-    margin: 10px 0px 0px 0px; 
-    padding-left: 0px;
+  @media(max-width: 900px) {
+    margin: 1vh 0px 1vh 0px;
   }
-  @media screen and (min-width: 390px) {
-    margin: 10px 0px -50px 0px; 
-    padding-left: 7px;
+  @media(max-width: 820px) {
+    margin: 21vh 0px 21vh 0px;
   }
-  @media screen and (min-width: 414px) {
-    margin: -80px 0px -50px 0px; 
-    padding-left: 7px;
+  @media(max-width: 768px) {
+    margin: 16vh 0px 16vh 0px;
   }
-  @media screen and (min-width: 430px) {
-    margin: -80px 0px -50px 0px; 
-    padding-left: 15px;
+  @media(max-width: 450px) {
+    margin: 11vh 0px 11vh 0px;
+  }
+  @media(max-width: 430px) {
+    margin: 13vh 0px 13vh 0px;
   }
 `;
 
@@ -52,14 +46,5 @@ export const PosterSlide = styled.div`
   width: 600px;
   background-image: url(${(props) => props.image});
   background-size: contain;
-  background-repeat: no-repeat;
- 
-  @media(max-width: 400px) {
-    height: 570px;
-    width: 450px;
-  }
-  @media(max-width: 360px) {
-    height: 550px;
-    width: 450px;
-  }
+  background-repeat: no-repeat; 
 `;

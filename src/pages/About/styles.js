@@ -23,8 +23,8 @@ export const AboutText = styled.h1`
   
     grid-column-start: 3;
     grid-column-end: 5;
-    grid-row-start: 2;
-    grid-row-end: 5;
+    grid-row-start: 1;
+    grid-row-end: 3;
 
     @media (max-width: 700px) {
       font-size: 30px;
@@ -74,6 +74,6 @@ export const AboutItem6 = styled.div`
 export const AboutItem7 = styled.div`
   grid-column-start: 3;
   grid-column-end: 4;
-  grid-row-start: 4;
-  grid-row-end: 5;
+  grid-row-start: 2;
+  grid-row-end: 3;
 `;

@@ -57,7 +57,7 @@ export const ImdbIcon = styled(FaImdb)`
 
   @media (max-width: 700px) {
     width: 21px;
-    padding: 8px;
+    padding: 0px 8px 0px 8px;
     
     &:hover {
     color: black;
@@ -66,7 +66,7 @@ export const ImdbIcon = styled(FaImdb)`
 
   @media (min-width: 820px) {
     width: 40px;
-    padding: 25px;
+    padding: 0px 25px 0px 25px;
   }
 `;
 
@@ -87,7 +87,7 @@ export const InstagramIcon = styled(FaInstagram)`
 
   @media (max-width: 700px) {
     width: 21px;
-    padding: 8px;
+    padding: 0px 8px 0px 8px;
     
     &:hover {
     color: black;
@@ -96,7 +96,7 @@ export const InstagramIcon = styled(FaInstagram)`
 
   @media (min-width: 820px) {
     width: 40px;
-    padding: 25px;    
+    padding: 0px 25px 0px 25px;    
   }  
 `;
 
@@ -117,7 +117,7 @@ export const WhatsappIcon = styled(FaWhatsapp)`
 
   @media (max-width: 700px) {
     width: 21px;
-    padding: 8px;
+    padding: 0px 8px 0px 8px;
     
     &:hover {
     color: black;
@@ -126,7 +126,7 @@ export const WhatsappIcon = styled(FaWhatsapp)`
 
   @media (min-width: 820px) {
     width: 40px;
-    padding: 25px;
+    padding: 0px 25px 0px 25px;
   }
 `;
 
