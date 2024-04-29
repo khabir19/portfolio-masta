@@ -96,10 +96,3 @@ export const AboutItem6 = styled.div`
   grid-row-start: 3;
   grid-row-end: 5;  
 `;
-
-export const AboutItem7 = styled.div`
-  grid-column-start: 3;
-  grid-column-end: 6;
-  grid-row-start: 4;
-  grid-row-end: 5;
-`;

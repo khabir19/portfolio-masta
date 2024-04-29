@@ -5,22 +5,19 @@ import {
   AboutWrapper,
   AboutImg,
   AboutItem1,
-  AboutItem2,
   AboutItem3,
   AboutItem4,
   AboutItem5,
   AboutItem6,
-  AboutItem7,
   Title,
   Synopsis
 } from './styles';
 
 import Pic1 from '../../../assets/portfolio/assinaturas/musicopolis/MS1.jpg';
-import Pic2 from '../../../assets/portfolio/assinaturas/musicopolis/MS2.jpg';
-import Pic3 from '../../../assets/portfolio/assinaturas/musicopolis/MS3.png';
+import Pic3 from '../../../assets/portfolio/assinaturas/musicopolis/MS3.jpg';
 import Pic4 from '../../../assets/portfolio/assinaturas/musicopolis/MS4.jpg';
 import Pic5 from '../../../assets/portfolio/assinaturas/musicopolis/MS5.jpg';
-import Pic6 from '../../../assets/portfolio/assinaturas/musicopolis/MS6.png';
+import Pic6 from '../../../assets/portfolio/assinaturas/musicopolis/MS6.jpg';
 
 const About = () => {
   return (
@@ -45,9 +42,6 @@ const About = () => {
         </Title>
       </AboutWrapper>
       <AboutWrapper>
-        {/* <AboutItem2>
-          <AboutImg src={Pic2} />
-        </AboutItem2> */}
         <AboutItem3>
           <AboutImg src={Pic3} />
         </AboutItem3>

@@ -15,13 +15,13 @@ import {
   AboutText 
 } from './styles';
 
-import Pic1 from '../../assets/portfolio/about/artist1.JPG';
-import Pic2 from '../../assets/portfolio/about/mastaBT.JPG';
+import Pic1 from '../../assets/portfolio/about/artist1.jpg';
+import Pic2 from '../../assets/portfolio/about/mastaBT.jpg';
 import Pic3 from '../../assets/portfolio/about/mastaBT2.JPG';
-import Pic4 from '../../assets/portfolio/about/mastaBT3.png';
-import Pic5 from '../../assets/portfolio/about/mastaBT4.png';
+import Pic4 from '../../assets/portfolio/about/mastaBT3.jpg';
+import Pic5 from '../../assets/portfolio/about/mastaBT4.jpg';
 import Pic6 from '../../assets/portfolio/about/mastaBT5.JPG';
-import Pic7 from '../../assets/portfolio/about/mastaBT6.jpeg';
+import Pic7 from '../../assets/portfolio/about/mastaBT6.jpg';
 
 const About = () => {
   return (

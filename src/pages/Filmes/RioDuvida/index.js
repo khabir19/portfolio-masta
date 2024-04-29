@@ -9,8 +9,6 @@ import {
   AboutItem3,
   AboutItem4,
   AboutItem5,
-  AboutItem6,
-  AboutItem7,
   Title,
   Synopsis
 } from './styles';

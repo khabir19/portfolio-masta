@@ -7,7 +7,6 @@ import {
   AboutItem1,
   AboutItem2,
   AboutItem3,
-  AboutItem4,
   AboutItem5,
   AboutItem6,
   AboutItem7,
@@ -21,8 +20,6 @@ import Pic4 from '../../../assets/portfolio/assinaturas/doresAmores/DA4.jpg';
 import Pic5 from '../../../assets/portfolio/assinaturas/doresAmores/DA7.jpg';
 import Pic2 from '../../../assets/portfolio/assinaturas/doresAmores/DA5.jpg';
 import Pic6 from '../../../assets/portfolio/assinaturas/doresAmores/DA8.jpg';
-import Pic7 from '../../../assets/portfolio/assinaturas/doresAmores/DA3.jpg';
-import Pic8 from '../../../assets/portfolio/assinaturas/doresAmores/DA8.jpg';
 
 const About = () => {
   return (

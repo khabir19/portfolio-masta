@@ -1,6 +1,6 @@
 import React from 'react';
 import { Swiper, SwiperSlide } from 'swiper/react';
-import { LinkWrapper, Container, PosterSlide, Title } from './styles';
+import { LinkWrapper, Container, PosterSlide } from './styles';
 
 import 'swiper/css';
 import 'swiper/css/pagination';

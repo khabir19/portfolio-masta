@@ -48,7 +48,7 @@ export const Middle = styled.div`
     }
     overflow: hidden;
 
-  @media (max-width: 900px) {
+  @media (max-width: 1200px) {
   display: flex;
   align-items: flex-end;
   justify-content: left;

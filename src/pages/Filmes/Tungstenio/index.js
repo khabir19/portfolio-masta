@@ -9,13 +9,11 @@ import {
   AboutItem3,
   AboutItem4,
   AboutItem5,
-  AboutItem6,
-  AboutItem7,
   Title,
   Synopsis
 } from './styles';
 
-import Pic1 from '../../../assets/portfolio/assinaturas/tungstenio/TG1.png';
+import Pic1 from '../../../assets/portfolio/assinaturas/tungstenio/TG1.jpg';
 import Pic2 from '../../../assets/portfolio/assinaturas/tungstenio/TG2.jpg';
 import Pic3 from '../../../assets/portfolio/assinaturas/tungstenio/TG3.webp';
 import Pic4 from '../../../assets/portfolio/assinaturas/tungstenio/TG4.jpg';

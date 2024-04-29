@@ -24,7 +24,6 @@ import Pic5 from '../../../assets/portfolio/assinaturas/rioDesejo/RD5.jpg';
 import Pic6 from '../../../assets/portfolio/assinaturas/rioDesejo/RD6.jpg';
 import Pic7 from '../../../assets/portfolio/assinaturas/rioDesejo/RD7.jpg';
 import Pic8 from '../../../assets/portfolio/assinaturas/rioDesejo/RD8.jpg';
-import Pic9 from '../../../assets/portfolio/assinaturas/rioDesejo/RD9.jpg';
 
 const About = () => {
   return (

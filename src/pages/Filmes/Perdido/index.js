@@ -16,11 +16,11 @@ import {
 } from './styles';
 
 import Pic1 from '../../../assets/portfolio/assinaturas/perdido/PD1.jpg';
-import Pic2 from '../../../assets/portfolio/assinaturas/perdido/PD2.png';
-import Pic3 from '../../../assets/portfolio/assinaturas/perdido/PD3.png';
-import Pic4 from '../../../assets/portfolio/assinaturas/perdido/PD4.png';
+import Pic2 from '../../../assets/portfolio/assinaturas/perdido/PD2.jpg';
+import Pic3 from '../../../assets/portfolio/assinaturas/perdido/PD3.jpg';
+import Pic4 from '../../../assets/portfolio/assinaturas/perdido/PD4.jpg';
 import Pic5 from '../../../assets/portfolio/assinaturas/perdido/PD5.jpg';
-import Pic6 from '../../../assets/portfolio/assinaturas/perdido/PD6.png';
+import Pic6 from '../../../assets/portfolio/assinaturas/perdido/PD6.jpg';
 import Pic7 from '../../../assets/portfolio/assinaturas/perdido/PD7.jpg';
 
 const About = () => {

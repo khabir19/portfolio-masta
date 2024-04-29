@@ -26,25 +26,39 @@ export const Container = styled.div`
   }
 `;
 
-export const Title = styled.h1`
-  color: black;
-  font-family: Inter, Arial, Helvetica, sans-serif;
-  font-weight: 300;
-  font-size: 30px;
-  display: flex;
-  justify-content: center;
-
-  @media(max-width: 700px) {
-    font-size: 30px;
-  }
-`;
-
 export const LinkWrapper = styled(Link)``;
 
 export const PosterSlide = styled.div`
-  height: 600px;
-  width: 600px;
+  height: 630px;
+  width: auto;
   background-image: url(${(props) => props.image});
-  background-size: contain;
-  background-repeat: no-repeat; 
+  background-size: 420px;
+  background-repeat: no-repeat;
+
+  @media(max-width: 1024px) {
+      background-size: 420px;
+  }
+  @media(max-width: 900px) {
+      background-size: 420px; 
+  }
+  @media(max-width: 820px) {
+      background-size: 420px;
+  }
+  @media(max-width: 768px) {
+      /* background-size: 540px; */
+      height: 630px;
+      width: 480px;
+  }
+  @media(max-width: 450px) {
+      background-size: 420px;
+  }
+  @media(max-width: 430px) {
+      background-size: 430px;
+  }
+  @media(max-width: 414px) {
+      background-size: 414px;
+  }
+  @media(max-width: 375px) {
+      background-size: 375px;
+  }
 `;

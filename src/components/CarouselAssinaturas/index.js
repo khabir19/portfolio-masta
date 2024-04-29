@@ -1,6 +1,6 @@
 import React from 'react';
 import { Swiper, SwiperSlide } from 'swiper/react';
-import { LinkWrapper, Container, PosterSlide, Title } from './styles';
+import { LinkWrapper, Container, PosterSlide } from './styles';
 
 import 'swiper/css';
 import 'swiper/css/pagination';
@@ -14,7 +14,7 @@ function CarouselAssinaturas() {
       <Swiper
         breakpoints={{
           640: {
-            slidesPerView: 2,
+            slidesPerView: 1,
           },
           1024: {
             slidesPerView: 2,

@@ -62,13 +62,6 @@ export const AboutItem1 = styled.div`
     }
 `;
 
-export const AboutItem2 = styled.div`
-  grid-column-start: 1;
-  grid-column-end: 3;
-  grid-row-start: 1;
-  grid-row-end: 3;
-`;
-
 export const AboutItem3 = styled.div`
   grid-column-start: 1;
   grid-column-end: 3;

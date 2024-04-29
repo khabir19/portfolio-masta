@@ -20,7 +20,7 @@ import Pic3 from '../../../assets/portfolio/assinaturas/aliceSo/AS2.jpg';
 import Pic4 from '../../../assets/portfolio/assinaturas/aliceSo/AS3.jpg';
 import Pic5 from '../../../assets/portfolio/assinaturas/aliceSo/AS4.jpg';
 import Pic2 from '../../../assets/portfolio/assinaturas/aliceSo/AS5.jpg';
-import Pic6 from '../../../assets/portfolio/assinaturas/aliceSo/AS8.jpg';
+import Pic6 from '../../../assets/portfolio/assinaturas/aliceSo/AS6.jpg';
 import Pic7 from '../../../assets/portfolio/assinaturas/aliceSo/AS7.jpg';
 
 const About = () => {

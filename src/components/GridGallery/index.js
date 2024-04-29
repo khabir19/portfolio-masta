@@ -20,10 +20,10 @@ import {
 import Magal from "../../assets/portfolio/assinaturas/meuSangueFerve/MF1.jpg";
 import Fogareu from "../../assets/portfolio/assinaturas/fogareu/FG3.jpg";
 import RioDesejo from "../../assets/portfolio/assinaturas/rioDesejo/RDGrid.jpg";
-import Tungstenio from "../../assets/portfolio/assinaturas/tungstenio/TGGrid.png";
+import Tungstenio from "../../assets/portfolio/assinaturas/tungstenio/TGGrid.jpg";
 import SemSeuSangue from "../../assets/portfolio/assinaturas/semSeuSangue/SSGrid.jpg";
 import DoresAmores from "../../assets/portfolio/assinaturas/doresAmores/DA6.jpg";
-import AliceSo from "../../assets/portfolio/assinaturas/aliceSo/AS6.png";
+import AliceSo from "../../assets/portfolio/assinaturas/aliceSo/ASGrid.png";
 import SambandoBrasas from "../../assets/portfolio/assinaturas/rioDuvida/RD1.jpg";
 import Santo from "../../assets/portfolio/assinaturas/santo/STGrid.jpg";
 import Perdido from "../../assets/portfolio/assinaturas/perdido/PDGrid.jpg";

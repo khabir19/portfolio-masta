@@ -9,8 +9,6 @@ import {
   AboutItem3,
   AboutItem4,
   AboutItem5,
-  AboutItem6,
-  AboutItem7,
   Title,
   Synopsis
 } from './styles';
@@ -19,7 +17,7 @@ import Pic1 from '../../../assets/portfolio/assinaturas/semSeuSangue/SS1.jpg';
 import Pic2 from '../../../assets/portfolio/assinaturas/semSeuSangue/SS2.jpg';
 import Pic3 from '../../../assets/portfolio/assinaturas/semSeuSangue/SS3.jpg';
 import Pic4 from '../../../assets/portfolio/assinaturas/semSeuSangue/SS4.jpg';
-import Pic5 from '../../../assets/portfolio/assinaturas/semSeuSangue/SS5.png';
+import Pic5 from '../../../assets/portfolio/assinaturas/semSeuSangue/SS5.jpg';
 
 const About = () => {
   return (

@@ -61,13 +61,17 @@ export const ImdbIcon = styled(FaImdb)`
     
     &:hover {
     color: black;
+    }
   }
-  }
-
   @media (min-width: 820px) {
     width: 40px;
     padding: 0px 25px 0px 25px;
+  }  
+  @media (max-width: 768px) {
+    width: 40px;
+    padding: 0px 18px 0px 18px;
   }
+  
 `;
 
 export const InstagramIcon = styled(FaInstagram)`
@@ -91,12 +95,15 @@ export const InstagramIcon = styled(FaInstagram)`
     
     &:hover {
     color: black;
+    }
   }
-  }
-
   @media (min-width: 820px) {
     width: 40px;
     padding: 0px 25px 0px 25px;    
+  }  
+  @media (max-width: 768px) {
+    width: 40px;
+    padding: 0px 18px 0px 18px;
   }  
 `;
 
@@ -123,10 +130,13 @@ export const WhatsappIcon = styled(FaWhatsapp)`
     color: black;
     }
   }
-
   @media (min-width: 820px) {
     width: 40px;
     padding: 0px 25px 0px 25px;
+  }  
+  @media (max-width: 768px) {
+    width: 40px;
+    padding: 0px 18px 0px 18px;
   }
 `;
 

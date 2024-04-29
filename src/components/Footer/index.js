@@ -3,16 +3,12 @@ import {
   GridLogoWrapper,
   GridSocialsWrapper,
   SocialsLink,
-  SocialsIcon,
   Disclaimer,
   ImdbIcon,
   InstagramIcon,
   WhatsappIcon
 } from "./styles";
  
-import Instagram from "../../assets/socials/instagram.png";
-import Imdb from "../../assets/socials/imdb.png";
-import Whatsapp from "../../assets/socials/whatsapp.png";
 import { useEffect } from "react";
 
 function Footer() {

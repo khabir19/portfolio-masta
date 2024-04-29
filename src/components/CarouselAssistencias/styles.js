@@ -26,19 +26,6 @@ export const Container = styled.div`
   }
 `;
 
-export const Title = styled.h1`
-  color: black;
-  font-family: Inter, Arial, Helvetica, sans-serif;
-  font-weight: 300;
-  font-size: 30px;
-  display: flex;
-  justify-content: center;
-
-  @media(max-width: 700px) {
-    font-size: 30px;
-  }
-`;
-
 export const LinkWrapper = styled(Link)``;
 
 export const PosterSlide = styled.div`
