@@ -6,22 +6,24 @@ import { FaImdb, FaInstagram, FaWhatsapp } from "react-icons/fa6";
 import LogoB from '../../assets/misc/mandalaBlack.png';
 
 export const GridWrapper = styled.div`
+  
   display: grid;
-  grid-template-columns: repeat(1, 1fr 1fr 0.5fr 1fr 1fr);
+  grid-template-columns: repeat(1, 1fr 1fr 1fr 2fr 1fr 1fr 1fr);
   grid-template-rows: repeat(1, 6vw);
   grid-template-areas:
-    "a b c d e";
+    "a b c d e f g";
   grid-auto-flow: row;
   background-color: rgba(158, 121, 140, 0.8);
-
-  @media (max-width: 900px) {
-    grid-template-rows: repeat(1, 1fr);
-    grid-template-columns: repeat(1, 1.5fr 0.5fr 1fr 0.5fr 1.5fr);
-   }
+  position: fixed;
+  width: 100vw;
+  bottom: 0;
+  @media (max-width: 1200px) {
+    grid-template-rows: repeat(1, 10vw);
+  }
 `;
 
 export const GridLogoWrapper = styled.div`
-  grid-area: c; 
+  grid-area: d; 
 
   background-image: url(${LogoB});
   background-size: contain;  
@@ -30,17 +32,31 @@ export const GridLogoWrapper = styled.div`
   background-position-y: center;  
 `;
 
-export const GridSocialsWrapper = styled.div`
+export const GridImdbWrapper = styled.div`
   grid-area: e;
 
   display: flex;
   align-items: center;
-  justify-content: flex-end;  
+  justify-content: center;  
+`;
+export const GridInstagramWrapper = styled.div`
+  grid-area: f;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;  
+`;
+export const GridWhatsappWrapper = styled.div`
+  grid-area: g;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;  
 `;
 
 export const SocialsLink = styled(Link)``;
 
-export const ImdbIcon = styled(FaImdb)`
+export const ImdbIcon = styled(FaImdb)`   
   width: 100px;
   height: 50px;
   text-decoration: none;
@@ -57,19 +73,13 @@ export const ImdbIcon = styled(FaImdb)`
 
   @media (max-width: 700px) {
     width: 21px;
-    padding: 0px 8px 0px 8px;
     
     &:hover {
     color: black;
     }
   }
-  @media (min-width: 820px) {
-    width: 40px;
-    padding: 0px 25px 0px 25px;
-  }  
   @media (max-width: 768px) {
-    width: 40px;
-    padding: 0px 18px 0px 18px;
+    width: 15px;
   }
   
 `;
@@ -91,19 +101,13 @@ export const InstagramIcon = styled(FaInstagram)`
 
   @media (max-width: 700px) {
     width: 21px;
-    padding: 0px 8px 0px 8px;
     
     &:hover {
     color: black;
     }
   }
-  @media (min-width: 820px) {
-    width: 40px;
-    padding: 0px 25px 0px 25px;    
-  }  
   @media (max-width: 768px) {
-    width: 40px;
-    padding: 0px 18px 0px 18px;
+    width: 15px;
   }  
 `;
 
@@ -124,24 +128,18 @@ export const WhatsappIcon = styled(FaWhatsapp)`
 
   @media (max-width: 700px) {
     width: 21px;
-    padding: 0px 8px 0px 8px;
     
     &:hover {
     color: black;
     }
   }
-  @media (min-width: 820px) {
-    width: 40px;
-    padding: 0px 25px 0px 25px;
-  }  
   @media (max-width: 768px) {
-    width: 40px;
-    padding: 0px 18px 0px 18px;
+    width: 15px;
   }
 `;
 
 export const Disclaimer = styled.div`  
-  grid-area: e;
+  grid-area: a;
   font-family: Inter, Arial, Helvetica, sans-serif;
   font-weight: 300;
   color: black;

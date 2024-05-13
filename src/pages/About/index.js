@@ -47,9 +47,6 @@ const About = () => {
           Gosto quando acontece a mágica e os atores se sentem completamente à vontade para viverem outras vidas, dando formas e contornos que acrescentam em cada história que contamos.
         </AboutText>
 
-        <AboutItem7>
-          <AboutImg src={Pic7} />
-        </AboutItem7>
       </AboutWrapper>
       <AboutWrapper>
         <AboutItem2>
@@ -67,6 +64,9 @@ const About = () => {
         <AboutItem6>
           <AboutImg src={Pic6} />
         </AboutItem6>
+        <AboutItem7>
+          <AboutImg src={Pic7} />
+        </AboutItem7>
       </AboutWrapper>
       <Footer />
     </>

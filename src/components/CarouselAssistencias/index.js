@@ -6,6 +6,28 @@ import 'swiper/css';
 import 'swiper/css/pagination';
 import 'swiper/css/navigation';
 
+import budapeste from '../../assets/portfolio/cartazesAssist/BDCZ.jpg'
+import deserto from '../../assets/portfolio/cartazesAssist/DSCZ.jpg'
+import desafinados from '../../assets/portfolio/cartazesAssist/DSFCZ.jpg'
+import entreVales from '../../assets/portfolio/cartazesAssist/EVCZ.jpg'
+import fada from '../../assets/portfolio/cartazesAssist/FDCZ.jpg'
+import meninaMorta from '../../assets/portfolio/cartazesAssist/FMMCZ.jpg'
+import circoMistico from '../../assets/portfolio/cartazesAssist/GCCZ.jpg'
+import gonzaga from '../../assets/portfolio/cartazesAssist/GZCZ.jpg'
+import homemFuturo from '../../assets/portfolio/cartazesAssist/HFCZ.jpg'
+import haruNatsu from '../../assets/portfolio/cartazesAssist/HNCZ.jpg'
+import infancia from '../../assets/portfolio/cartazesAssist/IFCZ.jpg'
+import impuros from '../../assets/portfolio/cartazesAssist/IPCZ.jpg'
+import juventude from '../../assets/portfolio/cartazesAssist/JVCZ.jpg'
+import magnifica from '../../assets/portfolio/cartazesAssist/MGCZ.jpg'
+import maeJoana from '../../assets/portfolio/cartazesAssist/MJCZ.jpg'
+import natalieRio from '../../assets/portfolio/cartazesAssist/NRCZ.jpg'
+import ondaAr from '../../assets/portfolio/cartazesAssist/OACZ.jpg'
+import ouroNegro from '../../assets/portfolio/cartazesAssist/ONCZ.jpg'
+import palhaco from '../../assets/portfolio/cartazesAssist/PLCZ.jpg'
+import quincas from '../../assets/portfolio/cartazesAssist/QBCZ.jpg'
+import trinta from '../../assets/portfolio/cartazesAssist/TRCZ.jpg'
+
 import { Navigation } from 'swiper/modules';
 
 function CarouselAssinaturas() {
@@ -35,168 +57,147 @@ function CarouselAssinaturas() {
           {/* O Palhaço */}
           <LinkWrapper>
             <PosterSlide
-              image={"https://upload.wikimedia.org/wikipedia/pt/2/2a/O_Palhaco_poster_vert.jpg"}
-            />
+              image={palhaco}/>
           </LinkWrapper>
         </SwiperSlide>
         <SwiperSlide>
           {/* Quincas Berro d'Água */}
           <LinkWrapper>
             <PosterSlide
-              image={"https://upload.wikimedia.org/wikipedia/pt/b/b1/Quincas_Berro_d%27%C3%81gua.jpg"}
-            />
+              image={quincas}/>
           </LinkWrapper>
         </SwiperSlide>
         <SwiperSlide>
           {/* Trinta */}
           <LinkWrapper>
             <PosterSlide
-              image={"https://m.media-amazon.com/images/M/MV5BMjcxNTI5NDU1MV5BMl5BanBnXkFtZTgwMTM3Nzc2MjE@._V1_FMjpg_UX1000_.jpg"}
-            />
+              image={trinta}/>
           </LinkWrapper>
         </SwiperSlide>
         <SwiperSlide>
           {/* Deserto */}
           <LinkWrapper>
             <PosterSlide
-              image={"https://br.web.img3.acsta.net/pictures/17/09/18/01/19/5955481.jpg"}
-            />
+              image={deserto}/>
           </LinkWrapper>
         </SwiperSlide>
         <SwiperSlide>
           {/* O Grande Circo Místico */}
           <LinkWrapper>
             <PosterSlide
-              image={"https://upload.wikimedia.org/wikipedia/pt/0/00/O_grande_circo_mistico.png"}
-            />
+              image={circoMistico}/>
           </LinkWrapper>
         </SwiperSlide>
         <SwiperSlide>
           {/* Impuros */}
           <LinkWrapper>
             <PosterSlide
-              image={"https://m.media-amazon.com/images/M/MV5BNTg3MDhiYjgtZDhiNi00MTcwLWJmYWEtMGNkNWMxZjAyMTEzXkEyXkFqcGdeQXVyMTA0NTc5MQ@@._V1_FMjpg_UX1000_.jpg"}
-            />
+              image={impuros}/>
           </LinkWrapper>
         </SwiperSlide>
         <SwiperSlide>
           {/* É Fada! */}
           <LinkWrapper>
             <PosterSlide
-              image={"https://upload.wikimedia.org/wikipedia/pt/e/ea/%C3%89_Fada.jpeg"}
-            />
+              image={fada}/>
           </LinkWrapper>
         </SwiperSlide>
         <SwiperSlide>
           {/* Magnífica 70 */}
           <LinkWrapper>
             <PosterSlide
-              image={"https://f001.backblazeb2.com/file/papocine/2015/05/20181016-magnifica-70-papo-de-cinema-poster-t1.jpg"}
-            />
+              image={magnifica}/>
           </LinkWrapper>
         </SwiperSlide>
         <SwiperSlide>
           {/* Infância */}
           <LinkWrapper>
             <PosterSlide
-              image={"https://br.web.img3.acsta.net/c_310_420/pictures/15/07/21/20/21/023044.jpg"}
-            />
+              image={infancia}/>
           </LinkWrapper>
         </SwiperSlide>
         <SwiperSlide>
           {/* Casa da Mãe Joana 2 */}
           <LinkWrapper>
             <PosterSlide
-              image={"https://www.filmeb.com.br/sites/default/files/styles/large/public/calendario-de-estreias/cartazes/Poster-do-filme-Casa-da-Mae-Joana%3D2.jpg?itok=vtHTsoyY"}
-            />
+              image={maeJoana}/>
           </LinkWrapper>
         </SwiperSlide>
         <SwiperSlide>
           {/* Gonzaga: De Pai pra Filho */}
           <LinkWrapper>
             <PosterSlide
-              image={"https://image.tmdb.org/t/p/w500/rFSUhUpMqYgLZOnkRGwDleFQg44.jpg"}
-            />
+              image={gonzaga}/>
           </LinkWrapper>
         </SwiperSlide>
         <SwiperSlide>
           {/* Entre Vales */}
           <LinkWrapper>
             <PosterSlide
-              image={"https://upload.wikimedia.org/wikipedia/pt/a/a8/EntreVales.jpg"}
-            />
+              image={entreVales}/>
           </LinkWrapper>
         </SwiperSlide>
         <SwiperSlide>
           {/* O Homem do Futuro */}
           <LinkWrapper>
             <PosterSlide
-              image={"https://image.tmdb.org/t/p/w500/ajjvpHJcO9TD45Y0aLZU5yBeW2G.jpg"}
-            />
+              image={homemFuturo}/>
           </LinkWrapper>
         </SwiperSlide>
         <SwiperSlide>
           {/* Ouro Negro */}
           <LinkWrapper>
             <PosterSlide
-              image={"https://image.tmdb.org/t/p/w600_and_h900_bestv2/182qFudWibaXMRtpZx8xhScapsP.jpg"}
-            />
+              image={ouroNegro}/>
           </LinkWrapper>
         </SwiperSlide>
         <SwiperSlide>
           {/* Budapeste */}
           <LinkWrapper>
             <PosterSlide
-              image={"https://image.tmdb.org/t/p/w500/aZLulrPvexxbM101r0UkcenahnF.jpg"}
-            />
+              image={budapeste}/>
           </LinkWrapper>
         </SwiperSlide>
         <SwiperSlide>
           {/* Natale a Rio */}
           <LinkWrapper>
             <PosterSlide
-              image={"https://www.themoviedb.org/t/p/w600_and_h900_bestv2/b77Mv9O2Nw1ZAxm2uX0LeAPogmX.jpg"}
-            />
+              image={natalieRio}/>
           </LinkWrapper>
         </SwiperSlide>
         <SwiperSlide>
           {/* Juventude */}
           <LinkWrapper>
             <PosterSlide
-              image={"https://br.web.img2.acsta.net/c_310_420/medias/nmedia/18/88/79/24/20005407.jpg"}
-            />
+              image={juventude}/>
           </LinkWrapper>
         </SwiperSlide>
         <SwiperSlide>
           {/* A Festa da Menina Morta */}
           <LinkWrapper>
             <PosterSlide
-              image={"https://www.themoviedb.org/t/p/w600_and_h900_bestv2/2PWfoFg4pX8bMG8W5dIOzwZ2bsz.jpg"}
-            />
+              image={meninaMorta}/>
           </LinkWrapper>
         </SwiperSlide>
         <SwiperSlide>
           {/* Os Desafinados */}
           <LinkWrapper>
             <PosterSlide
-              image={"https://www.themoviedb.org/t/p/w600_and_h900_bestv2/eaxtPesOxtpSus8WCxSumxFeB0Z.jpg"}
-            />
+              image={desafinados}/>
           </LinkWrapper>
         </SwiperSlide>
         <SwiperSlide>
           {/* Haru e Natsu: As Cartas que Não Chegaram */}
           <LinkWrapper>
             <PosterSlide
-              image={"https://www.themoviedb.org/t/p/w600_and_h900_bestv2/hns10QEsMsoq4p37SAXuX0TtvfU.jpg"}
-            />
+              image={haruNatsu}/>
           </LinkWrapper>
         </SwiperSlide>
         <SwiperSlide>
           {/* Uma Onda no Ar */}
           <LinkWrapper>
             <PosterSlide
-              image={"https://www.themoviedb.org/t/p/w600_and_h900_bestv2/cUZBCwhGsOE2BZJGgpo7mdRQkq9.jpg"}
-            />
+              image={ondaAr}/>
           </LinkWrapper>
         </SwiperSlide>
       </Swiper>

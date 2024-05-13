@@ -1,7 +1,9 @@
 import {
   GridWrapper,
   GridLogoWrapper,
-  GridSocialsWrapper,
+  GridImdbWrapper,
+  GridInstagramWrapper,
+  GridWhatsappWrapper,
   SocialsLink,
   Disclaimer,
   ImdbIcon,
@@ -20,17 +22,21 @@ function Footer() {
     <>
       <GridWrapper>
         <GridLogoWrapper/>
-        <GridSocialsWrapper>
+        <GridImdbWrapper>
           <SocialsLink target="_blank" to="https://www.imdb.com/name/nm5756608/">
           <ImdbIcon/>
           </SocialsLink>
+        </GridImdbWrapper>
+        <GridInstagramWrapper>
           <SocialsLink target="_blank" to="https://www.instagram.com/mastaariane/">
             <InstagramIcon/>
           </SocialsLink>
+        </GridInstagramWrapper>
+        <GridWhatsappWrapper>
           <SocialsLink target="_blank" to="https://wa.me/5521981017549">
             <WhatsappIcon/>
           </SocialsLink>
-        </GridSocialsWrapper>
+        </GridWhatsappWrapper>
          <Disclaimer>Todos os direitos reservados©️ {new Date().getFullYear()}</Disclaimer>
       </GridWrapper>
     </>

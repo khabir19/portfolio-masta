@@ -6,6 +6,20 @@ import 'swiper/css';
 import 'swiper/css/pagination';
 import 'swiper/css/navigation';
 
+import aliceSo from '../../assets/portfolio/cartazesSign/ASCZ.jpg'
+import doresAmores from '../../assets/portfolio/cartazesSign/DACZ.jpg'
+import fogareu from '../../assets/portfolio/cartazesSign/FGCZ.jpg'
+import musicopolis from '../../assets/portfolio/cartazesSign/MCCZ.jpg'
+import magal from '../../assets/portfolio/cartazesSign/MFCZ.jpg'
+import memoriasEstudantil from '../../assets/portfolio/cartazesSign/MMCZ.jpg'
+import oswaldoCruz from '../../assets/portfolio/cartazesSign/OCCZ.jpg'
+import perdido from '../../assets/portfolio/cartazesSign/PDCZ.jpg'
+import rioDesejo from '../../assets/portfolio/cartazesSign/RDCZ.jpg'
+import rioDuvida from '../../assets/portfolio/cartazesSign/RVCZ.jpg'
+import sambandoBrasas from '../../assets/portfolio/cartazesSign/SBCZ.jpg'
+import semSeuSangue from '../../assets/portfolio/cartazesSign/SSCZ.jpg'
+import santo from '../../assets/portfolio/cartazesSign/STCZ.jpg'
+
 import { Navigation } from 'swiper/modules';
 
 function CarouselAssinaturas() {
@@ -35,7 +49,7 @@ function CarouselAssinaturas() {
         <SwiperSlide>
           <LinkWrapper to="/assinaturas/meu-sangue-ferve-por-voce">
             <PosterSlide
-              image={"https://www.themoviedb.org/t/p/w600_and_h900_bestv2/tdrx8LEYbIIwD9qrFQIVcRsj2au.jpg"}
+              image={magal}
             >
             </PosterSlide>
           </LinkWrapper>
@@ -43,7 +57,7 @@ function CarouselAssinaturas() {
         <SwiperSlide>
           <LinkWrapper to="/assinaturas/santo">
             <PosterSlide
-              image={"https://www.themoviedb.org/t/p/w600_and_h900_bestv2/9LVVSd2K724lwSChMCv0ENsikgm.jpg"}
+              image={santo}
             >
             </PosterSlide>
           </LinkWrapper>
@@ -51,7 +65,7 @@ function CarouselAssinaturas() {
         <SwiperSlide>
           <LinkWrapper to="/assinaturas/rio-do-desejo">
             <PosterSlide
-              image={"https://upload.wikimedia.org/wikipedia/pt/5/5c/O_Rio_do_Desejo.png"}
+              image={rioDesejo}
             >
             </PosterSlide>
           </LinkWrapper>
@@ -59,7 +73,7 @@ function CarouselAssinaturas() {
         <SwiperSlide>
           <LinkWrapper to="/assinaturas/fogareu">
             <PosterSlide
-              image={"https://br.web.img2.acsta.net/pictures/22/02/17/08/04/5758181.jpg"}
+              image={fogareu}
             >
             </PosterSlide>
           </LinkWrapper>
@@ -67,7 +81,7 @@ function CarouselAssinaturas() {
         <SwiperSlide>
           <LinkWrapper to="/assinaturas/alice-e-so">
             <PosterSlide
-              image={"https://upload.wikimedia.org/wikipedia/pt/thumb/b/be/Alice_%26_S%C3%B3.jpg/230px-Alice_%26_S%C3%B3.jpg"}
+              image={aliceSo}
             >
             </PosterSlide>
           </LinkWrapper>
@@ -75,7 +89,7 @@ function CarouselAssinaturas() {
         <SwiperSlide>
           <LinkWrapper to="/assinaturas/perdido">
             <PosterSlide
-              image={"https://m.media-amazon.com/images/M/MV5BOWExNGQ5MDQtMjQ3Mi00OTQ2LWI2YjMtNmYxZGIxZDBjNzExXkEyXkFqcGdeQXVyNjkyMjgxOTM@._V1_.jpg"}
+              image={perdido}
             >
             </PosterSlide>
           </LinkWrapper>
@@ -83,7 +97,7 @@ function CarouselAssinaturas() {
         <SwiperSlide>
           <LinkWrapper to="/assinaturas/sem-seu-sangue">
             <PosterSlide
-              image={"https://www.itaucinemas.com.br/_img/_filmes/3948_capa.jpg?Sem-Seu-Sangue"}
+              image={semSeuSangue}
             >
             </PosterSlide>
           </LinkWrapper>
@@ -91,7 +105,7 @@ function CarouselAssinaturas() {
         <SwiperSlide>
           <LinkWrapper to="/assinaturas/dores-de-amores">
             <PosterSlide
-              image={"https://vejasp.abril.com.br/wp-content/uploads/2016/12/poster-filme-final-kombat-pra-internet.jpeg?quality=70"}
+              image={doresAmores}
             >
             </PosterSlide>
           </LinkWrapper>
@@ -99,7 +113,7 @@ function CarouselAssinaturas() {
         <SwiperSlide>
           <LinkWrapper to="/assinaturas/musicopolis">
             <PosterSlide
-              image={"https://s2-globo-play.glbimg.com/ujZErJd5YbViNU-YB3AzUYPLRLo=/362x536/https://s2-globo-play.glbimg.com/uIEO2bNP_1zDOtH-k-zNfZBfBTI=/https://s2.glbimg.com/FMsbenFy5ULCJxBCYMh-iNfYnLc=/i.s3.glbimg.com/v1/AUTH_c3c606ff68e7478091d1ca496f9c5625/internal_photos/bs/2022/3/I/kukhcSRfyAS7GOn7KYow/2022-65-musicopolis-poster-1-.jpg"}
+              image={musicopolis}
             >
             </PosterSlide>
           </LinkWrapper>
@@ -107,7 +121,7 @@ function CarouselAssinaturas() {
         <SwiperSlide>
           <LinkWrapper to="/assinaturas/sambando-nas-brasas-moro">
             <PosterSlide
-              image={"https://m.media-amazon.com/images/M/MV5BNmM1ZGUzMGYtNTA5NS00NGFmLTk0MDgtMmY0MzA5OWMzNDZiXkEyXkFqcGdeQXVyOTU3ODk4MQ@@._V1_FMjpg_UX1000_.jpg"}
+              image={sambandoBrasas}
             >
             </PosterSlide>
           </LinkWrapper>
@@ -115,7 +129,7 @@ function CarouselAssinaturas() {
         <SwiperSlide>
           <LinkWrapper to="/assinaturas/">
             <PosterSlide
-              image={"https://caliban.com.br/wp-content/uploads/2016/02/MMEb.jpg"}
+              image={memoriasEstudantil}
             >
             </PosterSlide>
           </LinkWrapper>
@@ -123,7 +137,7 @@ function CarouselAssinaturas() {
         <SwiperSlide>
           <LinkWrapper to="/assinaturas/rio-da-duvida">
             <PosterSlide
-              image={"https://rondonriodaduvida.com/wp-content/uploads/2023/10/banner-28-09-23-web-2-725x1024.jpg"}
+              image={rioDuvida}
             >
             </PosterSlide>
           </LinkWrapper>
@@ -131,7 +145,7 @@ function CarouselAssinaturas() {
         <SwiperSlide>
           <LinkWrapper to="/assinaturas/">
             <PosterSlide
-              image={"https://caliban.com.br/wp-content/uploads/2016/02/OSWALDO-CRUZb.jpg"}
+              image={oswaldoCruz}
             >
             </PosterSlide>
           </LinkWrapper>

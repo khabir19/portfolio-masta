@@ -43,9 +43,9 @@ export const AboutItem1 = styled.div`
 `;
 export const AboutItem2 = styled.div`
   grid-column-start: 1;
-  grid-column-end: 3;
-  grid-row-start: 1;
-  grid-row-end: 3;  
+  grid-column-end: 5;
+  grid-row-start: 5;
+  grid-row-end: 6;  
 `;
 export const AboutItem3 = styled.div`
   grid-column-start: 4;
@@ -72,8 +72,8 @@ export const AboutItem6 = styled.div`
   grid-row-end: 5;
 `;
 export const AboutItem7 = styled.div`
-  grid-column-start: 3;
-  grid-column-end: 4;
-  grid-row-start: 2;
+  grid-column-start: 1;
+  grid-column-end: 3;
+  grid-row-start: 1;
   grid-row-end: 3;
 `;
