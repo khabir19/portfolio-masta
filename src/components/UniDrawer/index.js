@@ -21,9 +21,9 @@ const ContactBar = () => {
           <ContactBarArrowIcon isOpen={isDisplayed} />
         </ContactBarArrowContainer>
         <IconsContainer isOpen={isDisplayed}>
-          <IconContainer to="/sobre" rel="noreferrer">
+          {/* <IconContainer to="/sobre" rel="noreferrer">
             SOBRE
-          </IconContainer>
+          </IconContainer> */}
           <IconContainer to="/assinaturas" rel="noreferrer">
             ASSINATURAS
           </IconContainer>
