@@ -17,8 +17,8 @@ import Filmes from "../pages/Filmes";
   import SemSeuSangue from "../pages/Filmes/SemSeuSangue"
   import Tungstenio from "../pages/Filmes/Tungstenio"
 import Assistencias from "../pages/Assistencias";
-// import Teatro from "../pages/Teatro";
-// import Publicidade from "../pages/Publicidade";
+import Teatro from "../pages/Teatro";
+import Publicidade from "../pages/Publicidade";
 import About from "../pages/About";
 
 const RouteBuild = () => (
@@ -42,8 +42,8 @@ const RouteBuild = () => (
       <Route path='musicopolis' element={<Musicopolis />} />
     </Route>
     <Route path="/assistencias" element={<Assistencias />}/>
-    {/* <Route path="/teatro" element={<Teatro />} />
-    <Route path="/publicidade" element={<Publicidade />} /> */}
+    <Route path="/teatro" element={<Teatro />} />
+    <Route path="/publicidade" element={<Publicidade />} />
     <Route path="/sobre" element={<About />} />
   </Routes>
 );

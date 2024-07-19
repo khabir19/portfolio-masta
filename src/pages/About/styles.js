@@ -21,10 +21,10 @@ export const AboutText = styled.h1`
     text-align: justify;
     margin: 20px;
   
-    grid-column-start: 3;
+    grid-column-start: 1;
     grid-column-end: 5;
-    grid-row-start: 1;
-    grid-row-end: 3;
+    grid-row-start: 4;
+    grid-row-end: 6;
 
     @media (max-width: 700px) {
       font-size: 30px;
@@ -37,9 +37,9 @@ export const AboutText = styled.h1`
 
 export const AboutItem1 = styled.div`
   grid-column-start: 1;
-  grid-column-end: 3;
+  grid-column-end: 6;
   grid-row-start: 1;
-  grid-row-end: 3;  
+  grid-row-end: 2;  
 `;
 export const AboutItem2 = styled.div`
   grid-column-start: 1;

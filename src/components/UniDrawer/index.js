@@ -21,21 +21,21 @@ const ContactBar = () => {
           <ContactBarArrowIcon isOpen={isDisplayed} />
         </ContactBarArrowContainer>
         <IconsContainer isOpen={isDisplayed}>
-          {/* <IconContainer to="/sobre" rel="noreferrer">
+          <IconContainer to="/sobre" rel="noreferrer">
             SOBRE
-          </IconContainer> */}
+          </IconContainer>
           <IconContainer to="/assinaturas" rel="noreferrer">
             ASSINATURAS
           </IconContainer>
           <IconContainer to="/assistencias" rel="noreferrer">
             ASSISTÊNCIAS
           </IconContainer>
-          {/* <IconContainer to="/teatro" rel="noreferrer">
+          <IconContainer to="/teatro" rel="noreferrer">
             TEATRO
           </IconContainer>
           <IconContainer to="/publicidade" rel="noreferrer">
             PUBLICIDADE
-          </IconContainer> */}
+          </IconContainer>
         </IconsContainer>
       </ContactBarContainer>
     </>

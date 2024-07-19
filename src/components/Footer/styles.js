@@ -9,7 +9,7 @@ export const GridWrapper = styled.div`
   
   display: grid;
   grid-template-columns: repeat(1, 1fr 1fr 1fr 2fr 1fr 1fr 1fr);
-  grid-template-rows: repeat(1, 6vw);
+  grid-template-rows: repeat(1, 4vw);
   grid-template-areas:
     "a b c d e f g";
   grid-auto-flow: row;
