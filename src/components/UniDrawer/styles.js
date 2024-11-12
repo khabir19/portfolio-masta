@@ -40,7 +40,7 @@ export const IconContainer = styled(Link)`
   text-align: left;
   font-family: Inter, Arial, Helvetica, sans-serif;
   font-weight: 400;
-  font-size: 20px;
+  font-size: 15px;
   color: rgba(250, 250, 250, 1);
   text-decoration: none;
   display: flex;

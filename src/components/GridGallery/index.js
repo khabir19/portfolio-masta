@@ -4,6 +4,8 @@ import {
   GalleryImg,
   Middle,
   MiddleText,
+  OvertitleText,
+  OTdiv,
   GalleryMagal,
   GalleryFogareu,
   GalleryRioDesejo,
@@ -34,8 +36,13 @@ function GridGallery() {
     <>
       <GridWrapper>
         <GalleryMagal to="/assinaturas/meu-sangue-ferve-por-voce" >
+          <OTdiv>
+            <OvertitleText>
+              Indicada ao prêmio de melhor figurino pela LABRFF
+            </OvertitleText>
+          </OTdiv>
           <Middle>
-            <GalleryImg src={Magal} />
+            <GalleryImg src={Magal} />   
             <MiddleText>
               Meu Sangue Ferve Por Você (2024)
             </MiddleText>

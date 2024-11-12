@@ -1,6 +1,6 @@
 import { BrowserRouter } from 'react-router-dom';
 
-import RouteBuild from './routes';
+import RouteBuild from './routes/index.js';
 
 const Routes = () => (
   <>

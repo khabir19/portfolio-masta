@@ -25,10 +25,10 @@ const ContactBar = () => {
             SOBRE
           </IconContainer>
           <IconContainer to="/assinaturas" rel="noreferrer">
-            ASSINATURAS
+            PORTFÓLIO
           </IconContainer>
           <IconContainer to="/assistencias" rel="noreferrer">
-            ASSISTÊNCIAS
+            MINHA HISTÓRIA
           </IconContainer>
           {/* <IconContainer to="/teatro" rel="noreferrer">
             TEATRO

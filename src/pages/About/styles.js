@@ -17,7 +17,7 @@ export const AboutText = styled.h1`
     color: black;
     font-family: Inter, Arial, Helvetica, sans-serif;
     font-weight: 300;
-    font-size: 30px;
+    font-size: 15px;
     text-align: justify;
     margin: 20px;
   
@@ -27,7 +27,7 @@ export const AboutText = styled.h1`
     grid-row-end: 6;
 
     @media (max-width: 700px) {
-      font-size: 30px;
+      font-size: 15px;
       grid-column-start: 1;
       grid-column-end: 5;
       grid-row-start: 4;

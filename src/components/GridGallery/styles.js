@@ -69,14 +69,40 @@ export const MiddleText = styled.p`
   color: rgba(255, 255, 255, 1);
   
   font-size: 45px;
-  padding: 16px 32px;  
+  padding: 16px 32px;
   
   @media (max-width: 900px) {
     opacity: 10;
     font-size: 10px;
-    padding: 0px 0px; 
+    padding: 0px 0px;
     font-weight: 300;
-    background-color: rgba(0, 0, 0, 0.3); ; 
+    background-color: rgba(0, 0, 0, 0.3);
+  }
+`;
+
+export const OTdiv = styled. div`
+  display: flex;
+  align-items: top;
+  justify-content: right;
+`;
+
+export const OvertitleText = styled.div`
+  font-family: Inter, Arial, Helvetica, sans-serif;
+  font-weight: 200;
+  position: absolute;
+  font-size: 20px;
+  color: rgba(255, 255, 255, 1);
+
+  padding: 10px;
+  margin: 10px;
+  background-color: rgba(158, 121, 140, 0.8);
+
+  @media (max-width: 900px) {
+    opacity: 10;
+    font-size: 10px;
+    padding: 0px 0px;
+    font-weight: 300;
+    background-color: rgba(0, 0, 0, 0.3);
   }
 `;
 

@@ -40,10 +40,10 @@ export const Title = styled.h1`
 
 export const Synopsis = styled.h2`
     font-weight: 400;
-    font-size: 30px;
+    font-size: 15px;
 
     @media (max-width: 700px) {
-      font-size: 22px;
+      font-size: 15px;
       text-align: justify;
     }
 `;

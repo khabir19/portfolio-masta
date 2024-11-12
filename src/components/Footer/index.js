@@ -10,7 +10,8 @@ import {
   InstagramIcon,
   WhatsappIcon
 } from "./styles";
- 
+
+
 import { useEffect } from "react";
 
 function Footer() {

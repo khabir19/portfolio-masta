@@ -34,6 +34,7 @@ const About = () => {
         <Title>
           Meu Sangue Ferve Por Você
           <br />
+          
           <Synopsis>
             Ano: 2024
             <br />
@@ -42,6 +43,9 @@ const About = () => {
             <br />
             Em 1979, Magal, um dos artistas mais populares e celebrados do país, segue a rotina de ensaios e compromissos em Salvador.
             Durante um programa de TV, conhece a deslumbrante Magali e é acometido por uma paixão inédita e avassaladora.
+            <br />
+            <br />
+            Indicada ao prêmio de melhor figurino pela LABRFF
           </Synopsis>
         </Title>
       </AboutWrapper>

@@ -80,8 +80,7 @@ export const ImdbIcon = styled(FaImdb)`
   }
   @media (max-width: 768px) {
     width: 15px;
-  }
-  
+  }  
 `;
 
 export const InstagramIcon = styled(FaInstagram)`
